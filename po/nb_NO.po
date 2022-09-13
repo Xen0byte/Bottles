@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bottles\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-07 22:25+0200\n"
-"PO-Revision-Date: 2022-01-23 11:55+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"POT-Creation-Date: 2022-08-07 23:12+0200\n"
+"PO-Revision-Date: 2022-07-04 17:16+0000\n"
+"Last-Translator: Stian Øverbye <stian@overbye.dev>\n"
 "Language-Team: Norwegian Bokmål <https://hosted.weblate.org/projects/bottles/"
 "bottles/nb_NO/>\n"
 "Language: nb_NO\n"
@@ -17,22 +17,3053 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.11-dev\n"
+"X-Generator: Weblate 4.13.1-dev\n"
 
+#: bottles/backend/managers/backup.py:50 bottles/backend/managers/backup.py:112
+msgid "No path specified"
+msgstr "Ingen sti spesifisert"
+
+#: bottles/backend/managers/backup.py:71
+#, fuzzy, python-brace-format
+msgid "Backup {0}"
+msgstr "Sikkerhetskopi {0}"
+
+#: bottles/backend/managers/backup.py:124
+#, python-brace-format
+msgid "Importing backup: {0}"
+msgstr "Importerer sikkerhetskopi: {0}"
+
+#: bottles/backend/managers/manager.py:1030
+msgid "Fail to install components, tried 3 times."
+msgstr "Mislyktes i å installere komponenter, forsøkt 3 ganger."
+
+#: bottles/backend/managers/manager.py:1041
+msgid "Missing essential components. Installing…"
+msgstr "Mangler viktige komponenter. Installerer…"
+
+#: bottles/backend/managers/manager.py:1117
+#, fuzzy
+msgid "Failed to create bottle directory."
+msgstr "Jeg må velge en egedefinert sti"
+
+#: bottles/backend/managers/manager.py:1129
+msgid "Failed to create placeholder directory/file."
+msgstr "Mislyktes i å opprette plassholder mappe/fil."
+
+#: bottles/backend/managers/manager.py:1134
+#, fuzzy
+msgid "Generating bottle configuration…"
+msgstr "Oppretter wineprefiks …"
+
+#: bottles/backend/managers/manager.py:1157
+msgid "Template found, applying…"
+msgstr "Mal funnet, anvender…"
+
+#. execute wineboot on the bottle path
+#: bottles/backend/managers/manager.py:1169
+#, fuzzy
+msgid "The Wine config is being updated…"
+msgstr "Oppsett"
+
+#: bottles/backend/managers/manager.py:1171
+#, fuzzy
+msgid "Wine config updated!"
+msgstr "Oppsett"
+
+#: bottles/backend/managers/manager.py:1179
+#, fuzzy
+msgid "Running as Flatpak, sandboxing userdir…"
+msgstr "Kjører som Flatpak. Oppretter sandkasse-mapper…"
+
+#: bottles/backend/managers/manager.py:1181
+msgid "Sandboxing userdir…"
+msgstr "Sandbokser brukermappe…"
+
+#: bottles/backend/managers/manager.py:1211
+#, fuzzy
+msgid "Setting Windows version…"
+msgstr "Versjonering"
+
+#: bottles/backend/managers/manager.py:1221
+msgid "Apply CMD default settings…"
+msgstr "Anvend CMD standardinnstillinger…"
+
+#: bottles/backend/managers/manager.py:1229
+#, fuzzy
+msgid "Optimizing environment…"
+msgstr "Tar i bruk miljø: {0}…"
+
+#: bottles/backend/managers/manager.py:1240
+#, fuzzy, python-brace-format
+msgid "Applying environment: {0}…"
+msgstr "Tar i bruk miljø: {0}…"
+
+#: bottles/backend/managers/manager.py:1250
+msgid "(!) Using a custom environment recipe…"
+msgstr "(!) Bruker en egendefinert miljøoppskrift…"
+
+#: bottles/backend/managers/manager.py:1253
+msgid "(!) Recipe not not found or not valid…"
+msgstr "(!) Oppskrift ikke funnet eller ugyldig…"
+
+#: bottles/backend/managers/manager.py:1270
+#, fuzzy
+msgid "Installing DXVK…"
+msgstr "Installerer DXVK…"
+
+#: bottles/backend/managers/manager.py:1278
+#, fuzzy
+msgid "Installing VKD3D…"
+msgstr "Installerer VKD3D…"
+
+#: bottles/backend/managers/manager.py:1286
+#, fuzzy
+msgid "Installing DXVK-NVAPI…"
+msgstr "Installerer DXVK…"
+
+#: bottles/backend/managers/manager.py:1295
+#, fuzzy, python-format
+msgid "Installing dependency: %s …"
+msgstr "Installerer avhengighet: {0} …"
+
+#: bottles/backend/managers/manager.py:1311
+#, fuzzy
+msgid "Creating versioning state 0…"
+msgstr "Oppretter versjoneringstilstand 0…"
+
+#: bottles/backend/managers/manager.py:1319
+msgid "Finalizing…"
+msgstr "Fullfører …"
+
+#: bottles/backend/managers/manager.py:1330
+#, fuzzy
+msgid "Caching template…"
+msgstr "Oppretter flaske …"
+
+#: bottles/backend/managers/versioning.py:97
+#, fuzzy
+msgid "Committing state …"
+msgstr "Oppretter flaske …"
+
+#: bottles/backend/managers/versioning.py:106
+msgid "Nothing to commit"
+msgstr ""
+
+#: bottles/backend/managers/versioning.py:112
+#, fuzzy, python-brace-format
+msgid "New state [{0}] created successfully!"
+msgstr "En flaske ved navn «{0}» ble opprettet"
+
+#: bottles/backend/managers/versioning.py:140
+#, fuzzy
+msgid "States list retrieved successfully!"
+msgstr "En flaske ved navn «{0}» ble opprettet"
+
+#: bottles/backend/managers/versioning.py:171
+#, fuzzy, python-brace-format
+msgid "State {0} restored successfully!"
+msgstr "En flaske ved navn «{0}» ble opprettet"
+
+#: bottles/backend/managers/versioning.py:176
+#, fuzzy
+msgid "Restoring state {} …"
+msgstr "Oppretter flaske …"
+
+#: bottles/backend/managers/versioning.py:185
+#, fuzzy
+msgid "State not found"
+msgstr "Fant ingen springere"
+
+#: bottles/backend/managers/versioning.py:191
+msgid "State {} is already the active state"
+msgstr ""
+
+#: bottles/frontend/windows/crash.py:37
+#, fuzzy
+msgid "Show report"
+msgstr "Feilrapport"
+
+#: bottles/frontend/windows/crash.py:88
+msgid ""
+"            This issue was reported 5 times and cannot be sent again.\n"
+"            Report your feedback in one of the below existing reports."
+msgstr ""
+
+#: bottles/frontend/windows/dlloverrides.py:136
+#, fuzzy
+msgid "No overrides found."
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/windows/drives.py:71
+#, fuzzy
+msgid "Choose path"
+msgstr "Utforsk C:"
+
+#: bottles/frontend/windows/drives.py:73
+#: bottles/frontend/windows/filechooser.py:63
+#: bottles/frontend/windows/installer.py:66
+#: bottles/frontend/windows/launchoptions.py:234
+#: bottles/frontend/windows/launchoptions.py:258
+#: bottles/frontend/windows/vkbasalt.py:355
+#: bottles/frontend/ui/dialog-bottle-picker.ui:17
+#: bottles/frontend/ui/dialog-crash-report.ui:18
+#: bottles/frontend/ui/dialog-proton-alert.ui:17
+#: bottles/frontend/ui/dialog-rename.ui:17
+#: bottles/frontend/ui/dialog-run-args.ui:19 bottles/frontend/ui/new.ui:33
+#: bottles/frontend/views/bottle_details.py:202
+#: bottles/frontend/views/bottle_details.py:296
+#: bottles/frontend/views/bottle_details.py:335
+#: bottles/frontend/views/bottle_details.py:414
+#: bottles/frontend/views/bottle_preferences.py:276
+#: bottles/frontend/views/bottle_preferences.py:775
+#: bottles/frontend/views/bottle_programs.py:92
+#: bottles/frontend/views/importer.py:117
+#: bottles/frontend/views/importer.py:146 bottles/frontend/views/list.py:120
+#: bottles/frontend/views/new.py:152 bottles/frontend/views/new.py:168
+#: bottles/frontend/views/preferences.py:158
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: bottles/frontend/windows/drives.py:73
+#: bottles/frontend/windows/installer.py:66
+#: bottles/frontend/windows/launchoptions.py:234
+#: bottles/frontend/windows/launchoptions.py:258
+#: bottles/frontend/ui/dialog-bottle-picker.ui:22
+#: bottles/frontend/views/bottle_preferences.py:276
+#: bottles/frontend/views/new.py:152 bottles/frontend/views/new.py:168
+#: bottles/frontend/views/preferences.py:158
+msgid "Select"
+msgstr "Velg"
+
+#: bottles/frontend/windows/envvars.py:131
+#, fuzzy
+msgid "No environment variables defined."
+msgstr "Miljøvariabler"
+
+#: bottles/frontend/windows/exclusionpatterns.py:108
+#, fuzzy
+msgid "No exclusion patterns defined."
+msgstr "Miljøvariabler"
+
+#: bottles/frontend/windows/filechooser.py:63
+#: bottles/frontend/ui/dialog-gamescope.ui:34
+#: bottles/frontend/ui/dialog-launch-options.ui:35
+#: bottles/frontend/ui/dialog-rename.ui:22
+#: bottles/frontend/ui/dialog-vkbasalt.ui:38
+msgid "Save"
+msgstr "Lagre"
+
+#: bottles/frontend/windows/generic.py:24
+msgid "An error has occurred."
+msgstr "En feil har inntruffet."
+
+#: bottles/frontend/windows/generic.py:91
+#: bottles/frontend/windows/generic.py:137
+#: bottles/frontend/windows/generic.py:182
+msgid "Copy to clipboard"
+msgstr "Kopier til utklippstavle"
+
+#: bottles/frontend/windows/installer.py:64
+msgid "Select Resource FIle"
+msgstr "Velg ressursfil"
+
+#: bottles/frontend/windows/installer.py:115
+#, fuzzy
+msgid "Installing Windows dependencies…"
+msgstr "Installerer avhengighet: {0} …"
+
+#: bottles/frontend/windows/installer.py:116
+#, fuzzy
+msgid "Configuring the bottle…"
+msgstr "Oppretter flaske …"
+
+#: bottles/frontend/windows/installer.py:117
+msgid "Processing installer steps…"
+msgstr ""
+
+#: bottles/frontend/windows/installer.py:118
+#, fuzzy
+msgid "Installing the {}…"
+msgstr "Installerer DXVK…"
+
+#: bottles/frontend/windows/installer.py:119
+msgid "Performing final checks…"
+msgstr ""
+
+#: bottles/frontend/windows/installer.py:123
+#, fuzzy, python-brace-format
+msgid "Installing {0}…"
+msgstr "Installerer DXVK…"
+
+#: bottles/frontend/windows/installer.py:125
+#, python-brace-format
+msgid "{0} is now available in the programs view."
+msgstr ""
+
+#: bottles/frontend/windows/installer.py:171
+msgid "Installer failed with unknown error"
+msgstr "Installasjonsprogram feilet med ukjent feilmelding"
+
+#. endregion
+#: bottles/frontend/windows/launchoptions.py:56
+#: bottles/frontend/ui/dialog-launch-options.ui:59
+msgid "Choose a script which should be executed after run."
+msgstr "Velg skript som skal utføres etter kjøring."
+
+#: bottles/frontend/windows/launchoptions.py:57
+#: bottles/frontend/ui/dialog-launch-options.ui:92
+#, fuzzy
+msgid "Choose from where start the program."
+msgstr "Lukk Bottles etter start av et program"
+
+#: bottles/frontend/windows/launchoptions.py:58
+#, fuzzy, python-brace-format
+msgid "{0} is already disabled for this bottle."
+msgstr "Versjonering påskrudd for denne flasken"
+
+#: bottles/frontend/windows/launchoptions.py:59
+msgid "This setting is different from the bottle's default."
+msgstr "Denne innstillingene er annerledes fra flaskens standard."
+
+#: bottles/frontend/windows/launchoptions.py:232
+msgid "Choose the script"
+msgstr "Velg skriptet"
+
+#: bottles/frontend/windows/launchoptions.py:256
+#, fuzzy
+msgid "Choose the Working Directory"
+msgstr "Arbeidsmappe"
+
+#: bottles/frontend/windows/vkbasalt.py:84
+#: bottles/frontend/ui/dialog-vkbasalt.ui:420
+#, fuzzy
+msgid "Choose a file."
+msgstr "Oppsett"
+
+#: bottles/frontend/windows/vkbasalt.py:306
+#, fuzzy
+msgid "File not Found"
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/windows/vkbasalt.py:307
+msgid "The given file does not exist. Please choose an appropriate file."
+msgstr ""
+
+#: bottles/frontend/windows/vkbasalt.py:330
+msgid "Spaces in File Name"
+msgstr ""
+
+#: bottles/frontend/windows/vkbasalt.py:331
+msgid ""
+"Color Lookup Table path must not contain any spaces. Please rename the file "
+"to remove all spaces."
+msgstr ""
+
+#: bottles/frontend/windows/vkbasalt.py:339
+msgid "Invalid Image Dimension"
+msgstr ""
+
+#: bottles/frontend/windows/vkbasalt.py:340
+msgid "Height and width of the image must be equal."
+msgstr ""
+
+#: bottles/frontend/windows/vkbasalt.py:353
+#: bottles/frontend/views/importer.py:144
+#, fuzzy
+msgid "Choose a configuration file"
+msgstr "Oppsett"
+
+#: bottles/frontend/windows/vkbasalt.py:355
+#: bottles/frontend/views/importer.py:117
+#: bottles/frontend/views/importer.py:146
+#, fuzzy
+msgid "Import"
+msgstr "Importerer"
+
+#: bottles/frontend/main.py:105
+#, fuzzy
+msgid "Show version"
+msgstr "Versjonering"
+
+#: bottles/frontend/main.py:113
+#, fuzzy
+msgid "Executable path"
+msgstr "Kjør .exe"
+
+#: bottles/frontend/main.py:121
+#, fuzzy
+msgid "lnk path"
+msgstr "Sti til .lnk"
+
+#: bottles/frontend/main.py:129 bottles/frontend/ui/library-entry.ui:103
+#: bottles/frontend/ui/list-entry.ui:7
+msgid "Bottle name"
+msgstr "Flaskenavn"
+
+#: bottles/frontend/main.py:137
+#, fuzzy
+msgid "Pass arguments"
+msgstr "Kjør med argumenter"
+
+#: bottles/frontend/main.py:196
+msgid "Invalid URI (syntax: bottles:run/<bottle>/<program>)"
+msgstr "Ugyldig URI (syntaks: bottles:run/<flaske></<program>)"
+
+#: bottles/frontend/main.py:237
+#, fuzzy
+msgid "[Quit] request received."
+msgstr "`Avslutt`-forespørsel mottatt."
+
+#: bottles/frontend/main.py:246
+#, fuzzy
+msgid "[Help] request received."
+msgstr "`Hjelp`-forespørsel mottatt."
+
+#: bottles/frontend/main.py:254
+#, fuzzy
+msgid "[Refresh] request received."
+msgstr "`Gjenoppfrisk`-forespørsel mottatt."
+
+#: bottles/frontend/operation.py:50
+#, fuzzy
+msgid "Calculating…"
+msgstr "Beregner …"
+
+#: bottles/frontend/ui/about.ui:8
+#, fuzzy
+msgid "© 2017-2022 - Bottles Developers"
+msgstr "© 2017-2021 - Flasker-utviklerne"
+
+#: bottles/frontend/ui/about.ui:9
+#, fuzzy
+msgid "Easily manage wineprefix using environments"
+msgstr "Håndter wineprefiks enkelt"
+
+#: bottles/frontend/ui/component-entry.ui:6
+#, fuzzy
+msgid "Component version"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/component-entry.ui:15
+#: bottles/frontend/ui/dependency-entry.ui:34
+#: bottles/frontend/ui/program-entry.ui:92
+#, fuzzy
+msgid "Uninstall"
+msgstr "Avinstaller"
+
+#: bottles/frontend/ui/component-entry.ui:26
+#: bottles/frontend/ui/importer-entry.ui:15
+#, fuzzy
+msgid "Browse files"
+msgstr "Utforsk C:"
+
+#: bottles/frontend/ui/component-entry.ui:37
+#, fuzzy
+msgid ""
+"The installation failed. This may be due to a repository error, partial "
+"download or checksum mismatch. Press to try again."
+msgstr ""
+"Installasjonen mislyktes. Dette kan være en pakkebrønnsfeil, delvis "
+"nedlastning, eller sjekksumsuoverensstemmelse.\n"
+"\n"
+"Trykk for å prøve igjen."
+
+#: bottles/frontend/ui/component-entry.ui:48
+#, fuzzy
+msgid "Download & Install"
+msgstr "Last ned og installer denne DXVK-en"
+
+#: bottles/frontend/ui/component-entry.ui:61
+#, fuzzy
+msgid "0%"
+msgstr "0"
+
+#: bottles/frontend/ui/dependency-entry.ui:18
+#, fuzzy
+msgid "Show Manifest"
+msgstr "Vis manifest"
+
+#: bottles/frontend/ui/dependency-entry.ui:23
+msgid "License"
+msgstr "Lisens"
+
+#: bottles/frontend/ui/dependency-entry.ui:28
+#, fuzzy
+msgid "Reinstall"
+msgstr "Avinstaller"
+
+#: bottles/frontend/ui/dependency-entry.ui:43
+#: bottles/frontend/ui/installer-entry.ui:32
+msgid "Report a Bug…"
+msgstr ""
+
+#: bottles/frontend/ui/dependency-entry.ui:50
+#, fuzzy
+msgid "Dependency name"
+msgstr "Avhengigheter"
+
+#: bottles/frontend/ui/dependency-entry.ui:52
+#, fuzzy
+msgid "Dependency description"
+msgstr "Miljøbeskrivelse"
+
+#: bottles/frontend/ui/dependency-entry.ui:59
+msgid "Category"
+msgstr ""
+
+#: bottles/frontend/ui/dependency-entry.ui:73
+msgid "Download & Install this dependency"
+msgstr "Last ned og installer denne avhengigheten"
+
+#: bottles/frontend/ui/dependency-entry.ui:89
+#, fuzzy
+msgid ""
+"An installation error occurred. Restart Bottles to read the Crash Report or "
+"run it via terminal to read the output."
+msgstr ""
+"Kunne ikke utføre installasjonen. Start Bottles på ny for å lese "
+"krasjrapporten eller for å kjøre det via terminalen for å lese utdataen."
+
+#: bottles/frontend/ui/details-bottle.ui:18
+msgid "Troubleshooting"
+msgstr ""
+
+#: bottles/frontend/ui/details-bottle.ui:26
+#, fuzzy
+msgid "Browse Files…"
+msgstr "Utforsk C:"
+
+#: bottles/frontend/ui/details-bottle.ui:31
+#, fuzzy
+msgid "Duplicate Bottle…"
+msgstr "Dupliser flaske"
+
+#: bottles/frontend/ui/details-bottle.ui:36 bottles/frontend/ui/importer.ui:86
+msgid "This is the complete archive of your bottle, including personal files."
+msgstr "Dette er flaskens komplette arkiv, inkludert personlige filer."
+
+#: bottles/frontend/ui/details-bottle.ui:37
+#, fuzzy
+msgid "Full Backup…"
+msgstr "Fullstendig arkiv"
+
+#: bottles/frontend/ui/details-bottle.ui:42 bottles/frontend/ui/importer.ui:80
+msgid ""
+"This is just the bottle configuration, it's perfect if you want to create a "
+"new one but without personal files."
+msgstr ""
+"Dette er kun flaskeoppsettet, det er perfekt hvis du ønsker å opprette en "
+"ny, uten personlige filer."
+
+#: bottles/frontend/ui/details-bottle.ui:43
+#, fuzzy
+msgid "Export Configuration…"
+msgstr "Oppsett"
+
+#: bottles/frontend/ui/details-bottle.ui:51
+#, fuzzy
+msgid "Delete Bottle…"
+msgstr "Opprett flaske"
+
+#: bottles/frontend/ui/details-bottle.ui:86
+#, fuzzy
+msgid "Kill all Processes"
+msgstr "Drep alle prosesser"
+
+#: bottles/frontend/ui/details-bottle.ui:91
+msgid "Simulate a Windows system shutdown."
+msgstr ""
+
+#: bottles/frontend/ui/details-bottle.ui:92
+#, fuzzy
+msgid "Shutdown"
+msgstr "Slå av"
+
+#: bottles/frontend/ui/details-bottle.ui:97
+msgid "Simulate a Windows system reboot."
+msgstr ""
+
+#: bottles/frontend/ui/details-bottle.ui:98
+#, fuzzy
+msgid "Reboot"
+msgstr "Omstart"
+
+#: bottles/frontend/ui/details-bottle.ui:121
+#, fuzzy
+msgid "Run with Arguments…"
+msgstr "Kjør med argumenter"
+
+#: bottles/frontend/ui/details-bottle.ui:126
+msgid "Launch in Terminal…"
+msgstr ""
+
+#: bottles/frontend/ui/details-bottle.ui:157
+#, fuzzy
+msgid "My bottle"
+msgstr "Ny flaske"
+
+#: bottles/frontend/ui/details-bottle.ui:169
+msgid "Win64"
+msgstr ""
+
+#: bottles/frontend/ui/details-bottle.ui:177
+#: bottles/frontend/ui/list-entry.ui:14 bottles/frontend/ui/new.ui:77
+msgid "Environment"
+msgstr "Miljø"
+
+#: bottles/frontend/ui/details-bottle.ui:185
+#: bottles/frontend/ui/details-preferences.ui:314
+#: bottles/frontend/ui/new.ui:129
+msgid "Runner"
+msgstr "Springer"
+
+#: bottles/frontend/ui/details-bottle.ui:193
+#: bottles/frontend/ui/list-entry.ui:23
+msgid "Versioning enabled for this bottle"
+msgstr "Versjonering påskrudd for denne flasken"
+
+#: bottles/frontend/ui/details-bottle.ui:198
+#: bottles/frontend/ui/list-entry.ui:28
+msgid "Versioning is active in this bottle."
+msgstr "Versjonering er påslått for denne flasken."
+
+#: bottles/frontend/ui/details-bottle.ui:208
+#: bottles/frontend/ui/list-entry.ui:34
+msgid "0"
+msgstr "0"
+
+#: bottles/frontend/ui/details-bottle.ui:219
+#, fuzzy
+msgid "Run Executable…"
+msgstr "Start kjørbar fil"
+
+#: bottles/frontend/ui/details-bottle.ui:235
+msgid "Layers"
+msgstr "Lag"
+
+#: bottles/frontend/ui/details-bottle.ui:241
+#: bottles/frontend/views/details.py:166
+msgid "Programs"
+msgstr "Programmer"
+
+#: bottles/frontend/ui/details-bottle.ui:246
+msgid "Tools"
+msgstr ""
+
+#: bottles/frontend/ui/details-bottle.ui:250
+msgid "Command Line"
+msgstr "Kommandolinje"
+
+#: bottles/frontend/ui/details-bottle.ui:251
+msgid "Run commands inside the Bottle."
+msgstr "Kjør kommandoer i denne flasken"
+
+#: bottles/frontend/ui/details-bottle.ui:262
+msgid "Registry Editor"
+msgstr "Register-redigerer"
+
+#: bottles/frontend/ui/details-bottle.ui:263
+msgid "Edit the internal registry."
+msgstr "Rediger det interne registeret."
+
+#: bottles/frontend/ui/details-bottle.ui:273
+msgid "Legacy Tools"
+msgstr ""
+
+#: bottles/frontend/ui/details-bottle.ui:277
+msgid "Explorer"
+msgstr ""
+
+#: bottles/frontend/ui/details-bottle.ui:278
+#, fuzzy
+msgid "Browse internal files with the Wine explorer."
+msgstr "Utforsk interne filer."
+
+#: bottles/frontend/ui/details-bottle.ui:289
+#: bottles/frontend/views/details.py:178
+#, fuzzy
+msgid "Task Manager"
+msgstr "Oppgavebehandler"
+
+#: bottles/frontend/ui/details-bottle.ui:290
+#, fuzzy
+msgid "Manage processes with the Wine task manager."
+msgstr "Håndter prosessene som kjører i denne flasken."
+
+#: bottles/frontend/ui/details-bottle.ui:301
+msgid "Debug"
+msgstr "Avlusing"
+
+#: bottles/frontend/ui/details-bottle.ui:302
+#, fuzzy
+msgid "Debug wine processes."
+msgstr "Avlus Wine-prosesser."
+
+#: bottles/frontend/ui/details-bottle.ui:313
+#, fuzzy
+msgid "Wine Configuration"
+msgstr "Oppsett"
+
+#: bottles/frontend/ui/details-bottle.ui:314
+msgid "Adjust internal settings."
+msgstr "Juster interne innstillinger."
+
+#: bottles/frontend/ui/details-bottle.ui:325
+msgid "Uninstaller"
+msgstr "Avinstaller"
+
+#: bottles/frontend/ui/details-bottle.ui:326
+#, fuzzy
+msgid "Uninstall programs using Wine uninstaller."
+msgstr "Avinstaller programvare med Wine-avinstallereren"
+
+#: bottles/frontend/ui/details-bottle.ui:337
+#, fuzzy
+msgid "Control Panel"
+msgstr "Kontrollpanel"
+
+#: bottles/frontend/ui/details-bottle.ui:338
+#, fuzzy
+msgid "Access the internal Wine Control Panel."
+msgstr "Tilgang til Wine-kontrollpanelet."
+
+#: bottles/frontend/ui/details-bottle.ui:357
+msgid "Use the Installers section or the \"Run executable\" button."
+msgstr ""
+
+#: bottles/frontend/ui/details-dependencies.ui:13
+#, fuzzy
+msgid "Search for dependencies…"
+msgstr "Avhengigheter"
+
+#: bottles/frontend/ui/details-dependencies.ui:22
+msgid ""
+"Dependencies are software, libraries and codecs that improve the "
+"compatibility of Windows software. Install from here to meet your program "
+"requirements."
+msgstr ""
+
+#: bottles/frontend/ui/details-dependencies.ui:34
+#: bottles/frontend/ui/details-installers.ui:33
+msgid ""
+"Files on this page are provided by third parties under a proprietary "
+"license. By installing them, you agree with their respective licensing terms."
+msgstr ""
+
+#: bottles/frontend/ui/details-dependencies.ui:62
+#, fuzzy
+msgid "Report a problem or a missing dependency."
+msgstr "Funnet en knekt avhengighet?"
+
+#: bottles/frontend/ui/details-dependencies.ui:63
+#, fuzzy
+msgid "Report missing dependency"
+msgstr "Funnet en knekt avhengighet?"
+
+#: bottles/frontend/ui/details-dependencies.ui:68
+#, fuzzy
+msgid "Read documentation."
+msgstr "Dokumentasjon"
+
+#: bottles/frontend/ui/details-dependencies.ui:69
+#: bottles/frontend/ui/details-installers.ui:71
+#: bottles/frontend/ui/details-programs.ui:45
+#: bottles/frontend/ui/details-versioning.ui:44
+#: bottles/frontend/ui/window.ui:38
+msgid "Documentation"
+msgstr "Dokumentasjon"
+
+#: bottles/frontend/ui/details-dependencies.ui:80
+#, fuzzy
+msgid "Install Selected"
+msgstr "Installasjonskandidater"
+
+#: bottles/frontend/ui/details-dependencies.ui:81
+msgid "We strongly advise against installing multiple dependencies at once."
+msgstr ""
+
+#: bottles/frontend/ui/details-dependencies.ui:88
+#, fuzzy
+msgid "Select Dependencies"
+msgstr "Avhengigheter"
+
+#: bottles/frontend/ui/details-dependencies.ui:95
+#: bottles/frontend/ui/details-installers.ui:82
+#: bottles/frontend/ui/window.ui:86
+msgid "Search"
+msgstr ""
+
+#: bottles/frontend/ui/details-installers.ui:13
+#, fuzzy
+msgid "Search for Programs…"
+msgstr "Se etter installerte programmer."
+
+#: bottles/frontend/ui/details-installers.ui:22
+msgid ""
+"Use this section to install programs curated by our community, without "
+"having to proceed manually."
+msgstr ""
+
+#: bottles/frontend/ui/details-installers.ui:48
+#, fuzzy
+msgid "No Installers Found"
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/ui/details-installers.ui:51
+msgid ""
+"The repository is unreachable or no installer is compatible with this bottle."
+msgstr ""
+
+#: bottles/frontend/ui/details-installers.ui:70
+#: bottles/frontend/ui/details-programs.ui:44
+#: bottles/frontend/ui/details-versioning.ui:43
+#, fuzzy
+msgid "Read documentation"
+msgstr "Dokumentasjon"
+
+#: bottles/frontend/ui/details-preferences.ui:8
+#, fuzzy
+msgid "Bottle Details"
+msgstr "Flaskedetaljer"
+
+#: bottles/frontend/ui/details-preferences.ui:11
+#: bottles/frontend/ui/dialog-duplicate.ui:58 bottles/frontend/ui/new.ui:70
+msgid "Name"
+msgstr "Navn"
+
+#: bottles/frontend/ui/details-preferences.ui:19
+msgid "Graphics"
+msgstr "Grafikk"
+
+#: bottles/frontend/ui/details-preferences.ui:23
+#: bottles/frontend/ui/preferences.ui:213
+#, fuzzy
+msgid "DXVK"
+msgstr "Bruk DXVK"
+
+#: bottles/frontend/ui/details-preferences.ui:24
+#, fuzzy
+msgid "Improves performance of DirectX 11 games and 3D applications."
+msgstr ""
+"Forbedrer ytelse for DirectX 11-spill og 3D-programmer.\n"
+"Skru av hvis du opplever grafiske forstyrrelser."
+
+#: bottles/frontend/ui/details-preferences.ui:27
+#: bottles/frontend/ui/details-preferences.ui:338
+#, fuzzy
+msgid "Updating DXVK, please wait…"
+msgstr "Oppretter flaske …"
+
+#: bottles/frontend/ui/details-preferences.ui:42
+#: bottles/frontend/ui/preferences.ui:218
+msgid "VKD3D"
+msgstr "VKD3D"
+
+#: bottles/frontend/ui/details-preferences.ui:43
+#, fuzzy
+msgid "Improves performance of DirectX 12 games and 3D applications."
+msgstr ""
+"Forbedrer ytelse for DirectX 12-spill og 3D-programmer.\n"
+"Skru av hvis du opplever grafiske forstyrrelser."
+
+#: bottles/frontend/ui/details-preferences.ui:46
+#: bottles/frontend/ui/details-preferences.ui:361
+#, fuzzy
+msgid "Updating VKD3D, please wait…"
+msgstr "Oppretter flaske …"
+
+#: bottles/frontend/ui/details-preferences.ui:61
+#, fuzzy
+msgid "DLSS (DXVK-NVAPI)"
+msgstr "Skru på DLSS (DXVK-NVAPI)"
+
+#: bottles/frontend/ui/details-preferences.ui:62
+msgid "Provide DLSS support if available and Nvidia's NVAPI."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:65
+#: bottles/frontend/ui/details-preferences.ui:112
+#: bottles/frontend/ui/details-preferences.ui:385
+#: bottles/frontend/ui/details-preferences.ui:407
+#, fuzzy
+msgid "Updating DXVK-NVAPI, please wait…"
+msgstr "Installerer DXVK…"
+
+#: bottles/frontend/ui/details-preferences.ui:80
+msgid "FSR"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:81
+msgid ""
+"FSR uses cutting-edge up-scaling technologies to help boost your framerate."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:88
+msgid "Ultra Quality"
+msgstr "Ultrakvalitet"
+
+#: bottles/frontend/ui/details-preferences.ui:89
+msgid "Quality"
+msgstr "Kvalitet"
+
+#: bottles/frontend/ui/details-preferences.ui:90
+msgid "Balanced"
+msgstr "Balansert"
+
+#: bottles/frontend/ui/details-preferences.ui:91
+#, fuzzy
+msgid "Performance"
+msgstr "Utseende"
+
+#: bottles/frontend/ui/details-preferences.ui:108
+#: bottles/frontend/ui/preferences.ui:228
+msgid "LatencyFleX"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:109
+msgid "An alternative to NVIDIA Reflex. Can be detected by some Anti-cheats."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:128
+msgid "Discrete GPU"
+msgstr "Egen GPU"
+
+#: bottles/frontend/ui/details-preferences.ui:129
+msgid "Improves performance at the cost of increased power usage."
+msgstr "Fobredrer ytelsen på bekostning av strømforbruk."
+
+#: bottles/frontend/ui/details-preferences.ui:140
+msgid "vkBasalt"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:141
+msgid ""
+"vkBasalt is a Vulkan post processing layer to enhance the visual graphics of "
+"games."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:144
+#, fuzzy
+msgid "Manage vkBasalt settings"
+msgstr "Håndter undersystemsinnstillingene i Wine"
+
+#: bottles/frontend/ui/details-preferences.ui:161
+#, fuzzy
+msgid "Display Settings"
+msgstr "Juster interne innstillinger."
+
+#: bottles/frontend/ui/details-preferences.ui:165
+#: bottles/frontend/ui/dialog-launch-options.ui:194
+#, fuzzy
+msgid "Virtual Desktop"
+msgstr "Oppløsning for virtelt skrivebord"
+
+#: bottles/frontend/ui/details-preferences.ui:166
+#, fuzzy
+msgid "Use the Wine virtual desktop."
+msgstr "Bruk virtuelt Wine-skrivebord."
+
+#: bottles/frontend/ui/details-preferences.ui:204
+msgid "Fullscreen Mouse Capture"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:205
+msgid "Let the program capture mouse input when fullscreen."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:216
+msgid "Take Focus"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:217
+msgid "Activate it if the program does not retake focus on switch."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:228
+msgid "Mouse Warp"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:229
+msgid "Change this if you are running into mouse lag or desync."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:241
+#, fuzzy
+msgid "Screen Scaling"
+msgstr "Skru på versjonering"
+
+#: bottles/frontend/ui/details-preferences.ui:242
+#, fuzzy
+msgid "Set custom DPI."
+msgstr "Bruk spillmodus"
+
+#: bottles/frontend/ui/details-preferences.ui:248
+msgid "96"
+msgstr "96"
+
+#: bottles/frontend/ui/details-preferences.ui:249
+msgid "120"
+msgstr "120"
+
+#: bottles/frontend/ui/details-preferences.ui:250
+msgid "144"
+msgstr "144"
+
+#: bottles/frontend/ui/details-preferences.ui:251
+msgid "168"
+msgstr "168"
+
+#: bottles/frontend/ui/details-preferences.ui:252
+msgid "192"
+msgstr "192"
+
+#: bottles/frontend/ui/details-preferences.ui:253
+msgid "216"
+msgstr "216"
+
+#: bottles/frontend/ui/details-preferences.ui:254
+msgid "240"
+msgstr "240"
+
+#: bottles/frontend/ui/details-preferences.ui:255
+msgid "288"
+msgstr "288"
+
+#: bottles/frontend/ui/details-preferences.ui:256
+msgid "336"
+msgstr "336"
+
+#: bottles/frontend/ui/details-preferences.ui:257
+msgid "384"
+msgstr "384"
+
+#: bottles/frontend/ui/details-preferences.ui:258
+msgid "432"
+msgstr "432"
+
+#: bottles/frontend/ui/details-preferences.ui:259
+msgid "480"
+msgstr "480"
+
+#: bottles/frontend/ui/details-preferences.ui:272
+msgid "Renderer"
+msgstr "Opptegner"
+
+#: bottles/frontend/ui/details-preferences.ui:273
+msgid "Select what backend to use for wined3d."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:279
+msgid "gl (default)"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:280
+#, fuzzy
+msgid "gdi"
+msgstr "Regedit"
+
+#: bottles/frontend/ui/details-preferences.ui:281
+msgid "vulkan"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:296
+#: bottles/frontend/ui/details-preferences.ui:432
+#, fuzzy
+msgid "System"
+msgstr "Systemkontroll"
+
+#: bottles/frontend/ui/details-preferences.ui:299
+#, fuzzy
+msgid "Manage Components Versions"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/details-preferences.ui:309
+#, fuzzy
+msgid "Components"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/details-preferences.ui:317
+msgid "Updating Runner and components, please wait…"
+msgstr ""
+
+#. TODO: replace with ComboRow
+#: bottles/frontend/ui/details-preferences.ui:334
+msgid "DXVK Version"
+msgstr "DXVK-versjon"
+
+#: bottles/frontend/ui/details-preferences.ui:358
+#, fuzzy
+msgid "VKD3D Version"
+msgstr "VKD3D-versjon"
+
+#: bottles/frontend/ui/details-preferences.ui:382
+#, fuzzy
+msgid "DXVK NVAPI Version"
+msgstr "DXVK-versjon"
+
+#: bottles/frontend/ui/details-preferences.ui:404
+#, fuzzy
+msgid "LatencyFleX Version"
+msgstr "Håndter DXVK-versjoner"
+
+#: bottles/frontend/ui/details-preferences.ui:426
+#, fuzzy
+msgid "Enable synchronization to increase performance of multicore processors."
+msgstr ""
+"Skru på futex-basert synkronisering for å øke ytelsen med "
+"multikjerneprosessorer."
+
+#: bottles/frontend/ui/details-preferences.ui:427
+msgid "Synchronization"
+msgstr "Synkronisering"
+
+#: bottles/frontend/ui/details-preferences.ui:438
+#, fuzzy
+msgid "Esync"
+msgstr "Esync"
+
+#: bottles/frontend/ui/details-preferences.ui:444
+#, fuzzy
+msgid "Fsync"
+msgstr "Fsync"
+
+#: bottles/frontend/ui/details-preferences.ui:450
+msgid "Futex2"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:465
+#, fuzzy
+msgid "Windows Version"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/details-preferences.ui:468
+#, fuzzy
+msgid "Updating Windows version, please wait…"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/details-preferences.ui:496
+msgid "Language"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:497
+msgid "Choose the language to use with programs."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:507
+msgid "false"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:508
+msgid "Dedicated Sandbox"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:509
+#, fuzzy
+msgid "Use a restricted/managed environment for this bottle."
+msgstr "Velg en annen springer for denne flasken."
+
+#: bottles/frontend/ui/details-preferences.ui:512
+#, fuzzy
+msgid "Manage Sandbox permissions"
+msgstr "Håndter DXVK-versjoner"
+
+#: bottles/frontend/ui/details-preferences.ui:530
+#, fuzzy
+msgid "Bottles Runtime"
+msgstr "Flaskenavn"
+
+#: bottles/frontend/ui/details-preferences.ui:531
+msgid ""
+"Provides a bundle of extra libraries for more compatibility,disable if you "
+"run into issues."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:542
+#, fuzzy
+msgid "Steam Runtime"
+msgstr "Flaskenavn"
+
+#: bottles/frontend/ui/details-preferences.ui:543
+msgid "The same as the Bottles one but provided by Steam."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:554
+#, fuzzy
+msgid "GameMode"
+msgstr "Bruk spillmodus"
+
+#: bottles/frontend/ui/details-preferences.ui:555
+#, fuzzy
+msgid "Optimise gaming performance on demand."
+msgstr "Optimaliser spillytelse ved behov"
+
+#: bottles/frontend/ui/details-preferences.ui:566
+#, fuzzy
+msgid "Gamescope"
+msgstr "Bruk spillmodus"
+
+#: bottles/frontend/ui/details-preferences.ui:567
+msgid "Use the Gamescope micro-compositor."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:570
+#, fuzzy
+msgid "Manage Gamescope settings"
+msgstr "Håndter undersystemsinnstillingene i Wine"
+
+#: bottles/frontend/ui/details-preferences.ui:588
+msgid "Vmtouch"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:589
+msgid "Preload game files into RAM"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:592
+#, fuzzy
+msgid "Manage vmtouch settings"
+msgstr "Håndter undersystemsinnstillingene i Wine"
+
+#: bottles/frontend/ui/details-preferences.ui:610
+#: bottles/frontend/ui/dialog-launch-options.ui:91
+#, fuzzy
+msgid "Working Directory"
+msgstr "Arbeidsmappe"
+
+#: bottles/frontend/ui/details-preferences.ui:611
+#, fuzzy
+msgid "Defaults to the bottle path."
+msgstr "Pek på flaskestien"
+
+#: bottles/frontend/ui/details-preferences.ui:614
+#: bottles/frontend/ui/dialog-launch-options.ui:65
+#: bottles/frontend/ui/dialog-launch-options.ui:98
+#: bottles/frontend/ui/preferences.ui:159
+msgid "Reset to default"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:624
+#: bottles/frontend/ui/dialog-launch-options.ui:109
+#: bottles/frontend/ui/new.ui:163 bottles/frontend/ui/new.ui:180
+#: bottles/frontend/ui/preferences.ui:170
+#, fuzzy
+msgid "Choose a directory"
+msgstr "Velg en mappe"
+
+#: bottles/frontend/ui/details-preferences.ui:637
+#: bottles/frontend/ui/dialog-dll-overrides.ui:9
+#: bottles/frontend/ui/dialog-dll-overrides.ui:15
+#, fuzzy
+msgid "DLL Overrides"
+msgstr "DLL-overstyringer"
+
+#: bottles/frontend/ui/details-preferences.ui:648
+#: bottles/frontend/ui/dialog-env-vars.ui:16
+#, fuzzy
+msgid "Environment Variables"
+msgstr "Miljøvariabler"
+
+#: bottles/frontend/ui/details-preferences.ui:659
+#, fuzzy
+msgid "Manage Drives"
+msgstr "Håndter springere"
+
+#: bottles/frontend/ui/details-preferences.ui:671
+msgid "Audio"
+msgstr "Lyd"
+
+#: bottles/frontend/ui/details-preferences.ui:675
+#: bottles/frontend/ui/dialog-launch-options.ui:183
+#, fuzzy
+msgid "Reduce Latency"
+msgstr "Reduser PulseAudio-forsinkelse"
+
+#: bottles/frontend/ui/details-preferences.ui:676
+#, fuzzy
+msgid "Set PulseAudio latency to 60 ms, increasing sound quality."
+msgstr ""
+"Sett PulseAudio-forsinkelse til 60 millisekunder for bedret lydkvalitet"
+
+#: bottles/frontend/ui/details-preferences.ui:688
+#: bottles/frontend/views/details.py:170
+msgid "Versioning"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/details-preferences.ui:692
+msgid "Use Compression for States"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:693
+msgid ""
+"This will reduce the space used by the states but slow down their creation."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:704
+#, fuzzy
+msgid "Automatic Versioning"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/details-preferences.ui:705
+msgid ""
+"Bottles will create a state before running any dependencies or installers."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:716
+msgid "Use Exclusion Patterns"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:717
+msgid "Use custom patterns to exclude some paths from versioning."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:720
+#, fuzzy
+msgid "Manage Patterns"
+msgstr "Håndter springere"
+
+#: bottles/frontend/ui/details-preferences.ui:739
+#, fuzzy
+msgid "Development and Debugging"
+msgstr "Utvikling og avlusing"
+
+#: bottles/frontend/ui/details-preferences.ui:743
+msgid "MangoHud"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:744
+msgid ""
+"A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load "
+"and more."
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:755
+msgid "OBS Vulkan Capture"
+msgstr ""
+
+#: bottles/frontend/ui/details-preferences.ui:756
+#, fuzzy
+msgid "Toggle OBS game capture for all programs."
+msgstr "Se etter installerte programmer."
+
+#: bottles/frontend/ui/details-preferences.ui:767
+#, fuzzy
+msgid "Wine 'fixme' Logs"
+msgstr "Skru på fixme-loggføring fra Wine"
+
+#: bottles/frontend/ui/details-preferences.ui:768
+msgid "Log code paths that are unimplemented in Wine."
+msgstr "Loggfør kodestier som ikke er implementert i Wine."
+
+#: bottles/frontend/ui/details-programs.ui:9
+#, fuzzy
+msgid "No Programs found"
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/ui/details-programs.ui:10
+msgid ""
+"Install programs from the installers section or by running the installer "
+"executable, you can also manually add executables with the \"+\" button."
+msgstr ""
+
+#: bottles/frontend/ui/details-programs.ui:31
+msgid "Toggle Hidden"
+msgstr ""
+
+#: bottles/frontend/ui/details-programs.ui:36
+#, fuzzy
+msgid "Search for new programs"
+msgstr "Se etter installerte programmer."
+
+#: bottles/frontend/ui/details-programs.ui:55
+msgid "Add a custom executable path"
+msgstr "Legg til en egendefinert kjørbar sti"
+
+#: bottles/frontend/ui/details-taskmanager.ui:18
+msgid "Refresh"
+msgstr "Gjenoppfrisk"
+
+#: bottles/frontend/ui/details-taskmanager.ui:24
+msgid "Stop process"
+msgstr ""
+
+#: bottles/frontend/ui/details-versioning.ui:25
+#, fuzzy
+msgid "No States Found"
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/ui/details-versioning.ui:26
+msgid "Create first state to start using versioning."
+msgstr ""
+
+#: bottles/frontend/ui/details-versioning.ui:63
+#, fuzzy
+msgid "A short comment"
+msgstr "En veldig kort kommentar"
+
+#: bottles/frontend/ui/details-versioning.ui:68
+msgid "Save the bottle state."
+msgstr "Lagre flasketilstand."
+
+#: bottles/frontend/ui/details-versioning.ui:88
+msgid "Create new state"
+msgstr "Opprett ny tilstand"
+
+#: bottles/frontend/ui/details.ui:74
+#, fuzzy
+msgid "Operations"
+msgstr "Oppdaterte oversettelser"
+
+#: bottles/frontend/ui/dialog-bottle-picker.ui:6
+#, fuzzy
+msgid "Select Bottle"
+msgstr "Opprett flaske"
+
+#: bottles/frontend/ui/dialog-bottle-picker.ui:42
+#, fuzzy
+msgid "Create New Bottle"
+msgstr "Opprett ny flaske"
+
+#: bottles/frontend/ui/dialog-crash-report.ui:10
+#, fuzzy
+msgid "Bottles crash report"
+msgstr "Flaskesikkerhetskopi og import"
+
+#: bottles/frontend/ui/dialog-crash-report.ui:23
+#, fuzzy
+msgid "Send report"
+msgstr "Feilrapport"
+
+#: bottles/frontend/ui/dialog-crash-report.ui:43
+msgid ""
+"Bottles crashed last time. Please fill out a report attaching the following "
+"traceback to help us identify the problem preventing it from happening again."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-crash-report.ui:75
+msgid ""
+"We found one or more similar (or identical) reports. Please make sure to "
+"check carefully that it has not already been reported before submitting a "
+"new one. Each report requires effort on the part of the developers to "
+"diagnose, please respect their work and make sure you don't post duplicates."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-crash-report.ui:96
+msgid "I still want to report."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-crash-report.ui:102
+#, fuzzy
+msgid "Advanced options"
+msgstr "Avansert"
+
+#: bottles/frontend/ui/dialog-deps-check.ui:15
+msgid "Incomplete package"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-deps-check.ui:16
+msgid ""
+"This version of Bottles does not seem to provide all the necessary core "
+"dependencies, please contact the package maintainer or use an official "
+"version.\n"
+"                        "
+msgstr ""
+
+#: bottles/frontend/ui/dialog-deps-check.ui:21
+msgid "Quit"
+msgstr "Avslutt"
+
+#: bottles/frontend/ui/dialog-dll-overrides.ui:14
+#, fuzzy
+msgid ""
+"Dynamic Link Libraries can be specified to be builtin (provided by Wine) or "
+"native (provided by the program)."
+msgstr ""
+"Dynamisk lenkede bibliotek kan angis for innebygging (tilbudt av Wine) eller "
+"systemspesifikt (tilbudt av programmet)"
+
+#: bottles/frontend/ui/dialog-dll-overrides.ui:18
+#, fuzzy
+msgid "New Override"
+msgstr "Ny overstyring"
+
+#: bottles/frontend/ui/dialog-dll-overrides.ui:26
+#, fuzzy
+msgid "Overrides"
+msgstr "DLL-overstyringer"
+
+#: bottles/frontend/ui/dialog-drives.ui:9
+msgid "Drives"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-drives.ui:31
+msgid ""
+"These are paths from your host system that are mapped and recognized as "
+"devices by the runner (e.g. C: D:…).\n"
+"                                "
+msgstr ""
+
+#: bottles/frontend/ui/dialog-drives.ui:35
+msgid "Letter"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-drives.ui:59
+#, fuzzy
+msgid "Existing Drives"
+msgstr "Eksisterende overstyringer"
+
+#: bottles/frontend/ui/dialog-duplicate.ui:18
+#, fuzzy
+msgid "Duplicate Bottle"
+msgstr "Dupliser flaske"
+
+#: bottles/frontend/ui/dialog-duplicate.ui:23
+#: bottles/frontend/ui/dialog-gamescope.ui:17
+#: bottles/frontend/ui/dialog-launch-options.ui:17
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:23
+#: bottles/frontend/ui/dialog-vkbasalt.ui:31
+#, fuzzy
+msgid "_Cancel"
+msgstr "Avbryt"
+
+#: bottles/frontend/ui/dialog-duplicate.ui:41
+#, fuzzy
+msgid "Duplicate"
+msgstr "Dupliser flaske"
+
+#: bottles/frontend/ui/dialog-duplicate.ui:55
+#, fuzzy
+msgid "Enter a name for the duplicate of the Bottle."
+msgstr "Skriv et navn på flasken din"
+
+#: bottles/frontend/ui/dialog-duplicate.ui:78
+#, fuzzy
+msgid "Duplicating…"
+msgstr "Laster ned …"
+
+#: bottles/frontend/ui/dialog-duplicate.ui:87
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:121
+#: bottles/frontend/ui/new.ui:216
+#, fuzzy
+msgid "Take a break, it may take a while."
+msgstr "Ta en pause. Dette kan ta sin tid."
+
+#: bottles/frontend/ui/dialog-duplicate.ui:108
+#, fuzzy
+msgid "Bottle Duplicated"
+msgstr "Flasker startet."
+
+#: bottles/frontend/ui/dialog-env-vars.ui:35
+msgid ""
+"Environment variables are dynamic-named value that can affect the way "
+"running processes will behave on your bottle."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-env-vars.ui:38
+msgid "Variable Name"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-env-vars.ui:46
+#, fuzzy
+msgid "Existing Variables"
+msgstr "Eksisterende overstyringer"
+
+#: bottles/frontend/ui/dialog-exclusion-patterns.ui:16
+msgid "Exclusion Patterns"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-exclusion-patterns.ui:35
+msgid ""
+"Define patterns that will be used to prevent some directories to being "
+"versioned."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-exclusion-patterns.ui:38
+msgid "Pattern"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-exclusion-patterns.ui:46
+#, fuzzy
+msgid "Existing Patterns"
+msgstr "Eksisterende overstyringer"
+
+#: bottles/frontend/ui/dialog-gamescope.ui:8
+#, fuzzy
+msgid "Gamescope Settings"
+msgstr "Håndter undersystemsinnstillingene i Wine"
+
+#: bottles/frontend/ui/dialog-gamescope.ui:46
+msgid ""
+"Configure how Gamescope should manage the window for the games you will run."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-gamescope.ui:51
+#, fuzzy
+msgid "Game Resolution"
+msgstr "Oppløsning for virtelt skrivebord"
+
+#: bottles/frontend/ui/dialog-gamescope.ui:52
+msgid "Uses the resolution of the video game as a reference."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-gamescope.ui:55
+#: bottles/frontend/ui/dialog-gamescope.ui:71
+msgid "Width (e.g. 1280)"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-gamescope.ui:60
+#: bottles/frontend/ui/dialog-gamescope.ui:76
+#, fuzzy
+msgid "Height (e.g. 720)"
+msgstr "f.eks. 720"
+
+#: bottles/frontend/ui/dialog-gamescope.ui:67
+#, fuzzy
+msgid "Gamescope Resolution"
+msgstr "Oppløsning for virtelt skrivebord"
+
+#: bottles/frontend/ui/dialog-gamescope.ui:68
+msgid ""
+"Upscales the resolution when using a resolution higher than the game "
+"resolution."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-gamescope.ui:83
+msgid "Miscellaneous"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-gamescope.ui:86
+msgid "Frame Rate Limit (e.g. 60)"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-gamescope.ui:91
+msgid "Frame Rate Limit (When Unfocused)"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-gamescope.ui:96
+#, fuzzy
+msgid "Use Integer Scaling"
+msgstr "Skru på versjonering"
+
+#: bottles/frontend/ui/dialog-gamescope.ui:107
+#, fuzzy
+msgid "Window Type"
+msgstr "Vindusbredde"
+
+#: bottles/frontend/ui/dialog-gamescope.ui:112
+msgid "Borderless"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-gamescope.ui:119
+#, fuzzy
+msgid "Fullscreen"
+msgstr "Fullskjermsvisning"
+
+#: bottles/frontend/ui/dialog-journal.ui:12
+#, fuzzy
+msgid "All messages"
+msgstr "Slett tilstand"
+
+#: bottles/frontend/ui/dialog-journal.ui:17
+msgid "Critical"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-journal.ui:22
+msgid "Errors"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-journal.ui:27
+#, fuzzy
+msgid "Warnings"
+msgstr "Advarsel"
+
+#: bottles/frontend/ui/dialog-journal.ui:32
+msgid "Info"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-journal.ui:49
+msgid "Journal browser"
+msgstr "Journal-leser"
+
+#: bottles/frontend/ui/dialog-journal.ui:56
+msgid "Journal Browser"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-journal.ui:62
+msgid ""
+"Change logging level.\n"
+"                                        "
+msgstr ""
+
+#: bottles/frontend/ui/dialog-journal.ui:67
+msgid "All"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-launch-options.ui:8
+#, fuzzy
+msgid "Launch Options"
+msgstr "Endre oppstartsvalg"
+
+#: bottles/frontend/ui/dialog-launch-options.ui:47
+#, fuzzy
+msgid "Those arguments will be passed at launch."
+msgstr "Disse argumentene sendes ved programstart:"
+
+#: bottles/frontend/ui/dialog-launch-options.ui:48
+#, fuzzy
+msgid "Custom Arguments"
+msgstr "Kjør med argumenter"
+
+#: bottles/frontend/ui/dialog-launch-options.ui:51
+#, fuzzy
+msgid "Command Arguments"
+msgstr "Kjør med argumenter"
+
+#: bottles/frontend/ui/dialog-launch-options.ui:52
+#, fuzzy, c-format
+msgid "e.g.: VAR=value %command% -example1 -example2 -example3=hello"
+msgstr "f.eks: -eksempel1 -eksempel2 -eksempel3=hallo"
+
+#: bottles/frontend/ui/dialog-launch-options.ui:58
+msgid "Post-run Script"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-launch-options.ui:76
+#, fuzzy
+msgid "Choose a script"
+msgstr "Velg skriptet"
+
+#: bottles/frontend/ui/dialog-launch-options.ui:125
+msgid "These settings will override the default settings for this executable."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-launch-options.ui:126
+#, fuzzy
+msgid "Preferences Overrides"
+msgstr "Egenskaper"
+
+#: bottles/frontend/ui/dialog-launch-options.ui:129
+#, fuzzy
+msgid "Reset to Bottle's Defaults"
+msgstr "Flaskedetaljer"
+
+#: bottles/frontend/ui/dialog-proton-alert.ui:6
+msgid "Proton Disclaimer"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-proton-alert.ui:22
+#, fuzzy
+msgid "Use Proton"
+msgstr "ProtonDB"
+
+#: bottles/frontend/ui/dialog-proton-alert.ui:37
+msgid ""
+"Beware, using Proton-based runners in non-Steam bottles can cause problems "
+"and prevent them from behaving correctly.\n"
+"\n"
+"We recommend using Wine-GE rather, a version of Proton meant to run outside "
+"of Steam.\n"
+"\n"
+"Proceeding will automatically enable the Steam runtime (if present in the "
+"system and detected by Bottles) in order to allow it to access the necessary "
+"libraries and limit compatibility problems. Be aware that GloriousEggroll, "
+"the runner's provider, is not responsible for any problems and we ask that "
+"you do not report to them."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-proton-alert.ui:50
+msgid "I got it."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-rename.ui:9
+#, fuzzy
+msgid "Rename"
+msgstr "Springer"
+
+#: bottles/frontend/ui/dialog-rename.ui:34
+msgid "Choose a new name for the selected program."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-rename.ui:37
+#, fuzzy
+msgid "New Name"
+msgstr "Navn"
+
+#: bottles/frontend/ui/dialog-run-args.ui:14
+#, fuzzy
+msgid "Run With Arguments"
+msgstr "Kjør med argumenter"
+
+#: bottles/frontend/ui/dialog-run-args.ui:35
+#: bottles/frontend/views/bottle_details.py:202
+#: bottles/frontend/views/list.py:120
+#, fuzzy
+msgid "Run"
+msgstr "Springer"
+
+#: bottles/frontend/ui/dialog-run-args.ui:47
+msgid "Write below the arguments to be passed to the executable."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-run-args.ui:50
+msgid "e.g.: -opengl -SkipBuildPatchPrereq"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-sandbox.ui:9
+#, fuzzy
+msgid "Sandbox Settings"
+msgstr "Håndter undersystemsinnstillingene i Wine"
+
+#: bottles/frontend/ui/dialog-sandbox.ui:23
+msgid "Share Network"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-sandbox.ui:34
+#, fuzzy
+msgid "Share Sound"
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:18
+#, fuzzy
+msgid "Upgrade Needed"
+msgstr "Oppgrader"
+
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:41
+#: bottles/frontend/ui/onboard.ui:88
+msgid "Continue"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:49
+#, fuzzy
+msgid "Launch upgrade"
+msgstr "Bekreft oppgradering"
+
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:69
+#, fuzzy
+msgid "New Versioning System"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:72
+msgid "The new bottle versioning system has landed."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:86
+msgid ""
+"Bottles has a whole new Versioning System which is not backwards "
+"compatible. \n"
+"\n"
+"To continue using versioning we need to re-initialize the bottle repository. "
+"This will not delete data from your bottle but will delete all existing "
+"states and create a new one. \n"
+"\n"
+"If you need to go back to a previous state before continuing, close this "
+"window and restore the state, then reopen the bottle to show this window "
+"again. \n"
+"\n"
+"The old system will be discontinued in one of the next releases."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:112
+msgid "Re-initializing repository…"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-upgrade-versioning.ui:144
+msgid "Done! Please restart Bottles."
+msgstr ""
+
+#. vkBasalt is a Vulkan post processing layer for Linux
+#: bottles/frontend/ui/dialog-vkbasalt.ui:11
+#, fuzzy
+msgid "vkBasalt Settings"
+msgstr "Juster interne innstillinger."
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:50
+msgid "Default"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:54
+#, fuzzy
+msgid "Default Settings"
+msgstr "Juster interne innstillinger."
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:66
+msgid "Effects are applied according to the list order."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:67
+msgid "Effects"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:71
+msgid "Contrast Adaptive Sharpening"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:74
+#: bottles/frontend/ui/dialog-vkbasalt.ui:110
+msgid "Sharpness"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:78
+#: bottles/frontend/ui/dialog-vkbasalt.ui:114
+#: bottles/frontend/ui/dialog-vkbasalt.ui:143
+#: bottles/frontend/ui/dialog-vkbasalt.ui:178
+#: bottles/frontend/ui/dialog-vkbasalt.ui:207
+#: bottles/frontend/ui/dialog-vkbasalt.ui:236
+#: bottles/frontend/ui/dialog-vkbasalt.ui:271
+#: bottles/frontend/ui/dialog-vkbasalt.ui:307
+#: bottles/frontend/ui/dialog-vkbasalt.ui:336
+#: bottles/frontend/ui/dialog-vkbasalt.ui:364
+#: bottles/frontend/ui/dialog-vkbasalt.ui:392
+#: bottles/frontend/ui/dialog-vkbasalt.ui:424
+#, fuzzy
+msgid "Show Information"
+msgstr "Flasker startet."
+
+#. Luma is not translatable
+#: bottles/frontend/ui/dialog-vkbasalt.ui:107
+msgid "Denoised Luma Sharpening"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:139
+msgid "Denoise"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:171
+msgid "Fast Approximate Anti-Aliasing"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:174
+#, fuzzy
+msgid "Subpixel Quality"
+msgstr "Ultrakvalitet"
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:203
+msgid "Quality Edge Threshold"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:232
+msgid "Quality Edge Threshold Minimum"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:264
+msgid "Subpixel Morphological Anti-Aliasing"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:267
+msgid "Edge Detection"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:283
+msgid "Luma"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:290
+msgid "Color"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:303
+msgid "Threshold"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:332
+msgid "Max Search Steps"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:360
+msgid "Max Search Steps Diagonal"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:388
+msgid "Max Corner Rounding"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:419
+msgid "Color Lookup Table"
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:437
+#, fuzzy
+msgid "Reset to Default"
+msgstr "Flaskedetaljer"
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:448
+#, fuzzy
+msgid "Select a File"
+msgstr "Opprett flaske"
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:482
+msgid ""
+"CAS sharpness increases the sharpness of a frame. Higher values make the "
+"frame sharper, whereas values lower than 0 make the frame softer than native."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:500
+msgid ""
+"DLS sharpness increases the sharpness of a frame. Higher values make the "
+"frame sharper."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:518
+msgid ""
+"DLS denoise decreases the noise of a frame. Higher values make the frame "
+"softer."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:536
+msgid ""
+"FXAA subpixel quality decreases aliasing at the subpixel level. Higher "
+"values make the frame softer."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:554
+msgid ""
+"FXAA edge threshold is the minimum amount of contrast required to apply the "
+"FXAA algorithm. Higher values make the frame have more contrast."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:572
+msgid ""
+"FXAA quality edge threshold minimum is the minimum value of dark pixels that "
+"are ignored by the FXAA algorithm. Higher values make FXAA ignore pixels "
+"below the specified value and can lead to a performance increase."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:590
+msgid ""
+"Luma detects edges from a monochrome perspective, whereas Color detects "
+"edges based on colors. Luma is more performant than Color."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:608
+msgid ""
+"SMAA threshold specifies the sensitivity of edge detection. Lower values "
+"detect more edges at the expense of performance."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:626
+msgid ""
+"SMAA max search steps specifies how many horizontal and vertical search "
+"steps are performed when searching for edges."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:644
+msgid ""
+"SMAA max diagonal search steps specifies how many diagonal search steps are "
+"performed when searching for edges."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:662
+msgid "SMAA corner rounding specifies the strength of rounding edge corners."
+msgstr ""
+
+#: bottles/frontend/ui/dialog-vkbasalt.ui:680
+msgid ""
+"CLUT transforms a range of colors into another range of colors using a .CUBE "
+"file, or a .png file where the height is equal to the width."
+msgstr ""
+
+#: bottles/frontend/ui/dll-override-entry.ui:10
+#, fuzzy
+msgid "Builtin (Wine)"
+msgstr "Innebygd (Wine)"
+
+#: bottles/frontend/ui/dll-override-entry.ui:11
+#, fuzzy
+msgid "Native (Windows)"
+msgstr "Systemspesifikk (Windows)"
+
+#: bottles/frontend/ui/dll-override-entry.ui:12
+#, fuzzy
+msgid "Builtin, then Native"
+msgstr "Innebygd og så systemspesifikk"
+
+#: bottles/frontend/ui/dll-override-entry.ui:13
+#, fuzzy
+msgid "Native, then Builtin"
+msgstr "Systemspesifikk og så innebygd"
+
+#: bottles/frontend/ui/dll-override-entry.ui:14
+msgid "Disabled"
+msgstr ""
+
+#: bottles/frontend/ui/dll-override-entry.ui:22
+#: bottles/frontend/ui/drive-entry.ui:14
+msgid "Remove"
+msgstr ""
+
+#: bottles/frontend/ui/drive-entry.ui:7
+msgid "/point/to/path"
+msgstr ""
+
+#: bottles/frontend/ui/drive-entry.ui:24
+#, fuzzy
+msgid "Choose a Directory"
+msgstr "Velg en mappe"
+
+#: bottles/frontend/ui/env-var-entry.ui:6
+#: bottles/frontend/ui/exclusion-pattern-entry.ui:6
+#, fuzzy
+msgid "Value"
+msgstr "verdi"
+
+#. Wineprefix is a prefix for the wine program
+#: bottles/frontend/ui/importer-entry.ui:22
+msgid "Wineprefix name"
+msgstr ""
+
+#: bottles/frontend/ui/importer-entry.ui:29
+#, fuzzy
+msgid "Manager"
+msgstr "Håndter flasker"
+
+#: bottles/frontend/ui/importer-entry.ui:39
+msgid "This wineprefix was already imported in Bottles."
+msgstr "Wineprefix allerede importert i Bottles."
+
+#: bottles/frontend/ui/importer.ui:24
+#, fuzzy
+msgid "Import Bottles backup"
+msgstr "Importer fra sikkerhetskopi"
+
+#: bottles/frontend/ui/importer.ui:31
+msgid "Search again for prefixes"
+msgstr ""
+
+#: bottles/frontend/ui/importer.ui:45
+#, fuzzy
+msgid "No Prefixes Found"
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/ui/importer.ui:46
+msgid ""
+"No prefixes were found from Lutris, PlayOnLinux, etc.\n"
+"Use the icon on the top to import a bottle from a backup"
+msgstr ""
+
+#: bottles/frontend/ui/importer.ui:81
+msgid "Configuration"
+msgstr "Oppsett"
+
+#: bottles/frontend/ui/importer.ui:87
+#, fuzzy
+msgid "Full Archive"
+msgstr "Fullstendig arkiv"
+
+#: bottles/frontend/ui/installer-entry.ui:18
+#, fuzzy
+msgid "Show Manifest…"
+msgstr "Vis manifest"
+
+#: bottles/frontend/ui/installer-entry.ui:23
+msgid "Read Review…"
+msgstr ""
+
+#: bottles/frontend/ui/installer-entry.ui:40
+#, fuzzy
+msgid "Installer name"
+msgstr "Installasjonskandidater"
+
+#: bottles/frontend/ui/installer-entry.ui:41
+#, fuzzy
+msgid "Installer description"
+msgstr "Installasjonskandidater"
+
+#: bottles/frontend/ui/installer-entry.ui:48
+msgid "Unknown"
+msgstr ""
+
+#: bottles/frontend/ui/installer-entry.ui:57
+#, fuzzy
+msgid "Install this program"
+msgstr "Installerte programmer"
+
+#: bottles/frontend/ui/library-entry.ui:17
+#, fuzzy
+msgid "Remove from Library"
+msgstr "Fjern fra programmer"
+
+#: bottles/frontend/ui/library-entry.ui:94
+#, fuzzy
+msgid "Item name"
+msgstr "Flaskenavn"
+
+#: bottles/frontend/ui/library-entry.ui:115
+#: bottles/frontend/ui/program-entry.ui:105
+msgid "Launch with Steam"
+msgstr ""
+
+#: bottles/frontend/ui/library.ui:14 bottles/frontend/ui/preferences.ui:259
+#: bottles/frontend/windows/main_window.py:175
+#, fuzzy
+msgid "Library"
+msgstr "Mørk drakt"
+
+#: bottles/frontend/ui/library.ui:15
+msgid "Add items here from your bottle's program list"
+msgstr ""
+
+#: bottles/frontend/ui/list-entry.ui:46
+msgid "This bottle looks damaged."
+msgstr "Denne flasken ser ut til å være skadet."
+
+#: bottles/frontend/ui/list-entry.ui:60
+msgid "Execute in this bottle"
+msgstr "Kjør i denne flasken"
+
+#: bottles/frontend/ui/list-entry.ui:75
+#, fuzzy
+msgid "Run Here"
+msgstr "Kjør her"
+
+#: bottles/frontend/ui/list-entry.ui:84
+#, fuzzy
+msgid ""
+"This bottle looks damaged, the configuration file is missing. I can try to "
+"solve by creating a new configuration."
+msgstr ""
+"Flasken ser ut til å være skadet. Oppsettsfilen mangler. Dette kan løses ved "
+"å opprette et nytt oppsett."
+
+#: bottles/frontend/ui/list-entry.ui:96
+msgid "Run .exe/.msi in this bottle"
+msgstr "Kjør .exe/.msi i denne flasken"
+
+#: bottles/frontend/ui/list.ui:17
+#, fuzzy
+msgid "Search your bottles…"
+msgstr "Gi flasken et navn"
+
+#: bottles/frontend/ui/list.ui:38
+#, fuzzy
+msgid "Steam Proton"
+msgstr "ProtonDB"
+
+#: bottles/frontend/ui/list.ui:54 bottles/frontend/ui/window.ui:56
+#: bottles/frontend/ui/window.ui:73 bottles/frontend/windows/main_window.py:169
+#: data/com.usebottles.bottles.appdata.xml.in:6
 #: data/com.usebottles.bottles.desktop.in:3
-#: data/com.usebottles.bottles.appdata.xml.in:6 src/ui/list.ui:76
-#: src/ui/window.ui:222 src/ui/window.ui:237 src/window.py:169
-#: src/window.py:240
 msgid "Bottles"
 msgstr "Flasker"
 
-#: data/com.usebottles.bottles.desktop.in:4
-msgid "Easily manage wineprefix"
-msgstr "Håndter wineprefiks enkelt"
+#: bottles/frontend/ui/list.ui:55
+#, fuzzy
+msgid "Start off by creating a Bottle."
+msgstr "Opprett ny flaske"
 
-#: data/com.usebottles.bottles.desktop.in:13
-msgid "wine;windows;"
-msgstr "WINE;Windows;"
+#: bottles/frontend/ui/list.ui:62
+#, fuzzy
+msgid "Create a new Bottle"
+msgstr "Opprett ny flaske"
+
+#: bottles/frontend/ui/list.ui:75
+#, fuzzy
+msgid "No Results Found"
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/ui/list.ui:76
+msgid "Try a different search."
+msgstr ""
+
+#: bottles/frontend/ui/loading.ui:16
+msgid "Starting up…"
+msgstr ""
+
+#: bottles/frontend/ui/local-resource-entry.ui:6
+msgid "This resource is missing."
+msgstr ""
+
+#: bottles/frontend/ui/local-resource-entry.ui:10
+#, fuzzy
+msgid "Browse"
+msgstr "Utforsk C:"
+
+#: bottles/frontend/ui/new.ui:17 bottles/frontend/ui/new.ui:64
+msgid "New Bottle"
+msgstr "Ny flaske"
+
+#: bottles/frontend/ui/new.ui:38
+#, fuzzy
+msgid "Create"
+msgstr "Opprett flaske"
+
+#: bottles/frontend/ui/new.ui:47 bottles/frontend/ui/new.ui:268
+#: bottles/frontend/windows/main_window.py:191
+msgid "Close"
+msgstr "Lukk"
+
+#: bottles/frontend/ui/new.ui:67
+#, fuzzy
+msgid "Bottle Information"
+msgstr "Flasker startet."
+
+#: bottles/frontend/ui/new.ui:84
+msgid "Gaming"
+msgstr "Spill"
+
+#: bottles/frontend/ui/new.ui:85
+msgid "An environment improved for Windows games."
+msgstr "Et forbedret miljø for Windows-spill."
+
+#: bottles/frontend/ui/new.ui:93
+#, fuzzy
+msgid "Application"
+msgstr "Laster ned …"
+
+#: bottles/frontend/ui/new.ui:94
+#, fuzzy
+msgid "An environment improved for Windows applications."
+msgstr "Et forbedret miljø for Windows-spill."
+
+#: bottles/frontend/ui/new.ui:103
+msgid "Layered"
+msgstr ""
+
+#: bottles/frontend/ui/new.ui:104
+msgid "A layered environment, where every app is a layer."
+msgstr ""
+
+#: bottles/frontend/ui/new.ui:112
+msgid "Custom"
+msgstr "Egendefinert"
+
+#: bottles/frontend/ui/new.ui:113
+#, fuzzy
+msgid "A clear environment for your experiments."
+msgstr "Et rent miljø, uten optimiseringer."
+
+#: bottles/frontend/ui/new.ui:117
+msgid "Unlinked Home Directory"
+msgstr ""
+
+#: bottles/frontend/ui/new.ui:118
+msgid "Do not link the userdir to the homedir"
+msgstr ""
+
+#: bottles/frontend/ui/new.ui:143
+msgid "Architecture"
+msgstr "Arkitektur"
+
+#: bottles/frontend/ui/new.ui:144
+#, fuzzy
+msgid "We recommend using 32bit only if strictly necessary."
+msgstr "32-bit anbefales kun når det er tvingende nødvendig"
+
+#: bottles/frontend/ui/new.ui:148
+msgid "64 bit"
+msgstr "64-biters"
+
+#: bottles/frontend/ui/new.ui:149
+msgid "32 bit"
+msgstr "32-biters"
+
+#: bottles/frontend/ui/new.ui:157
+#, fuzzy
+msgid "Custom Recipe"
+msgstr "Bruk spillmodus"
+
+#: bottles/frontend/ui/new.ui:158
+msgid "Choose a custom recipe for the environment if you have one."
+msgstr "Velg en egendefinert oppskrift for miljøet hvis du har en."
+
+#: bottles/frontend/ui/new.ui:174
+#, fuzzy
+msgid "Custom Path"
+msgstr "Egendefinert"
+
+#: bottles/frontend/ui/new.ui:175
+#, fuzzy
+msgid "Store this bottle in another place."
+msgstr "Lagre denne flasken et annet sted."
+
+#: bottles/frontend/ui/new.ui:215
+#, fuzzy
+msgid "Creating a Bottle…"
+msgstr "Opprett ny flaske"
+
+#: bottles/frontend/ui/new.ui:262
+#, fuzzy
+msgid "Bottle created"
+msgstr "Flasker startet."
+
+#: bottles/frontend/ui/onboard.ui:36
+msgid "Previous"
+msgstr ""
+
+#: bottles/frontend/ui/onboard.ui:62
+msgid "Welcome to Bottles"
+msgstr "Velkommen til Flasker"
+
+#: bottles/frontend/ui/onboard.ui:63
+msgid ""
+"Run Windows Software on Linux.\n"
+"                                                "
+msgstr ""
+
+#: bottles/frontend/ui/onboard.ui:71
+#, fuzzy
+msgid "Windows in Bottles"
+msgstr "Vindusbredde"
+
+#: bottles/frontend/ui/onboard.ui:72
+msgid ""
+"Bottles uses compatibility runners to provide isolated containerized Windows-"
+"like environments where programs run."
+msgstr ""
+
+#: bottles/frontend/ui/onboard.ui:79
+msgid "Almost Done"
+msgstr ""
+
+#: bottles/frontend/ui/onboard.ui:80
+msgid "We need a few more minutes to set everything up…"
+msgstr ""
+
+#: bottles/frontend/ui/onboard.ui:113
+msgid "All ready!"
+msgstr ""
+
+#: bottles/frontend/ui/onboard.ui:122
+msgid "Please Finish the setup first"
+msgstr ""
+
+#: bottles/frontend/ui/onboard.ui:129
+#, fuzzy
+msgid "Start using Bottles"
+msgstr "Opprett ny flaske"
+
+#: bottles/frontend/ui/onboard.ui:150
+msgid "Next"
+msgstr "Neste"
+
+#: bottles/frontend/ui/preferences.ui:6 bottles/frontend/ui/window.ui:24
+#: bottles/frontend/views/details.py:158
+msgid "Preferences"
+msgstr "Egenskaper"
+
+#: bottles/frontend/ui/preferences.ui:13 bottles/frontend/ui/preferences.ui:46
+msgid "General"
+msgstr "Generelt"
+
+#: bottles/frontend/ui/preferences.ui:16
+#, fuzzy
+msgid "Appearance"
+msgstr "Utseende"
+
+#: bottles/frontend/ui/preferences.ui:19
+#, fuzzy
+msgid "Dark Mode"
+msgstr "Mørk drakt"
+
+#: bottles/frontend/ui/preferences.ui:20
+#, fuzzy
+msgid "Whether Bottles should use the dark color scheme."
+msgstr "Hvorvidt Bottles skal ikles mørk drakt."
+
+#: bottles/frontend/ui/preferences.ui:32
+#, fuzzy
+msgid "Show Update Date"
+msgstr "Vis oppdateringsdato"
+
+#: bottles/frontend/ui/preferences.ui:33
+msgid "Whether to show the update date in the bottle list."
+msgstr "Hvorvidt oppdateringsdato skal vises i flaskelisten."
+
+#: bottles/frontend/ui/preferences.ui:49
+#: data/com.usebottles.bottles.gschema.xml:46
+msgid "Notifications"
+msgstr "Merknader"
+
+#: bottles/frontend/ui/preferences.ui:50
+msgid "Show notifications for downloads and installs."
+msgstr "Vis merknader for nedlastinger og installasjoner."
+
+#: bottles/frontend/ui/preferences.ui:61
+#, fuzzy
+msgid "Temp Files"
+msgstr "Rens av midlertidig sti"
+
+#: bottles/frontend/ui/preferences.ui:62
+msgid "Clean temp files when Bottles launches?"
+msgstr "Tøm midlertidige filer når Bottles startes?"
+
+#: bottles/frontend/ui/preferences.ui:73
+#, fuzzy
+msgid "Close Bottles After Starting a Program"
+msgstr "Lukk Bottles etter start av et program"
+
+#: bottles/frontend/ui/preferences.ui:74
+#, fuzzy
+msgid "Close Bottles after starting a program from the file manager."
+msgstr "Lukk Bottles etter start av program fra filbehandleren"
+
+#: bottles/frontend/ui/preferences.ui:87
+#, fuzzy
+msgid "Integrations"
+msgstr "Oppdaterte oversettelser"
+
+#: bottles/frontend/ui/preferences.ui:90
+msgid "Steam Proton Prefixes"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:91
+#, fuzzy
+msgid "List and manage Steam Proton prefixes."
+msgstr "Skru av/på versjonseringsfunksjon"
+
+#: bottles/frontend/ui/preferences.ui:95
+#, fuzzy
+msgid "Read Documentation"
+msgstr "Dokumentasjon"
+
+#: bottles/frontend/ui/preferences.ui:113
+msgid "List Steam Apps in Programs List"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:114
+#, fuzzy
+msgid "Requires Steam for Windows installed in the bottle."
+msgstr "List opp, håndter og kjør programmer installert i denne flasken."
+
+#: bottles/frontend/ui/preferences.ui:125
+msgid "List Epic Games in Programs List"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:126
+msgid "Requires Epic Games Store installed in the bottle."
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:137
+msgid "List Ubisoft Games in Programs List"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:138
+#, fuzzy
+msgid "Requires Ubisoft Connect installed in the bottle."
+msgstr "List opp, håndter og kjør programmer installert i denne flasken."
+
+#: bottles/frontend/ui/preferences.ui:151
+#, fuzzy
+msgid "Advanced"
+msgstr "Avansert"
+
+#: bottles/frontend/ui/preferences.ui:154
+msgid "Custom Bottles Path (Requires Restart)"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:155
+#: bottles/frontend/views/preferences.py:151
+#: bottles/frontend/views/preferences.py:167
+msgid ""
+"Choose where to store the new bottles (this will not move the existing ones)."
+msgstr ""
+"Velg hvor å oppbevare de nye flaskene (dette vil ikke flytte de eksisterende "
+"flaskene)."
+
+#: bottles/frontend/ui/preferences.ui:188
+msgid "Runners"
+msgstr "Springere"
+
+#: bottles/frontend/ui/preferences.ui:193
+#, fuzzy
+msgid "Pre-Release"
+msgstr "Forhåndsutgivelse"
+
+#: bottles/frontend/ui/preferences.ui:194
+msgid "Display unstable versions of runners."
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:210
+#, fuzzy
+msgid "DLL Components"
+msgstr "Versjonering"
+
+#: bottles/frontend/ui/preferences.ui:223
+msgid "DXVK-NVAPI"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:236
+msgid "Core"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:240
+msgid "Runtime"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:245
+msgid "WineBridge"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:253
+#: data/com.usebottles.bottles.gschema.xml:66
+msgid "Experiments"
+msgstr "Eksperiementer"
+
+#: bottles/frontend/ui/preferences.ui:256
+msgid ""
+"These features are under heavy development and may be unstable, expect bugs "
+"and breakage."
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:260
+msgid "In early development (requires restart)."
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:271
+msgid "Sandbox per bottle"
+msgstr ""
+
+#: bottles/frontend/ui/preferences.ui:272
+msgid "In early development."
+msgstr ""
+
+#: bottles/frontend/ui/program-entry.ui:21
+msgid "Launch with terminal"
+msgstr ""
+
+#: bottles/frontend/ui/program-entry.ui:28
+#, fuzzy
+msgid "Browse path"
+msgstr "Utforsk C:"
+
+#: bottles/frontend/ui/program-entry.ui:44
+#, fuzzy
+msgid "Change Launch Options…"
+msgstr "Endre oppstartsalternativer"
+
+#: bottles/frontend/ui/program-entry.ui:49
+msgid "Add to My Library"
+msgstr ""
+
+#: bottles/frontend/ui/program-entry.ui:54
+msgid "Add Desktop Entry"
+msgstr ""
+
+#: bottles/frontend/ui/program-entry.ui:59
+msgid "Add to Steam"
+msgstr ""
+
+#: bottles/frontend/ui/program-entry.ui:64
+#, fuzzy
+msgid "Rename…"
+msgstr "Springer"
+
+#: bottles/frontend/ui/program-entry.ui:73
+#, fuzzy
+msgid "Hide Program"
+msgstr "Programmer"
+
+#: bottles/frontend/ui/program-entry.ui:78
+#, fuzzy
+msgid "Show Program"
+msgstr "Programmer"
+
+#: bottles/frontend/ui/program-entry.ui:83
+#, fuzzy
+msgid "Remove from List"
+msgstr "Fjern fra programmer"
+
+#: bottles/frontend/ui/program-entry.ui:99
+#, fuzzy
+msgid "Program name"
+msgstr "Programmer"
+
+#. id as identification
+#: bottles/frontend/ui/state-entry.ui:7
+#, fuzzy
+msgid "State id"
+msgstr "Fant ingen springere"
+
+#: bottles/frontend/ui/state-entry.ui:8
+#, fuzzy
+msgid "State comment"
+msgstr "En veldig kort kommentar"
+
+#: bottles/frontend/ui/state-entry.ui:16
+#, fuzzy
+msgid "Restore this state"
+msgstr "Kjør i denne flasken"
+
+#: bottles/frontend/ui/task-entry.ui:24
+#, fuzzy
+msgid "Delete message"
+msgstr "Slett tilstand"
+
+#: bottles/frontend/ui/window.ui:19
+#, fuzzy
+msgid "Import/Export…"
+msgstr "Importerer"
+
+#: bottles/frontend/ui/window.ui:33
+#, fuzzy
+msgid "Support"
+msgstr "Eksporter"
+
+#: bottles/frontend/ui/window.ui:43
+msgid "Forums"
+msgstr "Forum"
+
+#: bottles/frontend/ui/window.ui:48
+msgid "About Bottles"
+msgstr "Om Flasker"
+
+#: bottles/frontend/ui/window.ui:79
+msgid "Open menu"
+msgstr "Åpne meny"
+
+#: bottles/frontend/ui/window.ui:93
+#, fuzzy
+msgid ""
+"You don't seem connected to the internet. Without it you will not be able to "
+"download essential components. Click this icon when you have reestablished "
+"the connection."
+msgstr ""
+"Du er ikke tilkoblet Internett. Du vil ikke kunne laste ned essensielle "
+"komponenter. Klikk på dette ikonet når du er tilkoblet."
+
+#: bottles/frontend/ui/window.ui:99
+msgid "New bottle"
+msgstr "Ny flaske"
+
+#: bottles/frontend/utils/connection.py:67
+#, fuzzy
+msgid "You are offline, unable to download."
+msgstr "Du er frakoblet. Kunne ikke laste ned."
+
+#: bottles/frontend/views/bottle_details.py:142
+#, python-format
+msgid "Updated: %s"
+msgstr "Oppdatert: %s"
+
+#: bottles/frontend/views/bottle_details.py:200
+#: bottles/frontend/views/list.py:118
+#, fuzzy
+msgid "Choose a Windows executable file"
+msgstr "Velg en kjørbar Windows-fil"
+
+#: bottles/frontend/views/bottle_details.py:209
+msgid "Be Aware of Sandbox"
+msgstr ""
+
+#: bottles/frontend/views/bottle_details.py:210
+msgid ""
+"Bottles is running in a sandbox, a restricted permission environment needed "
+"to keep you safe. If the program won't run, consider moving inside the "
+"bottle (3 dots icon on the top), then launch from there."
+msgstr ""
+
+#: bottles/frontend/views/bottle_details.py:212
+msgid "Ok"
+msgstr ""
+
+#: bottles/frontend/views/bottle_details.py:267
+#, fuzzy
+msgid "Select the location where to save the backup config"
+msgstr "Velg sted å lagre sikkerhetskopi"
+
+#: bottles/frontend/views/bottle_details.py:271
+#, fuzzy
+msgid "Select the location where to save the backup archive"
+msgstr "Velg sted å lagre sikkerhetskopiert arkiv"
+
+#: bottles/frontend/views/bottle_details.py:276
+#, python-brace-format
+msgid "Backup created for '{0}'."
+msgstr "Backup opprettet for '{0}'."
+
+#: bottles/frontend/views/bottle_details.py:278
+#, python-brace-format
+msgid "Backup failed for '{0}'."
+msgstr "Backup feilet for '{0}'."
+
+#: bottles/frontend/views/bottle_details.py:296
+#, fuzzy
+msgid "Export"
+msgstr "Eksporter"
+
+#: bottles/frontend/views/bottle_details.py:332
+#: bottles/frontend/views/bottle_details.py:336
+#: bottles/frontend/views/bottle_details.py:411
+#: bottles/frontend/views/bottle_details.py:415
+#: bottles/frontend/views/bottle_preferences.py:776
+msgid "Confirm"
+msgstr "Bekreft"
+
+#: bottles/frontend/views/bottle_details.py:333
+msgid "Are you sure you want to delete this Bottle and all files?"
+msgstr "Er du sikker på at du vil slette denne flasken og alle dens filer?"
+
+#: bottles/frontend/views/bottle_details.py:412
+#, fuzzy
+msgid ""
+"Are you sure you want to terminate all processes?\n"
+"This can cause data loss."
+msgstr "Er du sikker på at du vil slette denne flasken og alle dens filer?"
+
+#: bottles/frontend/views/bottle_preferences.py:218
+#, fuzzy
+msgid "This feature is not available on your system."
+msgstr ""
+"Spillmodus er enten ikke tilgjengelig på systemet ditt, eller kjører ikke."
+
+#: bottles/frontend/views/bottle_preferences.py:266
+#: bottles/frontend/views/bottle_preferences.py:283
+#: bottles/frontend/views/bottle_preferences.py:422
+#, fuzzy
+msgid "Default to the bottle path."
+msgstr "Pek på flaskestien"
+
+#: bottles/frontend/views/bottle_preferences.py:274
+#, fuzzy
+msgid "Choose working directory for executables"
+msgstr "Velg en kjørbar Windows-fil"
+
+#: bottles/frontend/views/bottle_preferences.py:772
+msgid "Toggling Compression Require Re-Initialization"
+msgstr ""
+
+#: bottles/frontend/views/bottle_preferences.py:773
+msgid ""
+"This will kepp all your files but will delete all states. Do you want to "
+"continue?"
+msgstr ""
+
+#: bottles/frontend/views/bottle_programs.py:86
+#, python-brace-format
+msgid "'{0}' added."
+msgstr "'{0}' lagt til."
+
+#: bottles/frontend/views/bottle_programs.py:90
+#, fuzzy
+msgid "Choose an executable path"
+msgstr "Velg en kjørbar Windows-fil"
+
+#: bottles/frontend/views/bottle_programs.py:92
+msgid "Add"
+msgstr "Legg til"
+
+#: bottles/frontend/views/bottle_versioning.py:88
+msgid "Please migrate to the new Versioning system to create new states."
+msgstr ""
+
+#: bottles/frontend/views/details.py:154
+#, fuzzy
+msgid "Details & Utilities"
+msgstr "Verktøy"
+
+#: bottles/frontend/views/details.py:162
+msgid "Dependencies"
+msgstr "Avhengigheter"
+
+#: bottles/frontend/views/details.py:167
+#, fuzzy
+msgid "Found in your bottle's Start menu."
+msgstr ""
+"Dette er programmene som ble funnet installert i flasken (det kan være "
+"flere)."
+
+#: bottles/frontend/views/details.py:174
+msgid "Installers"
+msgstr "Installasjonskandidater"
+
+#: bottles/frontend/views/details.py:377
+#, fuzzy
+msgid "Operations in progress, please wait."
+msgstr "Versjonering"
+
+#: bottles/frontend/views/details.py:381
+#, fuzzy
+msgid "Return to your bottles."
+msgstr "Gi flasken et navn"
+
+#: bottles/frontend/views/importer.py:89
+msgid "Backup imported successfully."
+msgstr "Backup importert vellykket."
+
+#: bottles/frontend/views/importer.py:91
+#, fuzzy
+msgid "Import failed."
+msgstr "Importerer"
+
+#: bottles/frontend/views/importer.py:103
+#: bottles/frontend/views/importer.py:132
+#, fuzzy
+msgid "Importing backup…"
+msgstr "Importerer sikkerhetskopi: {0}"
+
+#: bottles/frontend/views/importer.py:115
+#, fuzzy
+msgid "Choose a backup archive"
+msgstr "Velg en sikkerhetskopi"
+
+#: bottles/frontend/views/list.py:59 bottles/frontend/views/list.py:65
+msgid "N/A"
+msgstr "I/t"
+
+#: bottles/frontend/views/list.py:220
+msgid "Your Bottles"
+msgstr "Dine flasker"
+
+#: bottles/frontend/views/loading.py:33
+#, python-brace-format
+msgid "Downloading ~{0} of packages…"
+msgstr ""
+
+#: bottles/frontend/views/loading.py:34
+#, python-brace-format
+msgid "Fetched {0} of {1} packages"
+msgstr ""
+
+#: bottles/frontend/views/new.py:133
+#, fuzzy
+msgid "Name has special characters or already in use."
+msgstr "Spesialtegn tillates ikke."
+
+#: bottles/frontend/views/new.py:150
+#, fuzzy
+msgid "Choose a recipe file"
+msgstr "Oppsett"
+
+#: bottles/frontend/views/new.py:166
+#, fuzzy
+msgid "Choose where to store the bottle"
+msgstr "Sikkerhetkopier denne flasken"
+
+#: bottles/frontend/views/new.py:219
+#, fuzzy
+msgid "There was an error creating the bottle."
+msgstr "Kunne ikke opprette flasken."
+
+#: bottles/frontend/views/new.py:227
+#, fuzzy, python-brace-format
+msgid "A bottle named “{0}” was created successfully"
+msgstr "En flaske ved navn «{0}» ble opprettet"
+
+#: bottles/frontend/views/preferences.py:119
+#, fuzzy
+msgid "Steam was not found or Bottles does not have enough permissions."
+msgstr ""
+"Steam ble ikke funnet eller så har ikke Flasker nok tillatelser. Besøk "
+"https://docs.usebottles.com/flatpak/cant-enable-steam-proton-manager"
+
+#: bottles/frontend/views/preferences.py:156
+#, fuzzy
+msgid "Choose new bottles path"
+msgstr "Velg en kjørbar Windows-fil"
+
+#: bottles/frontend/views/preferences.py:199
+msgid "Based on Valve's Wine, includes staging and Proton patches."
+msgstr ""
+
+#: bottles/frontend/views/preferences.py:200
+msgid "Based on Wine upstream, includes staging and Proton patches."
+msgstr ""
+
+#: bottles/frontend/views/preferences.py:203
+msgid "Based on Wine upstream, includes staging patches."
+msgstr ""
+
+#: bottles/frontend/views/preferences.py:204
+msgid ""
+"Based on Valve's Wine, includes staging, Proton and Steam-specific patches. "
+"Requires the Steam Runtime turned on."
+msgstr ""
+
+#: bottles/frontend/views/preferences.py:206
+msgid "Other"
+msgstr "Andre"
+
+#: bottles/frontend/widgets/component.py:70
+#, fuzzy
+msgid "Upgrade"
+msgstr "Oppgrader"
+
+#: bottles/frontend/widgets/component.py:145
+#, fuzzy
+msgid "Installing…"
+msgstr "Installerer DXVK…"
+
+#: bottles/frontend/widgets/dependency.py:107
+#: bottles/frontend/widgets/installer.py:72
+#, python-brace-format
+msgid "Manifest for {0}"
+msgstr "Manifest for {0}"
+
+#: bottles/frontend/widgets/dependency.py:170
+#, python-brace-format
+msgid "'{0}' installed."
+msgstr "'{0}' installert."
+
+#: bottles/frontend/widgets/dependency.py:184
+#, fuzzy, python-brace-format
+msgid "'{0}' failed to install."
+msgstr "'{0}' installert."
+
+#: bottles/frontend/widgets/importer.py:66
+#, python-brace-format
+msgid "'{0}' imported."
+msgstr "'{0}' importert."
+
+#: bottles/frontend/widgets/installer.py:81
+#, fuzzy, python-brace-format
+msgid "Review for {0}"
+msgstr "Manifest for {0}"
+
+#: bottles/frontend/widgets/program.py:187
+#, python-brace-format
+msgid "Launching '{0}'…"
+msgstr ""
+
+#: bottles/frontend/widgets/program.py:193
+#, python-brace-format
+msgid "Launching '{0}' with Steam…"
+msgstr ""
+
+#: bottles/frontend/widgets/program.py:215
+#, python-brace-format
+msgid "'{0}' hidden."
+msgstr "'{0}' gjemt."
+
+#: bottles/frontend/widgets/program.py:217
+#, python-brace-format
+msgid "'{0}' showed."
+msgstr "'{0}' vist."
+
+#: bottles/frontend/widgets/program.py:240
+#, python-brace-format
+msgid "'{0}' removed."
+msgstr "'{0}' fjernet."
+
+#: bottles/frontend/widgets/program.py:254
+#, python-brace-format
+msgid "'{0}' renamed to '{1}'."
+msgstr "'{0}' endret navn til '{1}'."
+
+#: bottles/frontend/widgets/program.py:274
+#, python-brace-format
+msgid "Desktop Entry created for '{0}'"
+msgstr "Skrivebords-oppføring opprettet for '{0}'"
+
+#: bottles/frontend/widgets/program.py:290
+#, python-brace-format
+msgid "'{0}' added to your library"
+msgstr "'{0}' lagt til biblioteket ditt"
+
+#: bottles/frontend/widgets/program.py:306
+#, python-brace-format
+msgid "'{0}' added to your Steam library"
+msgstr ""
+
+#: bottles/frontend/windows/main_window.py:188
+msgid "Custom Bottles Path not Found"
+msgstr ""
+
+#: bottles/frontend/windows/main_window.py:189
+msgid ""
+"Falling back to default path. No bottles from the given path will be listed."
+msgstr ""
+
+#: bottles/frontend/windows/main_window.py:310
+msgid "Third-Party Libraries and Special Thanks"
+msgstr ""
 
 #: data/com.usebottles.bottles.appdata.xml.in:7
 msgid "Run Windows software"
@@ -43,9 +3074,8 @@ msgid "Mirko Brombin"
 msgstr "Mirko Brombin"
 
 #: data/com.usebottles.bottles.appdata.xml.in:10
-#, fuzzy
 msgid "Run Windows software on Linux with Bottles!"
-msgstr "Kjør Windows-programvare på Linux med Flasker 🍷!"
+msgstr "Kjør Windows-programvare på Linux med Flasker!"
 
 #: data/com.usebottles.bottles.appdata.xml.in:11
 msgid "Bottle software and enjoy at your leisure!"
@@ -74,11 +3104,9 @@ msgid "Features:"
 msgstr "Funksjoner:"
 
 #: data/com.usebottles.bottles.appdata.xml.in:18
-#, fuzzy
 msgid "Create bottles using preconfigured environments or create your own"
 msgstr ""
-"Opprett dine flasker ved bruk av forhåndsoppsatte miljøer, eller lag dine "
-"egne"
+"Opprett flasker ved bruk av forhåndsinnstilte miljøer, eller lag dine egne"
 
 #: data/com.usebottles.bottles.appdata.xml.in:19
 msgid ""
@@ -147,18 +3175,202 @@ msgid "Back up and import bottles"
 msgstr "Sikkerhetkopier og importer flasker"
 
 #: data/com.usebottles.bottles.appdata.xml.in:32
-#, fuzzy
 msgid "Import Wine prefixes from other managers"
-msgstr "Importer fra sikkerhetskopi eller andre håndterere"
+msgstr "Importer Wine-prefikser fra andre behandlere"
 
 #: data/com.usebottles.bottles.appdata.xml.in:33
-msgid "Bottles versioning (experimental)"
-msgstr "Flaskeversjonering (eksperimentelt)"
+msgid "Bottles versioning"
+msgstr "Flasker versjonering"
 
 #: data/com.usebottles.bottles.appdata.xml.in:34
-#, fuzzy
 msgid "... and much more that you can find by installing Bottles!"
-msgstr "… og mye mer du finner ved å installere Flasker."
+msgstr "… og mye mer som du finner ved å installere Flasker!"
+
+#: data/com.usebottles.bottles.appdata.xml.in:101
+msgid "News"
+msgstr "Nyheter"
+
+#: data/com.usebottles.bottles.appdata.xml.in:103
+msgid ""
+"New versioning system which allow versioning the whole bottle (also "
+"configuration)"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:104
+msgid "Automatic versioning can now be toggled on and off"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:105
+msgid "Exclude paths from versioning using patterns"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:106
+#, fuzzy
+msgid "Use compression for versioning states"
+msgstr "Oppretter versjoneringstilstand 0…"
+
+#: data/com.usebottles.bottles.appdata.xml.in:107
+msgid "Improve Launch Options saving without update the UI multiple times"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:108
+msgid ""
+"Improved YAML performance using libyaml (the python-yaml package must "
+"provide support for it)"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:109
+#, fuzzy
+msgid "New About dialog"
+msgstr "Ny flaske"
+
+#: data/com.usebottles.bottles.appdata.xml.in:110
+msgid "Covers support in Library mode (thanks to SteamGridDB)"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:111
+msgid "Removed DXVK HUD option, use the Environment Variables section instead"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:112
+msgid "bottles-cli shell option now provide command output"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:113
+msgid "The Health Check is now in the About´s Troubleshooting section"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:114
+msgid ""
+"Extended Core dependencies check, packagers are invited to double-check "
+"their packages"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:115
+msgid "New default permission for the Flatpak package: xdg-download"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:116
+msgid "Added credits for Third-Party Libraries in the Credits section"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:117
+#, fuzzy
+msgid "Minor UI improvements"
+msgstr "Generelle grenesnittsforbedringer"
+
+#: data/com.usebottles.bottles.appdata.xml.in:120
+msgid "Fixes"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:122
+msgid "Fix for skipable onboard dialog"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:123
+msgid "Fix for empty bottle name"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:124
+msgid "Fix gstreamer libs for win32 bottles"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:125
+msgid "Fix for RemoteDisconnected error causing a crash"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:126
+msgid "Fix wrong Vaniglia listing"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:127
+msgid "Fix templates being generated with symlinked paths causing loops"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:128
+msgid ""
+"Fix configuration migration causing a crash when the user altered the "
+"configuration"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:129
+msgid "Fix mscoree.dll not found"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:130
+msgid "Fix regression for the -b option of the legacy bottles cli"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:131
+msgid "Fix Steam Launch Options parser causing a crash"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:132
+msgid ""
+"Fix a regression in the Add to Steam button not adding the new entry in Steam"
+msgstr ""
+
+#: data/com.usebottles.bottles.appdata.xml.in:135
+msgid "Translations"
+msgstr "Oversettelser"
+
+#: data/com.usebottles.bottles.appdata.xml.in:137
+#, fuzzy
+msgid "Finnish translations thanks to Jiri Grönroos"
+msgstr "Spansk oversettelse ved @fitojb"
+
+#: data/com.usebottles.bottles.appdata.xml.in:138
+#, fuzzy
+msgid "French translations thanks to @rjousse18, @julroy67"
+msgstr "Spansk oversettelse ved @fitojb"
+
+#: data/com.usebottles.bottles.appdata.xml.in:139
+#, fuzzy
+msgid "Indonesian translations thanks to @liimee"
+msgstr "Indonesisk oversettelse ved @rezaalmanda"
+
+#: data/com.usebottles.bottles.appdata.xml.in:140
+#, fuzzy
+msgid "Russian translations thanks to @Knebergish, @lenemter, @Smoque"
+msgstr "Spansk oversettelse ved @fitojb"
+
+#: data/com.usebottles.bottles.appdata.xml.in:141
+#, fuzzy
+msgid "Thai translations thanks to @SashaPGT"
+msgstr "Spansk oversettelse ved @fitojb"
+
+#: data/com.usebottles.bottles.appdata.xml.in:142
+#, fuzzy
+msgid "Spanish translations thanks to Pablo Munoz Alabau, @oscfdezdz"
+msgstr "Spansk oversettelse ved @fitojb"
+
+#: data/com.usebottles.bottles.appdata.xml.in:143
+#, fuzzy
+msgid "Italian translations thanks to @gdonisi"
+msgstr "Spansk oversettelse ved @fitojb"
+
+#: data/com.usebottles.bottles.appdata.xml.in:144
+#, fuzzy
+msgid "Portuguese (Brazil) translations thanks to @geraldohomero"
+msgstr "Portugisisk oversettelse ved @hugok79"
+
+#: data/com.usebottles.bottles.appdata.xml.in:145
+#, fuzzy
+msgid "German translations thanks to Patrick Ulbricht"
+msgstr "Tysk oversettelse ved @thericosanto"
+
+#: data/com.usebottles.bottles.appdata.xml.in:146
+#, fuzzy
+msgid "Croatian translations thanks to @milotype"
+msgstr "Spansk oversettelse ved @fitojb"
+
+#: data/com.usebottles.bottles.desktop.in:4
+msgid "Easily manage wineprefix"
+msgstr "Håndter wineprefiks enkelt"
+
+#: data/com.usebottles.bottles.desktop.in:13
+msgid "wine;windows;"
+msgstr "WINE;Windows;"
 
 #: data/com.usebottles.bottles.gschema.xml:6
 msgid "Flatpak migration"
@@ -175,7 +3387,7 @@ msgstr "Mørk drakt"
 
 #: data/com.usebottles.bottles.gschema.xml:12
 msgid "Force the use of dark theme."
-msgstr ""
+msgstr "Påtving bruken av mørkt tema."
 
 #: data/com.usebottles.bottles.gschema.xml:16
 msgid "Toggle update date in list"
@@ -187,64 +3399,82 @@ msgid "Toggle the update date in list of bottles."
 msgstr "Skru av/på oppdatering av dato i flaskeliste."
 
 #: data/com.usebottles.bottles.gschema.xml:21
+msgid "Steam apps listing"
+msgstr "Steam programliste"
+
+#: data/com.usebottles.bottles.gschema.xml:22
+msgid "Toggle steam apps listing."
+msgstr "Skru av/på Steam programliste."
+
+#: data/com.usebottles.bottles.gschema.xml:26
+msgid "Epic Games listing"
+msgstr "Epic Games-oppføring"
+
+#: data/com.usebottles.bottles.gschema.xml:27
+#, fuzzy
+msgid "Toggle epic games listing."
+msgstr "Skru av/på oppdatering av dato i liste"
+
+#: data/com.usebottles.bottles.gschema.xml:31
+msgid "Ubisoft Connect listing"
+msgstr ""
+
+#: data/com.usebottles.bottles.gschema.xml:32
+#, fuzzy
+msgid "Toggle ubisoft connect listing."
+msgstr "Skru av/på Steam programliste."
+
+#: data/com.usebottles.bottles.gschema.xml:36
 msgid "Window width"
 msgstr "Vindusbredde"
 
-#: data/com.usebottles.bottles.gschema.xml:22
+#: data/com.usebottles.bottles.gschema.xml:37
 #, fuzzy
 msgid "Change the window width."
 msgstr "Endre vindushøyden"
 
-#: data/com.usebottles.bottles.gschema.xml:26
+#: data/com.usebottles.bottles.gschema.xml:41
 msgid "Window height"
 msgstr "Vindushøyde"
 
-#: data/com.usebottles.bottles.gschema.xml:27
+#: data/com.usebottles.bottles.gschema.xml:42
 #, fuzzy
 msgid "Change the window height."
 msgstr "Endre vindushøyden"
 
-#: data/com.usebottles.bottles.gschema.xml:31 src/ui/preferences.ui:100
-msgid "Notifications"
-msgstr "Merknader"
-
-#: data/com.usebottles.bottles.gschema.xml:32
+#: data/com.usebottles.bottles.gschema.xml:47
 #, fuzzy
 msgid "Show notifications."
 msgstr "Aktiver varsler."
 
-#: data/com.usebottles.bottles.gschema.xml:36
+#: data/com.usebottles.bottles.gschema.xml:51
 msgid "Temp cleaning"
 msgstr "Rens av midlertidig sti"
 
-#: data/com.usebottles.bottles.gschema.xml:37
+#: data/com.usebottles.bottles.gschema.xml:52
 #, fuzzy
 msgid "Clean the temp path when booting the system."
 msgstr "Rens midlertidig sti ved oppstart."
 
-#: data/com.usebottles.bottles.gschema.xml:41
+#: data/com.usebottles.bottles.gschema.xml:56
 msgid "Release Candidate"
 msgstr "Utgivelseskandidat"
 
-#: data/com.usebottles.bottles.gschema.xml:42
+#: data/com.usebottles.bottles.gschema.xml:57
 #, fuzzy
 msgid "Toggle release candidate for runners."
 msgstr "Veksle utgivelseskandidat for springere"
 
-#: data/com.usebottles.bottles.gschema.xml:46
+#: data/com.usebottles.bottles.gschema.xml:61
 msgid "Startup view"
 msgstr "Oppstartsvisning"
 
-#: data/com.usebottles.bottles.gschema.xml:47
+#: data/com.usebottles.bottles.gschema.xml:62
 #, fuzzy
 msgid "Choose which view the application should be started in."
 msgstr "Velg hvilken visning som skal brukes ved programoppstart."
 
-#: data/com.usebottles.bottles.gschema.xml:51 src/ui/preferences.ui:412
-msgid "Experiments"
-msgstr "Eksperiementer"
-
-#: data/com.usebottles.bottles.gschema.xml:52
+#: data/com.usebottles.bottles.gschema.xml:67
 #, fuzzy
 msgid ""
 "Toggle experimental features such as versioning and installers. Release "
@@ -253,2355 +3483,437 @@ msgstr ""
 "Veksle eksperimentelle funksjoner som versjonering og "
 "installasjonskandidater. Utgivelseskandidat for springere."
 
-#: data/com.usebottles.bottles.gschema.xml:56
+#: data/com.usebottles.bottles.gschema.xml:71
 #, fuzzy
-msgid "Experiments:steam"
-msgstr "Eksperiementer"
+msgid "Steam Proton Support"
+msgstr "ProtonDB"
 
-#: data/com.usebottles.bottles.gschema.xml:57
+#: data/com.usebottles.bottles.gschema.xml:72
 #, fuzzy
-msgid "Toggle experimental Steam Proton prefixes support."
+msgid "Toggle Steam Proton prefixes support."
 msgstr "Skru av/på versjonseringsfunksjon"
 
-#: data/com.usebottles.bottles.gschema.xml:61
+#: data/com.usebottles.bottles.gschema.xml:76
+#, fuzzy
+msgid "Experiments:sandbox"
+msgstr "Eksperiementer"
+
+#: data/com.usebottles.bottles.gschema.xml:77
+#, fuzzy
+msgid "Toggle experimental Sandbox per bottle."
+msgstr "Skru av på funksjon for eksperimentelle installasjonskandidater"
+
+#: data/com.usebottles.bottles.gschema.xml:81
 #, fuzzy
 msgid "Experiments:library"
 msgstr "Eksperiementer"
 
-#: data/com.usebottles.bottles.gschema.xml:62
+#: data/com.usebottles.bottles.gschema.xml:82
 #, fuzzy
 msgid "Toggle experimental Library mode."
 msgstr "Skru av på funksjon for eksperimentelle installasjonskandidater"
 
-#: data/com.usebottles.bottles.gschema.xml:66
+#: data/com.usebottles.bottles.gschema.xml:86
 msgid "Automatically close Bottles"
 msgstr "Lukk Flasker automatisk"
 
-#: data/com.usebottles.bottles.gschema.xml:67
+#: data/com.usebottles.bottles.gschema.xml:87
 #, fuzzy
 msgid "Close Bottles after starting an executable from the file manager."
 msgstr "Lukk Flasker etter start av kjørbar fil fra filbehandler"
 
-#: src/ui/about.ui:10
-#, fuzzy
-msgid "© 2017-2022 - Bottles Developers"
-msgstr "© 2017-2021 - Flasker-utviklerne"
-
-#: src/ui/about.ui:11
-#, fuzzy
-msgid "Easily manage wineprefix using environments"
-msgstr "Håndter wineprefiks enkelt"
-
-#: src/ui/about.ui:137
-msgid "<a href=\"https://hosted.weblate.org/engage/bottles/\">Translate</a>"
-msgstr "<a href=\"https://hosted.weblate.org/engage/bottles/\">Oversett</a>"
-
-#: src/ui/about.ui:150
-msgid "<a href=\"https://usebottles.com/funding/\">Funding</a>"
-msgstr "<a href=\"https://usebottles.com/funding/\">Finansiering</a>"
-
-#: src/ui/about.ui:163
-msgid ""
-"<a href=\"https://github.com/bottlesdevs/Bottles/issues\">Bug report</a>"
-msgstr ""
-"<a href=\"https://github.com/bottlesdevs/Bottles/issues\">Feilrapport</a>"
-
-#: src/ui/about.ui:176
-msgid "<a href=\"https://usebottles.com/blog\">Blog</a>"
-msgstr "<a href=\"https://usebottles.com/blog\">Blogg</a>"
-
-#: src/ui/about.ui:189
-#, fuzzy
-msgid "<a href=\"https://twitter.com/usebottles\">Twitter</a>"
-msgstr "<a href=\"https://hosted.weblate.org/engage/bottles/\">Oversett</a>"
-
-#: src/ui/component-entry.ui:8
-#, fuzzy
-msgid "Component version"
-msgstr "Versjonering"
-
-#: src/ui/component-entry.ui:66 src/ui/importer-entry.ui:20
-#, fuzzy
-msgid "Browse files"
-msgstr "Utforsk C:"
-
-#: src/ui/component-entry.ui:92
-msgid ""
-"The installation failed. This may be due to a repository error, partial "
-"download or checksum mismatch.\n"
-"\n"
-"Press to try again."
-msgstr ""
-"Installasjonen mislyktes. Dette kan være en pakkebrønnsfeil, delvis "
-"nedlastning, eller sjekksumsuoverensstemmelse.\n"
-"\n"
-"Trykk for å prøve igjen."
-
-#: src/ui/component-entry.ui:119
-#, fuzzy
-msgid "Download & Install"
-msgstr "Last ned og installer denne DXVK-en"
-
-#: src/ui/component-entry.ui:147
-#, fuzzy
-msgid "0%"
-msgstr "0"
-
-#: src/ui/component-entry.ui:219 src/ui/program-entry.ui:187
-#, fuzzy
-msgid "Uninstall"
-msgstr "Avinstaller"
-
-#: src/ui/dependency-entry.ui:20 src/ui/installer-entry.ui:20
-#: src/ui/state-entry.ui:20
-#, fuzzy
-msgid "Show manifest"
-msgstr "Vis manifest"
-
-#: src/ui/dependency-entry.ui:33
-msgid "License"
-msgstr "Lisens"
-
-#: src/ui/dependency-entry.ui:45
-#, fuzzy
-msgid "Reinstall"
-msgstr "Avinstaller"
-
-#: src/ui/dependency-entry.ui:69 src/ui/installer-entry.ui:33
-#, fuzzy
-msgid "Bug report"
-msgstr "Feilrapport"
-
-#: src/ui/dependency-entry.ui:159
-msgid "Download & Install this dependency"
-msgstr "Last ned og installer denne avhengigheten"
-
-#: src/ui/dependency-entry.ui:185
-#, fuzzy
-msgid ""
-"An installation error occurred. Restart Bottles to read the Crash Report or "
-"run it via terminal to read the output."
-msgstr ""
-"Kunne ikke utføre installasjonen. Start Bottles på ny for å lese "
-"krasjrapporten eller for å kjøre det via terminalen for å lese utdataen."
-
-#: src/ui/details-bottle.ui:20
-msgid "Open with explorer"
-msgstr ""
-
-#: src/ui/details-bottle.ui:46
-msgid "Troubleshooting"
-msgstr ""
-
-#: src/ui/details-bottle.ui:70
-#, fuzzy
-msgid "Duplicate bottle"
-msgstr "Dupliser flaske"
-
-#: src/ui/details-bottle.ui:83 src/ui/importer.ui:148
-msgid "This is the complete archive of your bottle, including personal files."
-msgstr "Dette er flaskens komplette arkiv, inkludert personlige filer."
-
-#: src/ui/details-bottle.ui:84
-#, fuzzy
-msgid "Full backup"
-msgstr "Fullstendig arkiv"
-
-#: src/ui/details-bottle.ui:97 src/ui/importer.ui:134
-msgid ""
-"This is just the bottle configuration, it's perfect if you want to create a "
-"new one but without personal files."
-msgstr ""
-"Dette er kun flaskeoppsettet, det er perfekt hvis du ønsker å opprette en "
-"ny, uten personlige filer."
-
-#: src/ui/details-bottle.ui:98
-#, fuzzy
-msgid "Export configuration"
-msgstr "Oppsett"
-
-#: src/ui/details-bottle.ui:122
-#, fuzzy
-msgid "Delete bottle"
-msgstr "Opprett flaske"
-
-#: src/ui/details-bottle.ui:148
-#, fuzzy
-msgid "Kill all processes"
-msgstr "Drep alle prosesser"
-
-#: src/ui/details-bottle.ui:161
-msgid "Simulate a Windows system shutdown."
-msgstr ""
-
-#: src/ui/details-bottle.ui:162
-#, fuzzy
-msgid "Shutdown"
-msgstr "Slå av"
-
-#: src/ui/details-bottle.ui:175
-msgid "Simulate a Windows system reboot."
-msgstr ""
-
-#: src/ui/details-bottle.ui:176
-#, fuzzy
-msgid "Reboot"
-msgstr "Omstart"
-
-#: src/ui/details-bottle.ui:281
-msgid "Run with arguments"
-msgstr "Kjør med argumenter"
-
-#: src/ui/details-bottle.ui:291
-msgid "Move inside the sandbox"
-msgstr ""
-
-#: src/ui/details-bottle.ui:305 src/ui/program-entry.ui:24
-msgid "Launch with terminal"
-msgstr ""
-
-#: src/ui/details-bottle.ui:358
-msgid "Layers"
-msgstr ""
-
-#: src/ui/details-bottle.ui:402
-msgid "Run executable"
-msgstr "Start kjørbar fil"
-
-#: src/ui/details-bottle.ui:439
-#, fuzzy
-msgid "My bottle"
-msgstr "Ny flaske"
-
-#: src/ui/details-bottle.ui:461
-msgid "Win64"
-msgstr ""
-
-#: src/ui/details-bottle.ui:482 src/ui/new.ui:129
-msgid "Environment"
-msgstr "Miljø"
-
-#: src/ui/details-bottle.ui:499
-#, fuzzy
-msgid "Vaniglia-6.21-x86_64"
-msgstr "lutris-6.0-rc1-x86_64"
-
-#: src/ui/details-bottle.ui:518 src/ui/list-entry.ui:35
-msgid "Versioning enabled for this bottle"
-msgstr "Versjonering påskrudd for denne flasken"
-
-#: src/ui/details-bottle.ui:526 src/ui/list-entry.ui:42
-msgid "Versioning is active in this bottle."
-msgstr "Versjonering er påslått for denne flasken."
-
-#: src/ui/details-bottle.ui:549 src/ui/list-entry.ui:61
-msgid "0"
-msgstr "0"
-
-#: src/ui/details-bottle.ui:597
-msgid "Moving inside the sandbox…"
-msgstr ""
-
-#: src/ui/details-bottle.ui:614 src/views/details.py:122
-msgid "Programs"
-msgstr "Programmer"
-
-#: src/ui/details-bottle.ui:630
-msgid "Other"
-msgstr ""
-
-#: src/ui/details-bottle.ui:636
-#, fuzzy
-msgid "Utilities"
-msgstr "Verktøy"
-
-#: src/ui/details-bottle.ui:641
-msgid "Browse C:"
-msgstr "Utforsk C:"
-
-#: src/ui/details-bottle.ui:643
-msgid "Browse internal files."
-msgstr "Utforsk interne filer."
-
-#: src/ui/details-bottle.ui:722
-#, fuzzy
-msgid "Command line"
-msgstr "Kommandolinje"
-
-#: src/ui/details-bottle.ui:724
-msgid "Run commands inside the Bottle."
-msgstr "Kjør kommandoer i denne flasken"
-
-#: src/ui/details-bottle.ui:764
-#, fuzzy
-msgid "Registry editor"
-msgstr "Register-redigerer"
-
-#: src/ui/details-bottle.ui:766
-msgid "Edit the internal registry."
-msgstr "Rediger det interne registeret."
-
-#: src/ui/details-bottle.ui:806
-msgid "Debug"
-msgstr "Avlusing"
-
-#: src/ui/details-bottle.ui:808
-#, fuzzy
-msgid "Debug wine processes."
-msgstr "Avlus Wine-prosesser."
-
-#: src/ui/details-bottle.ui:845
-#, fuzzy
-msgid "Read documentation"
-msgstr "Dokumentasjon"
-
-#: src/ui/details-bottle.ui:873 src/views/details.py:134
-msgid "Task manager"
-msgstr "Oppgavebehandler"
-
-#: src/ui/details-bottle.ui:875
-#, fuzzy
-msgid "Manage processes with the Wine task manager."
-msgstr "Håndter prosessene som kjører i denne flasken."
-
-#: src/ui/details-bottle.ui:915
-msgid "Wine config"
-msgstr "Wine-oppsett"
-
-#: src/ui/details-bottle.ui:917
-msgid "Adjust internal settings."
-msgstr "Juster interne innstillinger."
-
-#: src/ui/details-bottle.ui:957
-msgid "Uninstaller"
-msgstr "Avinstaller"
-
-#: src/ui/details-bottle.ui:959
-#, fuzzy
-msgid "Uninstall programs using wine uninstaller."
-msgstr "Avinstaller programvare med Wine-avinstallereren"
-
-#: src/ui/details-bottle.ui:999
-#, fuzzy
-msgid "Control panel"
-msgstr "Kontrollpanel"
-
-#: src/ui/details-bottle.ui:1001
-#, fuzzy
-msgid "Access the internal wine control panel."
-msgstr "Tilgang til Wine-kontrollpanelet."
-
-#: src/ui/details-bottle.ui:1071
-msgid "Use the Installers section or the \"Run executable\" button above."
-msgstr ""
-
-#: src/ui/details-dependencies.ui:50
-#, fuzzy
-msgid "Test mode enabled: only dependencies from testing repository are shown."
-msgstr "Testmodus påslått: Kun avhengigheter fra testpakkebrønner vises."
-
-#: src/ui/details-dependencies.ui:90
-#, fuzzy
-msgid "Microsoft .NET Framework 4 .."
-msgstr "Microsoft .NET-rammeverk 4 …"
-
-#: src/ui/details-dependencies.ui:118
-#, fuzzy
-msgid ""
-"While the files on this page have been verified may be under proprietary "
-"license."
-msgstr ""
-"Selv om filene på denne siden har blitt bekreftet kan de være under ufri "
-"lisens."
-
-#: src/ui/details-dependencies.ui:134
-msgid ""
-"Dependencies are software, libraries and codecs that improve the "
-"compatibility of Windows software. Install from here to meet your program "
-"requirements."
-msgstr ""
-
-#: src/ui/details-dependencies.ui:193
-#, fuzzy
-msgid "Report a problem or a missing dependency."
-msgstr "Funnet en knekt avhengighet?"
-
-#: src/ui/details-dependencies.ui:194
-#, fuzzy
-msgid "Report missing dependency"
-msgstr "Funnet en knekt avhengighet?"
-
-#: src/ui/details-dependencies.ui:207
-#, fuzzy
-msgid "Read documentation about dependencies\t"
-msgstr "Dokumentasjon"
-
-#: src/ui/details-dependencies.ui:208 src/ui/details-installers.ui:133
-#: src/ui/details-programs.ui:105 src/ui/details-versioning.ui:93
-#: src/ui/window.ui:82
-msgid "Documentation"
-msgstr "Dokumentasjon"
-
-#: src/ui/details-dependencies.ui:229
-#, fuzzy
-msgid "Install selected"
-msgstr "Installasjonskandidater"
-
-#: src/ui/details-dependencies.ui:232
-msgid "We strongly advise against installing multiple dependencies at once."
-msgstr ""
-
-#: src/ui/details-dependencies.ui:251
-#, fuzzy
-msgid "Select dependencies"
-msgstr "Avhengigheter"
-
-#: src/ui/details-dependencies.ui:305 src/ui/details-installers.ui:176
-msgid "Toggle search"
-msgstr ""
-
-#: src/ui/details-installers.ui:32
-msgid "Epic Games Store .."
-msgstr ""
-
-#: src/ui/details-installers.ui:60
-msgid ""
-"Use this section to install programs curated by our community, without "
-"having to proceed manually. Consider the <a href=\"https://docs.usebottles."
-"com/bottles/installers#compatibility-grades\">compatibility grade</a> when "
-"choosing."
-msgstr ""
-
-#: src/ui/details-installers.ui:92
-#, fuzzy
-msgid ""
-"While the files on this page have been verified, they may be under a "
-"proprietary license."
-msgstr ""
-"Selv om filene på denne siden har blitt bekreftet kan de være under ufri "
-"lisens."
-
-#: src/ui/details-installers.ui:132
-#, fuzzy
-msgid "Read documentation about installers\t"
-msgstr "Dokumentasjon"
-
-#: src/ui/details-preferences.ui:20 src/ui/dialog-launch-options.ui:20
-#: src/ui/preferences.ui:20
-msgid "Reset default"
-msgstr ""
-
-#: src/ui/details-preferences.ui:63 src/window.py:235
-msgid "Bottle details"
-msgstr "Flaskedetaljer"
-
-#: src/ui/details-preferences.ui:68 src/ui/new.ui:97 src/ui/new.ui:108
-msgid "Name"
-msgstr "Navn"
-
-#: src/ui/details-preferences.ui:81
-msgid "My beautiful bottle"
-msgstr "Min vakre flaske"
-
-#: src/ui/details-preferences.ui:94
-msgid "Rename bottle"
-msgstr "Gi flasken nytt navn"
-
-#: src/ui/details-preferences.ui:133
-msgid "Graphics"
-msgstr "Grafikk"
-
-#: src/ui/details-preferences.ui:138
-msgid "Use DXVK"
-msgstr "Bruk DXVK"
-
-#: src/ui/details-preferences.ui:139
-#, fuzzy
-msgid "Improves performance of DirectX 11 games and 3D applications."
-msgstr ""
-"Forbedrer ytelse for DirectX 11-spill og 3D-programmer.\n"
-"Skru av hvis du opplever grafiske forstyrrelser."
-
-#: src/ui/details-preferences.ui:148 src/ui/details-preferences.ui:782
-#, fuzzy
-msgid "Updating DXVK, please wait…"
-msgstr "Oppretter flaske …"
-
-#: src/ui/details-preferences.ui:181
-msgid "Use VKD3D"
-msgstr "Bruk VKD3D"
-
-#: src/ui/details-preferences.ui:182
-#, fuzzy
-msgid "Improves performance of DirectX 12 games and 3D applications."
-msgstr ""
-"Forbedrer ytelse for DirectX 12-spill og 3D-programmer.\n"
-"Skru av hvis du opplever grafiske forstyrrelser."
-
-#: src/ui/details-preferences.ui:191 src/ui/details-preferences.ui:867
-#, fuzzy
-msgid "Updating VKD3D, please wait…"
-msgstr "Oppretter flaske …"
-
-#: src/ui/details-preferences.ui:224
-msgid "Enable DLSS (DXVK-NVAPI)"
-msgstr "Skru på DLSS (DXVK-NVAPI)"
-
-#: src/ui/details-preferences.ui:225
-msgid "Provide DLSS support if available and Nvidia's NVAPI."
-msgstr ""
-
-#: src/ui/details-preferences.ui:234 src/ui/details-preferences.ui:346
-#: src/ui/details-preferences.ui:952 src/ui/details-preferences.ui:1035
-#, fuzzy
-msgid "Updating DXVK-NVAPI, please wait…"
-msgstr "Installerer DXVK…"
-
-#: src/ui/details-preferences.ui:269
-msgid "Enable FSR"
-msgstr "Skru på FSR"
-
-#: src/ui/details-preferences.ui:270
-msgid ""
-"FSR uses cutting-edge upscaling technologies to help boost your framerates."
-msgstr ""
-
-#: src/ui/details-preferences.ui:284
-msgid "Ultra Quality"
-msgstr "Ultrakvalitet"
-
-#: src/ui/details-preferences.ui:285
-msgid "Quality"
-msgstr "Kvalitet"
-
-#: src/ui/details-preferences.ui:286
-msgid "Balanced"
-msgstr "Balansert"
-
-#: src/ui/details-preferences.ui:287
-#, fuzzy
-msgid "Performance"
-msgstr "Utseende"
-
-#: src/ui/details-preferences.ui:336
-msgid "Enable LatencyFleX"
-msgstr ""
-
-#: src/ui/details-preferences.ui:337
-msgid "An alternative to NVIDIA Reflex. Can be detected by some Anticheats."
-msgstr ""
-
-#: src/ui/details-preferences.ui:380
-msgid "Discrete GPU"
-msgstr "Egen GPU"
-
-#: src/ui/details-preferences.ui:381
-msgid "Improves performance at the cost of increased power usage."
-msgstr "Fobredrer ytelsen på bekostning av strømforbruk."
-
-#: src/ui/details-preferences.ui:407
-msgid "Use vkBasalt"
-msgstr ""
-
-#: src/ui/details-preferences.ui:408
-msgid ""
-"vkBasalt is a Vulkan post processing layer to enhance the visual graphics of "
-"games."
-msgstr ""
-
-#: src/ui/details-preferences.ui:435
-#, fuzzy
-msgid "Display settings"
-msgstr "Juster interne innstillinger."
-
-#: src/ui/details-preferences.ui:440
-#, fuzzy
-msgid "Use a virtual desktop"
-msgstr "Virtuelt skrivebord"
-
-#: src/ui/details-preferences.ui:441
-#, fuzzy
-msgid "Use the Wine virtual desktop."
-msgstr "Bruk virtuelt Wine-skrivebord."
-
-#: src/ui/details-preferences.ui:516
-msgid "Mouse capture fullscreen"
-msgstr ""
-
-#: src/ui/details-preferences.ui:517
-msgid "Let the program capture mouse input when fullscreen."
-msgstr ""
-
-#: src/ui/details-preferences.ui:548
-msgid "Take focus"
-msgstr ""
-
-#: src/ui/details-preferences.ui:549
-msgid "Activate it if the program does not retake focus on switch."
-msgstr ""
-
-#: src/ui/details-preferences.ui:580
-#, fuzzy
-msgid "Screen scaling"
-msgstr "Skru på versjonering"
-
-#: src/ui/details-preferences.ui:581
-#, fuzzy
-msgid "Set custom DPI."
-msgstr "Bruk spillmodus"
-
-#: src/ui/details-preferences.ui:595
-msgid "96"
-msgstr ""
-
-#: src/ui/details-preferences.ui:596
-msgid "120"
-msgstr ""
-
-#: src/ui/details-preferences.ui:597
-msgid "144"
-msgstr ""
-
-#: src/ui/details-preferences.ui:598
-msgid "168"
-msgstr ""
-
-#: src/ui/details-preferences.ui:599
-msgid "192"
-msgstr ""
-
-#: src/ui/details-preferences.ui:600
-msgid "216"
-msgstr ""
-
-#: src/ui/details-preferences.ui:601
-msgid "240"
-msgstr ""
-
-#: src/ui/details-preferences.ui:602
-msgid "288"
-msgstr ""
-
-#: src/ui/details-preferences.ui:603
-msgid "336"
-msgstr ""
-
-#: src/ui/details-preferences.ui:604
-msgid "384"
-msgstr ""
-
-#: src/ui/details-preferences.ui:605
-msgid "432"
-msgstr ""
-
-#: src/ui/details-preferences.ui:606
-msgid "480"
-msgstr ""
-
-#: src/ui/details-preferences.ui:627
-msgid "Renderer"
-msgstr ""
-
-#: src/ui/details-preferences.ui:628
-msgid "Select what backend to use for wined3d."
-msgstr ""
-
-#: src/ui/details-preferences.ui:642
-msgid "gl (default)"
-msgstr ""
-
-#: src/ui/details-preferences.ui:643
-#, fuzzy
-msgid "gdi"
-msgstr "Regedit"
-
-#: src/ui/details-preferences.ui:644
-msgid "vulkan"
-msgstr ""
-
-#: src/ui/details-preferences.ui:677 src/ui/details-preferences.ui:1117
-#, fuzzy
-msgid "System"
-msgstr "Systemkontroll"
-
-#: src/ui/details-preferences.ui:683
-#, fuzzy
-msgid "Components version"
-msgstr "Versjonering"
-
-#: src/ui/details-preferences.ui:688 src/ui/new.ui:222
-msgid "Runner"
-msgstr "Springer"
-
-#: src/ui/details-preferences.ui:699
-msgid "Updating Runner and components, please wait…"
-msgstr ""
-
-#: src/ui/details-preferences.ui:742 src/ui/new.ui:262
-msgid "Manage runners"
-msgstr "Håndter springere"
-
-#: src/ui/details-preferences.ui:771
-#, fuzzy
-msgid "DXVK version"
-msgstr "Versjonering"
-
-#: src/ui/details-preferences.ui:827 src/ui/details-preferences.ui:995
-#: src/ui/details-preferences.ui:1078
-msgid "Manage DXVK versions"
-msgstr "Håndter DXVK-versjoner"
-
-#: src/ui/details-preferences.ui:856
-#, fuzzy
-msgid "VKD3D version"
-msgstr "VKD3D-versjon"
-
-#: src/ui/details-preferences.ui:912
-msgid "Manage VKD3D versions"
-msgstr "Håndter VKD3D-versjoner"
-
-#: src/ui/details-preferences.ui:941
-#, fuzzy
-msgid "DXVK NVAPI version"
-msgstr "DXVK-versjon"
-
-#: src/ui/details-preferences.ui:1024
-#, fuzzy
-msgid "LatencyFleX version"
-msgstr "Håndter DXVK-versjoner"
-
-#: src/ui/details-preferences.ui:1109
-#, fuzzy
-msgid ""
-"Enable synchronization to increase performance of multi-core processors."
-msgstr ""
-"Skru på futex-basert synkronisering for å øke ytelsen med "
-"multikjerneprosessorer."
-
-#: src/ui/details-preferences.ui:1110
-msgid "Synchronization"
-msgstr "Synkronisering"
-
-#: src/ui/details-preferences.ui:1121 src/ui/details-preferences.ui:1136
-#: src/ui/details-preferences.ui:1151 src/ui/details-preferences.ui:1166
-#: src/ui/dialog-gamescope.ui:345 src/ui/dialog-gamescope.ui:361
-msgid "Will restart the wineserver."
-msgstr ""
-
-#: src/ui/details-preferences.ui:1132
-#, fuzzy
-msgid "Esync"
-msgstr "Esync"
-
-#: src/ui/details-preferences.ui:1147
-#, fuzzy
-msgid "Fsync"
-msgstr "Fsync"
-
-#: src/ui/details-preferences.ui:1162
-msgid "Futex2"
-msgstr ""
-
-#: src/ui/details-preferences.ui:1186
-#, fuzzy
-msgid "Windows version"
-msgstr "Versjonering"
-
-#: src/ui/details-preferences.ui:1196
-#, fuzzy
-msgid "Updating Windows version, please wait…"
-msgstr "Versjonering"
-
-#: src/ui/details-preferences.ui:1237
-#, fuzzy
-msgid "Use Bottles runtime"
-msgstr "Flaskenavn"
-
-#: src/ui/details-preferences.ui:1238
-msgid ""
-"Provides a bundle of extra libraries for more compatibility,\n"
-"disable if you run into issues."
-msgstr ""
-
-#: src/ui/details-preferences.ui:1264
-#, fuzzy
-msgid "Use Steam runtime"
-msgstr "Flaskenavn"
-
-#: src/ui/details-preferences.ui:1265
-msgid "The same as the Bottles one but provided by Steam."
-msgstr ""
-
-#: src/ui/details-preferences.ui:1291
-#, fuzzy
-msgid "Use GameMode"
-msgstr "Bruk spillmodus"
-
-#: src/ui/details-preferences.ui:1292
-#, fuzzy
-msgid "Optimise gaming performance on demand."
-msgstr "Optimaliser spillytelse ved behov"
-
-#: src/ui/details-preferences.ui:1318
-#, fuzzy
-msgid "Use Gamescope"
-msgstr "Bruk spillmodus"
-
-#: src/ui/details-preferences.ui:1319
-msgid "Use the Gamescope micro-compositor."
-msgstr ""
-
-#: src/ui/details-preferences.ui:1354
-#, fuzzy
-msgid "Manage Gamescope settings"
-msgstr "Håndter undersystemsinnstillingene i Wine"
-
-#: src/ui/details-preferences.ui:1383
-msgid "Working directory"
-msgstr "Arbeidsmappe"
-
-#: src/ui/details-preferences.ui:1384 src/views/bottle_preferences.py:268
-#: src/views/bottle_preferences.py:376
-#, fuzzy
-msgid "Default to the bottle path."
-msgstr "Pek på flaskestien"
-
-#: src/ui/details-preferences.ui:1395 src/ui/dialog-launch-options.ui:211
-#: src/ui/drive-entry.ui:61 src/ui/new.ui:348 src/ui/new.ui:396
-#: src/ui/preferences.ui:203
-#, fuzzy
-msgid "Choose a directory"
-msgstr "Velg en mappe"
-
-#: src/ui/details-preferences.ui:1465 src/ui/dialog-dll-overrides.ui:51
-#, fuzzy
-msgid "DLL overrides"
-msgstr "DLL-overstyringer"
-
-#: src/ui/details-preferences.ui:1505
-msgid "Environment variables"
-msgstr "Miljøvariabler"
-
-#: src/ui/details-preferences.ui:1543
-#, fuzzy
-msgid "Manage drives"
-msgstr "Håndter springere"
-
-#: src/ui/details-preferences.ui:1591
-msgid "Audio"
-msgstr "Lyd"
-
-#: src/ui/details-preferences.ui:1596
-#, fuzzy
-msgid "Reduce PulseAudio latency"
-msgstr "Reduser PulseAudio-forsinkelse"
-
-#: src/ui/details-preferences.ui:1597
-#, fuzzy
-msgid "Set PulseAudio latency to 60 milliseconds to increase sound quality."
-msgstr ""
-"Sett PulseAudio-forsinkelse til 60 millisekunder for bedret lydkvalitet"
-
-#: src/ui/details-preferences.ui:1633
-#, fuzzy
-msgid "Developers & Debug"
-msgstr "Utvikling og avlusing"
-
-#: src/ui/details-preferences.ui:1638
-#, fuzzy
-msgid "DXVK HUD"
-msgstr "DXVK-HUD"
-
-#: src/ui/details-preferences.ui:1639
-msgid "Toggle DXVK overlay showing FPS and other details in D3D applications."
-msgstr ""
-"Skru på DXVX-overlegg som viser BPS og andre detaljer i D3D-programmer."
-
-#: src/ui/details-preferences.ui:1665
-msgid "MangoHud"
-msgstr ""
-
-#: src/ui/details-preferences.ui:1666
-msgid ""
-"A Vulkan and OpenGL overlay for monitoring FPS, temperatures, CPU/GPU load "
-"and more."
-msgstr ""
-
-#: src/ui/details-preferences.ui:1692
-msgid "OBS Vulkan Capture"
-msgstr ""
-
-#: src/ui/details-preferences.ui:1693
-msgid "Toggle OBS game capture for all next launches."
-msgstr ""
-
-#: src/ui/details-preferences.ui:1719
-#, fuzzy
-msgid "Enable wine fixme logs"
-msgstr "Skru på fixme-loggføring fra Wine"
-
-#: src/ui/details-preferences.ui:1720
-msgid "Log code paths that are unimplemented in Wine."
-msgstr "Loggfør kodestier som ikke er implementert i Wine."
-
-#: src/ui/details-programs.ui:28
-#, fuzzy
-msgid "No programs found"
-msgstr "Fant ingen springere"
-
-#: src/ui/details-programs.ui:29
-msgid ""
-"Install programs from the installers section or by running the installer "
-"executable, you can also manually add executables with the \"+\" button"
-msgstr ""
-
-#: src/ui/details-programs.ui:80
-msgid "Show/hide hidden programs"
-msgstr ""
-
-#: src/ui/details-programs.ui:104
-#, fuzzy
-msgid "Read documentation about programs\t"
-msgstr "Dokumentasjon"
-
-#: src/ui/details-programs.ui:148
-#, fuzzy
-msgid "Search for installed programs"
-msgstr "Se etter installerte programmer."
-
-#: src/ui/details-programs.ui:173
-msgid "Add a custom executable path"
-msgstr "Legg til en egendefinert kjørbar sti"
-
-#: src/ui/details-taskmanager.ui:32
-msgid "Refresh"
-msgstr "Gjenoppfrisk"
-
-#: src/ui/details-taskmanager.ui:59
-msgid "Stop process"
-msgstr ""
-
-#: src/ui/details-versioning.ui:60
-#, fuzzy
-msgid "No states found"
-msgstr "Fant ingen springere"
-
-#: src/ui/details-versioning.ui:61
-msgid "Create first state to start using versioning."
-msgstr ""
-
-#: src/ui/details-versioning.ui:92
-#, fuzzy
-msgid "Read documentation about versioning\t"
-msgstr "Dokumentasjon"
-
-#: src/ui/details-versioning.ui:120
-msgid "Type a really short comment:"
-msgstr "Skriv en veldig kort kommentar:"
-
-#: src/ui/details-versioning.ui:137
-msgid "A really short comment"
-msgstr "En veldig kort kommentar"
-
-#: src/ui/details-versioning.ui:151
-msgid "Save the bottle state."
-msgstr "Lagre flasketilstand."
-
-#: src/ui/details-versioning.ui:195
-msgid "Create new state"
-msgstr "Opprett ny tilstand"
-
-#: src/ui/dialog-crash-report.ui:24
-#, fuzzy
-msgid "Bottles Crash Report"
-msgstr "Flaskesikkerhetskopi og import"
-
-#: src/ui/dialog-crash-report.ui:27 src/ui/dialog-duplicate.ui:27
-#: src/ui/dialog-environment-variables.ui:27 src/ui/dialog-launch-options.ui:62
-#: src/ui/dialog-rename.ui:27 src/ui/dialog-run-args.ui:27 src/ui/dialog.ui:23
-#: src/ui/new.ui:27 src/backend/managers/installer.py:134
-#: src/dialogs/drives.py:63 src/dialogs/launchoptions.py:96
-#: src/views/bottle_details.py:242 src/views/bottle_details.py:317
-#: src/views/bottle_preferences.py:247 src/views/bottle_programs.py:76
-#: src/views/list.py:131
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: src/ui/dialog-crash-report.ui:35
-#, fuzzy
-msgid "Send report"
-msgstr "Feilrapport"
-
-#: src/ui/dialog-crash-report.ui:75
-msgid ""
-"Bottles crashed last time. Please fill out a report attaching the following "
-"traceback to help us identify the problem preventing it from happening again."
-msgstr ""
-
-#: src/ui/dialog-crash-report.ui:138
-msgid ""
-"We found one or more similar (or identical) reports. Please make sure to "
-"check carefully that it has not already been reported before submitting a "
-"new one. Each report requires effort on the part of the developers to "
-"diagnose, please respect their work and make sure you don't post duplicates."
-msgstr ""
-
-#: src/ui/dialog-crash-report.ui:183
-msgid "I still want to report."
-msgstr ""
-
-#: src/ui/dialog-crash-report.ui:195 src/ui/dialog-launch-options.ui:295
-#, fuzzy
-msgid "Advanced options"
-msgstr "Avansert"
-
-#: src/ui/dialog-dll-overrides.ui:25
-#, fuzzy
-msgid "DLL Overrides"
-msgstr "DLL-overstyringer"
-
-#: src/ui/dialog-dll-overrides.ui:50
-#, fuzzy
-msgid ""
-"Dynamic Link Libraries can be specified to be builtin (provided by Wine) or "
-"native (provided by the program)."
-msgstr ""
-"Dynamisk lenkede bibliotek kan angis for innebygging (tilbudt av Wine) eller "
-"systemspesifikt (tilbudt av programmet)"
-
-#: src/ui/dialog-dll-overrides.ui:56
-msgid "New override"
-msgstr "Ny overstyring"
-
-#: src/ui/dialog-dll-overrides.ui:67
-msgid "e.g. ucrtbase"
-msgstr "f.eks. ucrtbase"
-
-#: src/ui/dialog-dll-overrides.ui:124
-msgid "Existing overrides"
-msgstr "Eksisterende overstyringer"
-
-#: src/ui/dialog-drives.ui:24
-msgid "Drives"
-msgstr ""
-
-#: src/ui/dialog-drives.ui:49
-msgid ""
-"These are paths from your host system that are mapped and recognized as "
-"devices by the runner (e.g. C: D:..)."
-msgstr ""
-
-#: src/ui/dialog-drives.ui:54
-msgid "Letter"
-msgstr ""
-
-#: src/ui/dialog-drives.ui:134
-#, fuzzy
-msgid "Existing drives"
-msgstr "Eksisterende overstyringer"
-
-#: src/ui/dialog-duplicate.ui:24 src/ui/dialog-duplicate.ui:35
-#, fuzzy
-msgid "Duplicate"
-msgstr "Dupliser flaske"
-
-#: src/ui/dialog-duplicate.ui:51 src/ui/new.ui:51 src/ui/onboard.ui:55
-msgid "Close"
-msgstr "Lukk"
-
-#: src/ui/dialog-duplicate.ui:94
-#, fuzzy
-msgid "Type a name for the new bottle:"
-msgstr "Skriv et navn på flasken din"
-
-#: src/ui/dialog-duplicate.ui:106 src/ui/dialog-run-args.ui:86
-#, fuzzy
-msgid "e.g.: -example1 -example2 -example3=hello"
-msgstr "f.eks: -eksempel1 -eksempel2 -eksempel3=hallo"
-
-#: src/ui/dialog-duplicate.ui:108
-#, fuzzy
-msgid "e.g: MyDuplicatedBottle"
-msgstr "Dupliser flaske"
-
-#: src/ui/dialog-duplicate.ui:129
-#, fuzzy
-msgid "page_name"
-msgstr "Springer"
-
-#: src/ui/dialog-duplicate.ui:146
-#, fuzzy
-msgid "Duplicating…"
-msgstr "Laster ned …"
-
-#: src/ui/dialog-duplicate.ui:165 src/ui/new.ui:494
-msgid "Take a break, it may take a while"
-msgstr "Ta en pause. Dette kan ta sin tid."
-
-#: src/ui/dialog-duplicate.ui:194
-msgid "page_duplicating"
-msgstr ""
-
-#: src/ui/dialog-duplicate.ui:203
-#, fuzzy
-msgid "Bottle duplicated"
-msgstr "Flasker startet."
-
-#: src/ui/dialog-duplicate.ui:210
-msgid "page_duplicated"
-msgstr ""
-
-#: src/ui/dialog-env-vars.ui:24 src/ui/dialog-environment-variables.ui:24
-#, fuzzy
-msgid "Environment Variables"
-msgstr "Miljøvariabler"
-
-#: src/ui/dialog-env-vars.ui:49
-msgid ""
-"Environment variables are dynamic-named value that can affect the way "
-"running processes will behave on your bottle."
-msgstr ""
-
-#: src/ui/dialog-env-vars.ui:54
-#, fuzzy
-msgid "New variable"
-msgstr "Ny overstyring"
-
-#: src/ui/dialog-env-vars.ui:65
-msgid "e.g. MY_VAR"
-msgstr ""
-
-#: src/ui/dialog-env-vars.ui:123
-#, fuzzy
-msgid "Existing variables"
-msgstr "Eksisterende overstyringer"
-
-#: src/ui/dialog-environment-variables.ui:35 src/ui/dialog-gamescope.ui:28
-#: src/ui/dialog-launch-options.ui:70 src/ui/dialog-rename.ui:35
-msgid "Save"
-msgstr "Lagre"
-
-#: src/ui/dialog-environment-variables.ui:74
-msgid ""
-"Here you can change the environment variables for the commands that are "
-"executed."
-msgstr "Her kan du legge til miljøvariabler for kommandoene som kjøres."
-
-#: src/ui/dialog-environment-variables.ui:86
-#, fuzzy
-msgid "e.g.: VAR1=value VAR2=value"
-msgstr "f.eks: VAR1=verdi VAR2=verdi .."
-
-#: src/ui/dialog-environment-variables.ui:89
-msgid "e.g: VAR1=value VAR2=value .."
-msgstr "f.eks: VAR1=verdi VAR2=verdi .."
-
-#: src/ui/dialog-gamescope.ui:24
-#, fuzzy
-msgid "Gamescope Settings"
-msgstr "Håndter undersystemsinnstillingene i Wine"
-
-#: src/ui/dialog-gamescope.ui:63
-msgid ""
-"Configure how Gamescope should manage the window for the games you will run."
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:79
-#, fuzzy
-msgid "Game resolution"
-msgstr "Oppløsning for virtelt skrivebord"
-
-#: src/ui/dialog-gamescope.ui:84 src/ui/dialog-gamescope.ui:162
-msgid "Width"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:95 src/ui/dialog-gamescope.ui:173
-msgid "e.g. 1280"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:115 src/ui/dialog-gamescope.ui:193
-msgid "Height"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:126 src/ui/dialog-gamescope.ui:204
-msgid "e.g. 720"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:157
-#, fuzzy
-msgid "Gamescope resolution"
-msgstr "Oppløsning for virtelt skrivebord"
-
-#: src/ui/dialog-gamescope.ui:235
-#, fuzzy
-msgid "Extra settings"
-msgstr "Juster interne innstillinger."
-
-#: src/ui/dialog-gamescope.ui:240
-msgid "Frame rate limit"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:251
-msgid "e.g. 60"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:271
-msgid "Frame rate limit (when no focus)"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:282
-msgid "e.g. 30"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:302
-#, fuzzy
-msgid "Use integer scaling"
-msgstr "Skru på versjonering"
-
-#: src/ui/dialog-gamescope.ui:329
-#, fuzzy
-msgid "Window type"
-msgstr "Vindusbredde"
-
-#: src/ui/dialog-gamescope.ui:341
-msgid "Borderless"
-msgstr ""
-
-#: src/ui/dialog-gamescope.ui:357
-msgid "Fullscreen"
-msgstr ""
-
-#: src/ui/dialog-launch-options.ui:59
-#, fuzzy
-msgid "Launch Options"
-msgstr "Endre oppstartsvalg"
-
-#: src/ui/dialog-launch-options.ui:109
-#, fuzzy
-msgid "These arguments are passed on program launch:"
-msgstr "Disse argumentene sendes ved programstart:"
-
-#: src/ui/dialog-launch-options.ui:121 src/ui/dialog-launch-options.ui:124
-#: src/ui/dialog-rename.ui:86
-#, fuzzy
-msgid "e.g.: VAR=value %command% -example1 -example2 -example3=hello"
-msgstr "f.eks: -eksempel1 -eksempel2 -eksempel3=hallo"
-
-#: src/ui/dialog-launch-options.ui:163
-msgid ""
-"You are using Bottles Flatpak, remember to give it permissions via <a href="
-"\"https://docs.usebottles.com/flatpak/expose-directories\">Flatseal</a> if "
-"the script path is outside the sandbox."
-msgstr ""
-
-#: src/ui/dialog-launch-options.ui:199
-msgid "Post-run script"
-msgstr ""
-
-#: src/ui/dialog-launch-options.ui:200 src/dialogs/launchoptions.py:108
-msgid "Choose a script which should be executed after run."
-msgstr ""
-
-#: src/ui/dialog-rename.ui:24 src/ui/program-entry.ui:114
-#, fuzzy
-msgid "Rename"
-msgstr "Springer"
-
-#: src/ui/dialog-rename.ui:74
-msgid "Type the new name:"
-msgstr ""
-
-#: src/ui/dialog-rename.ui:88
-#, fuzzy
-msgid "Type here.."
-msgstr "Skriv her …"
-
-#: src/ui/dialog-run-args.ui:24
-#, fuzzy
-msgid "Run With Arguments"
-msgstr "Kjør med argumenter"
-
-#: src/ui/dialog-run-args.ui:35 src/dialogs/launchoptions.py:95
-#: src/views/bottle_details.py:241 src/views/list.py:130
-#, fuzzy
-msgid "Run"
-msgstr "Springer"
-
-#: src/ui/dialog-run-args.ui:74
-msgid "Write below the arguments to be passed to the executable."
-msgstr ""
-
-#: src/ui/dialog-run-args.ui:89
-msgid "e.g: -opengl -SkipBuildPatchPrereq"
-msgstr ""
-
-#: src/ui/dialog.ui:6
-msgid "Message goes here."
-msgstr "Skriv meldingen her."
-
-#: src/ui/dialog.ui:36 src/views/bottle_details.py:446
-msgid "Confirm"
-msgstr "Bekreft"
-
-#: src/ui/dll-override-entry.ui:22
-#, fuzzy
-msgid "Builtin (Wine)"
-msgstr "Innebygd (Wine)"
-
-#: src/ui/dll-override-entry.ui:23
-#, fuzzy
-msgid "Native (Windows)"
-msgstr "Systemspesifikk (Windows)"
-
-#: src/ui/dll-override-entry.ui:24
-#, fuzzy
-msgid "Builtin then Native"
-msgstr "Innebygd og så systemspesifikk"
-
-#: src/ui/dll-override-entry.ui:25
-#, fuzzy
-msgid "Native then Builtin"
-msgstr "Systemspesifikk og så innebygd"
-
-#: src/ui/drive-entry.ui:9
-msgid "/point/to/path"
-msgstr ""
-
-#: src/ui/env-var-entry.ui:84
-msgid "value"
-msgstr ""
-
-#: src/ui/importer-entry.ui:130
-msgid "This wineprefix was already imported in Bottles."
-msgstr "Wineprefix allerede importert i Bottles."
-
-#: src/ui/importer.ui:27
-#, fuzzy
-msgid "No prefixes found"
-msgstr "Fant ingen springere"
-
-#: src/ui/importer.ui:28
-msgid ""
-"No prefixes were found from Lutris, PlayOnLinux, etc.\n"
-"Use the icon on the top to import a bottle from a backup"
-msgstr ""
-
-#: src/ui/importer.ui:74
-#, fuzzy
-msgid "Import Bottles backup"
-msgstr "Importer fra sikkerhetskopi"
-
-#: src/ui/importer.ui:97
-msgid "Search again for prefixes"
-msgstr ""
-
-#: src/ui/importer.ui:135
-msgid "Configuration"
-msgstr "Oppsett"
-
-#: src/ui/importer.ui:149
-msgid "Full archive"
-msgstr "Fullstendig arkiv"
-
-#: src/ui/installer-entry.ui:47
-msgid "Read review"
-msgstr ""
-
-#: src/ui/installer-entry.ui:124
-#, fuzzy
-msgid "Install this program"
-msgstr "Installerte programmer"
-
-#: src/ui/installer-entry.ui:173
-msgid "Compatibility grade"
-msgstr ""
-
-#: src/ui/list-entry.ui:108
-msgid "This bottle looks damaged."
-msgstr "Denne flasken ser ut til å være skadet."
-
-#: src/ui/list-entry.ui:128
-msgid "Execute in this bottle"
-msgstr "Kjør i denne flasken"
-
-#: src/ui/list-entry.ui:155
-#, fuzzy
-msgid "Run Here"
-msgstr "Kjør her"
-
-#: src/ui/list-entry.ui:174
-#, fuzzy
-msgid ""
-"This bottle looks damaged, the configuration file is missing. I can try to "
-"solve by creating a new configuration."
-msgstr ""
-"Flasken ser ut til å være skadet. Oppsettsfilen mangler. Dette kan løses ved "
-"å opprette et nytt oppsett."
-
-#: src/ui/list-entry.ui:195
-msgid "Run .exe/.msi in this bottle"
-msgstr "Kjør .exe/.msi i denne flasken"
-
-#: src/ui/list.ui:39
-#, fuzzy
-msgid "Search your bottles .."
-msgstr "Gi flasken et navn"
-
-#: src/ui/list.ui:77
-#, fuzzy
-msgid "Start off by creating a Bottle."
-msgstr "Opprett ny flaske"
-
-#: src/ui/list.ui:80
-#, fuzzy
-msgid "Create a new Bottle"
-msgstr "Opprett ny flaske"
-
-#: src/ui/message-entry.ui:18
-msgid "Utility & Preferences"
-msgstr "Verktøy og innstillinger"
-
-#: src/ui/message-entry.ui:45 src/ui/task-entry.ui:24
-#, fuzzy
-msgid "Delete message"
-msgstr "Slett tilstand"
-
-#: src/ui/new.ui:24
-msgid "New Bottle"
-msgstr "Ny flaske"
-
-#: src/ui/new.ui:35
-#, fuzzy
-msgid "Create"
-msgstr "Opprett flaske"
-
-#: src/ui/new.ui:92
-#, fuzzy
-msgid "Bottle Information"
-msgstr "Flasker startet."
-
-#: src/ui/new.ui:98
-#, fuzzy
-msgid "Choose a name for your bottle"
-msgstr "Sikkerhetkopier denne flasken"
-
-#: src/ui/new.ui:165
-#, fuzzy
-msgid "Use versioning"
-msgstr "Skru på versjonering"
-
-#: src/ui/new.ui:167
-msgid "Enable versioning to save and restore the bottle to a state."
-msgstr ""
-"Skru på versjonering for å lagre og gjenopprette flasken til en tilstand."
-
-#: src/ui/new.ui:193
-msgid "Unlinked homedir"
-msgstr ""
-
-#: src/ui/new.ui:195
-msgid "Do not link the userdir to the homedir"
-msgstr ""
-
-#: src/ui/new.ui:291
-msgid "Architecture"
-msgstr "Arkitektur"
-
-#: src/ui/new.ui:293
-#, fuzzy
-msgid "We recommend using 32bit only if strictly necessary"
-msgstr "32-bit anbefales kun når det er tvingende nødvendig"
-
-#: src/ui/new.ui:307
-msgid "64 bit"
-msgstr "64-biters"
-
-#: src/ui/new.ui:308
-msgid "32 bit"
-msgstr "32-biters"
-
-#: src/ui/new.ui:329
-#, fuzzy
-msgid "Use custom recipe"
-msgstr "Bruk spillmodus"
-
-#: src/ui/new.ui:331
-msgid "Choose a custom recipe for the environment if you have one."
-msgstr ""
-
-#: src/ui/new.ui:377
-#, fuzzy
-msgid "Use custom path"
-msgstr "Bruk spillmodus"
-
-#: src/ui/new.ui:379
-msgid "Store this bottle in a different place."
-msgstr ""
-
-#: src/ui/new.ui:475
-msgid "Creating bottle…"
-msgstr "Oppretter flaske …"
-
-#: src/ui/new.ui:544
-#, fuzzy
-msgid "Bottle created"
-msgstr "Flasker startet."
-
-#: src/ui/onboard.ui:23 src/ui/onboard.ui:122
-msgid "Welcome"
-msgstr "Velkommen"
-
-#: src/ui/onboard.ui:30
-msgid "Next"
-msgstr "Neste"
-
-#: src/ui/onboard.ui:41
-#, fuzzy
-msgid "Install"
-msgstr "Installasjonskandidater"
-
-#: src/ui/onboard.ui:78
-msgid "Quit"
-msgstr "Avslutt"
-
-#: src/ui/onboard.ui:86
-msgid "Back"
-msgstr "Tilbake"
-
-#: src/ui/onboard.ui:117
-msgid "Welcome to Bottles"
-msgstr "Velkommen til Flasker"
-
-#: src/ui/onboard.ui:118
-#, fuzzy
-msgid "Bottles makes running Windows Software on Linux much easier."
-msgstr ""
-"Flasker er et moderne verktøy som refinerer og forenkler kjøring av Windows-"
-"programvare på Linux."
-
-#: src/ui/onboard.ui:152
-#, fuzzy
-msgid "What Are Bottles?"
-msgstr "Hva er springere?"
-
-#: src/ui/onboard.ui:171
-msgid ""
-"A bottle is a Windows-like environment configured to run Windows software, "
-"you can have multiple apps in each bottle. \n"
-"\n"
-"Those are isolated and the software that runs inside can't access your "
-"personal files if you don't allow it.\n"
-"\n"
-"<a href=\"https://docs.usebottles.com\">Read more about</a>"
-msgstr ""
-
-#: src/ui/onboard.ui:191
-#, fuzzy
-msgid "Wine"
-msgstr "Winecfg"
-
-#: src/ui/onboard.ui:222
-#, fuzzy
-msgid "We Are Almost There"
-msgstr "Vi er nesten der"
-
-#: src/ui/onboard.ui:241
-#, fuzzy
-msgid ""
-"We need to download and install some <a href=\"https://docs.usebottles.com/"
-"getting-started/first-run\">components (~75MB)</a> to get you ready.\n"
-"\n"
-"We cannot offer these files with Bottles as these have different release "
-"cycles.\n"
-"\n"
-"When you are ready press the <b>Install</b> button."
-msgstr ""
-"Du må laste ned og installere en springer for opprette dine egne flasker.\n"
-"Nedlastingsstørrelsen er <b>~70MB</b>.\n"
-"<a href=\"https://docs.usebottles.com/getting-started/first-run\">Les mer om "
-"hva som lastes ned</a>\n"
-"\n"
-"Disse filene kan ikke tilbys med Flasker, siden utgivelsessyklusene er "
-"forskjellige.\n"
-"\n"
-"Trykk <b>Installer</b> når du er klar."
-
-#: src/ui/onboard.ui:261 src/ui/preferences.ui:292
-msgid "Runners"
-msgstr "Springere"
-
-#: src/ui/onboard.ui:292
-msgid "Downloading…"
-msgstr "Laster ned …"
-
-#: src/ui/onboard.ui:311
-#, fuzzy
-msgid "Sit down and relax, it may take a few minutes."
-msgstr "Ta en pause og slapp av, det kan ta noen minutter."
-
-#: src/ui/onboard.ui:339
-#, fuzzy
-msgid "Download"
-msgstr "Nedlastninger"
-
-#: src/ui/onboard.ui:348
-#, fuzzy
-msgid "Everything Is Ready!"
-msgstr "Alt er klart."
-
-#: src/ui/onboard.ui:349
-msgid "You are now ready to create your first bottles."
-msgstr "Du er nå klart til å opprette dine første flasker."
-
-#: src/ui/onboard.ui:353
-msgid "Finish"
-msgstr "Fullfør"
-
-#: src/ui/preferences.ui:42 src/ui/window.ui:45 src/views/details.py:114
-msgid "Preferences"
-msgstr "Egenskaper"
-
-#: src/ui/preferences.ui:53 src/ui/preferences.ui:95
-msgid "General"
-msgstr "Generelt"
-
-#: src/ui/preferences.ui:58
-#, fuzzy
-msgid "Appearance"
-msgstr "Utseende"
-
-#: src/ui/preferences.ui:63
-#, fuzzy
-msgid "Show Update Date"
-msgstr "Vis oppdateringsdato"
-
-#: src/ui/preferences.ui:64
-msgid "Whether to show the update date in the bottle list."
-msgstr "Hvorvidt oppdateringsdato skal vises i flaskelisten."
-
-#: src/ui/preferences.ui:101
-msgid "Show notifications for downloads and installs."
-msgstr "Vis merknader for nedlastinger og installasjoner."
-
-#: src/ui/preferences.ui:127
-#, fuzzy
-msgid "Temp Files"
-msgstr "Rens av midlertidig sti"
-
-#: src/ui/preferences.ui:128
-msgid "Clean temp files when Bottles launches?"
-msgstr "Tøm midlertidige filer når Bottles startes?"
-
-#: src/ui/preferences.ui:154
-#, fuzzy
-msgid "Close Bottles After Starting Programs"
-msgstr "Lukk Bottles etter start av et program"
-
-#: src/ui/preferences.ui:155
-#, fuzzy
-msgid "Close Bottles after starting a program from the file manager."
-msgstr "Lukk Bottles etter start av program fra filbehandleren"
-
-#: src/ui/preferences.ui:186
-#, fuzzy
-msgid "Advanced"
-msgstr "Avansert"
-
-#: src/ui/preferences.ui:191
-msgid "Custom Bottles Path (Require Restart)"
-msgstr ""
-
-#: src/ui/preferences.ui:192
-msgid ""
-"Choose where to store the new bottles (this will not move the existing ones)."
-msgstr ""
-
-#: src/ui/preferences.ui:228
-msgid ""
-"Warning: Be sure to give permission to the Flatpak to access the new path.\n"
-"This will break the sandbox!"
-msgstr ""
-
-#: src/ui/preferences.ui:301
-#, fuzzy
-msgid "Pre-Release"
-msgstr "Forhåndsutgivelse"
-
-#: src/ui/preferences.ui:302
-msgid "Whether the above list should display unstable versions."
-msgstr "Hvorvidt listen ovenfor skal vise ustabile versjoner."
-
-#: src/ui/preferences.ui:336
-#, fuzzy
-msgid "DLL Components"
-msgstr "Versjonering"
-
-#: src/ui/preferences.ui:341
-#, fuzzy
-msgid "DXVK"
-msgstr "Bruk DXVK"
-
-#: src/ui/preferences.ui:351
-msgid "VKD3D"
-msgstr "VKD3D"
-
-#: src/ui/preferences.ui:361
-msgid "DXVK-NVAPI"
+#: data/com.usebottles.bottles.gschema.xml:91
+msgid "Show sandbox warning"
 msgstr ""
 
-#: src/ui/preferences.ui:371
-msgid "LatencyFleX"
-msgstr ""
-
-#: src/ui/preferences.ui:384
-msgid "Core"
-msgstr ""
-
-#: src/ui/preferences.ui:389
-msgid "Runtime"
-msgstr ""
-
-#: src/ui/preferences.ui:399
-msgid "WineBridge"
-msgstr ""
-
-#: src/ui/preferences.ui:421
-msgid "Steam Proton Prefixes"
-msgstr ""
-
-#: src/ui/preferences.ui:422 src/ui/preferences.ui:449
-msgid "In early development (requires restart)."
-msgstr ""
-
-#: src/ui/preferences.ui:448
-#, fuzzy
-msgid "Library Mode"
-msgstr "Mørk drakt"
-
-#: src/ui/program-entry.ui:45
-#, fuzzy
-msgid "Browse path"
-msgstr "Utforsk C:"
-
-#: src/ui/program-entry.ui:76
-msgid "Change launch options"
-msgstr "Endre oppstartsalternativer"
-
-#: src/ui/program-entry.ui:88
-msgid "Add to my library"
-msgstr ""
-
-#: src/ui/program-entry.ui:101
-msgid "Add desktop entry"
-msgstr ""
-
-#: src/ui/program-entry.ui:138
-msgid "Hide from list"
-msgstr ""
-
-#: src/ui/program-entry.ui:150
-msgid "Unhide from list"
-msgstr ""
-
-#: src/ui/program-entry.ui:163
-#, fuzzy
-msgid "Remove from list"
-msgstr "Fjern fra programmer"
-
-#: src/ui/program-entry.ui:211
-msgid "Launch with Steam"
-msgstr ""
-
-#: src/ui/state-entry.ui:86
-#, fuzzy
-msgid "Restore this state"
-msgstr "Kjør i denne flasken"
-
-#: src/ui/state-entry.ui:111
-#, fuzzy
-msgid "Creation date"
-msgstr "Oppdaterte oversettelser"
-
-#: src/ui/task-entry.ui:8
-msgid "Processing..."
-msgstr ""
-
-#: src/ui/window.ui:19 src/window.py:250
-msgid "Your library"
-msgstr ""
-
-#: src/ui/window.ui:32 src/window.py:171 src/window.py:245
-msgid "Importer"
-msgstr "Importerer"
-
-#: src/ui/window.ui:69
-msgid "Support us"
-msgstr ""
-
-#: src/ui/window.ui:95
-msgid "Forums"
-msgstr "Forum"
-
-#: src/ui/window.ui:108 src/window.py:324
-msgid "Health check"
-msgstr ""
-
-#: src/ui/window.ui:121
-msgid "About Bottles"
-msgstr "Om Flasker"
-
-#: src/ui/window.ui:246 src/ui/window.ui:289
-msgid "Open menu"
-msgstr "Åpne meny"
-
-#: src/ui/window.ui:267
-#, fuzzy
-msgid "Operations"
-msgstr "Oppdaterte oversettelser"
-
-#: src/ui/window.ui:311
-#, fuzzy
-msgid ""
-"You don't seem connected to the internet. Without it you will not be able to "
-"download essential components. Click this icon when you have reestablished "
-"the connection."
-msgstr ""
-"Du er ikke tilkoblet Internett. Du vil ikke kunne laste ned essensielle "
-"komponenter. Klikk på dette ikonet når du er tilkoblet."
-
-#: src/ui/window.ui:332
-msgid "Go back"
-msgstr "Tilbake"
-
-#: src/ui/window.ui:353
-msgid "New bottle"
-msgstr "Ny flaske"
-
-#: src/main.py:101
+#: data/com.usebottles.bottles.gschema.xml:92
 #, fuzzy
-msgid "Show version"
-msgstr "Versjonering"
+msgid "Toggle sandbox warning."
+msgstr "Skru av/på Steam programliste."
 
-#: src/main.py:109
 #, fuzzy
-msgid "Executable path"
-msgstr "Kjør .exe"
+#~ msgid "Loading…"
+#~ msgstr "Laster ned …"
 
-#: src/main.py:117
-#, fuzzy
-msgid "lnk path"
-msgstr "Sti til .lnk"
-
-#: src/main.py:125
-msgid "Bottle name"
-msgstr "Flaskenavn"
-
-#: src/main.py:133
-#, fuzzy
-msgid "Pass arguments"
-msgstr "Kjør med argumenter"
+#~ msgid ""
+#~ "The custom bottles path was not found. Please, check the path in "
+#~ "Preferences.\n"
+#~ "Fall-backing to the default path; no bottles from that path will be "
+#~ "listed!"
+#~ msgstr ""
+#~ "Den egendefinerte flaske-stien ble ikke funnet. Vennligst sjekk stien i "
+#~ "Innstillinger.\n"
+#~ "Faller tilbake til standardstien; ingen flasker fra den stien vil bli "
+#~ "oppført!"
 
-#: src/main.py:264
-#, fuzzy
-msgid "[Quit] request received."
-msgstr "`Avslutt`-forespørsel mottatt."
+#~ msgid "Health check"
+#~ msgstr "Helsesjekk"
 
-#: src/main.py:273
 #, fuzzy
-msgid "[Help] request received."
-msgstr "`Hjelp`-forespørsel mottatt."
+#~ msgid "Generating state files index …"
+#~ msgstr "Oppretter wineprefiks …"
 
-#: src/main.py:281
 #, fuzzy
-msgid "[Refresh] request received."
-msgstr "`Gjenoppfrisk`-forespørsel mottatt."
-
-#: src/operation.py:60
-msgid "Calculating..."
-msgstr "Beregner …"
+#~ msgid "Creating a restore point …"
+#~ msgstr "Oppretter wineprefiks …"
 
-#: src/window.py:133 src/window.py:176
-msgid "Loading..."
-msgstr ""
+#~ msgid "Could not create the state folder."
+#~ msgstr "Kunne ikke opprette tilstandsmappe."
 
-#: src/window.py:167
 #, fuzzy
-msgid "Bottle Details"
-msgstr "Flaskedetaljer"
-
-#: src/window.py:174
-msgid "Your Library"
-msgstr ""
-
-#: src/window.py:260
-msgid ""
-"The custom bottles path was not found.Please, check the it in Preferences.\n"
-"Fallbacking to the default path. You will no bottles from that path will be "
-"listed!"
-msgstr ""
+#~ msgid "Updating index …"
+#~ msgstr "Oppretter wineprefiks …"
 
-#: src/window.py:329
-msgid "Journal browser"
-msgstr ""
+#~ msgid "Could not update the states file."
+#~ msgstr "Kunne ikke oppdatere tilstandsfil."
 
-#: src/utils/connection.py:68
-#, fuzzy
-msgid "You are offline, unable to download."
-msgstr "Du er frakoblet. Kunne ikke laste ned."
+#~ msgid "Could not update the index file."
+#~ msgstr "Kunne ikke oppdatere indeksfil."
 
-#: src/backend/managers/backup.py:72
 #, fuzzy, python-brace-format
-msgid "Backup {0}"
-msgstr "Sikkerhetskopi {0}"
+#~ msgid "Arguments found for executable: [{executable}]."
+#~ msgstr "Argumenter funnet for kjørbar fil: [{executable}]."
 
-#: src/backend/managers/backup.py:124
+#, fuzzy, python-brace-format
+#~ msgid "{0} installed."
+#~ msgstr "Avinstaller"
+
 #, python-brace-format
-msgid "Importing backup: {0}"
-msgstr "Importerer sikkerhetskopi: {0}"
+#~ msgid "Step {self.__step} of {self.steps}"
+#~ msgstr "Steg {self.__step} av {self.steps}"
 
-#: src/backend/managers/installer.py:116
-msgid "Installer requires local resources"
-msgstr ""
+#, python-brace-format
+#~ msgid "'{0}' launched."
+#~ msgstr "'{0}' kjørt."
 
-#: src/backend/managers/installer.py:118
-#, python-format
-msgid "This installer requires some local resources: %s"
-msgstr ""
+#, python-brace-format
+#~ msgid "'{0}' launched with Steam."
+#~ msgstr "'{0}' kjørt med Steam."
 
-#: src/backend/managers/installer.py:118
-msgid ", "
-msgstr ""
+#, python-brace-format
+#~ msgid "Index for state {0}"
+#~ msgstr "Indeks for tilstand {0}"
 
-#: src/backend/managers/installer.py:130
+#, fuzzy
+#~ msgid "Read documentation about dependencies."
+#~ msgstr "Dokumentasjon"
+
+#, fuzzy
+#~ msgid "DXVK HUD"
+#~ msgstr "DXVK-HUD"
+
+#~ msgid ""
+#~ "Toggle DXVK overlay showing FPS and other details in D3D applications."
+#~ msgstr ""
+#~ "Skru på DXVX-overlegg som viser BPS og andre detaljer i D3D-programmer."
+
+#, fuzzy
+#~ msgid "Read documentation about programs"
+#~ msgstr "Dokumentasjon"
+
+#, fuzzy
+#~ msgid "Extra settings"
+#~ msgstr "Juster interne innstillinger."
+
+#~ msgid "Enable versioning to save and restore the bottle to a state."
+#~ msgstr ""
+#~ "Skru på versjonering for å lagre og gjenopprette flasken til en tilstand."
+
+#~ msgid "Task manager"
+#~ msgstr "Oppgavebehandler"
+
+#, fuzzy
+#~ msgid "Installing..."
+#~ msgstr "Installasjonskandidater"
+
+#, fuzzy
+#~ msgid "Type a short comment:"
+#~ msgstr "Skriv en veldig kort kommentar:"
+
+#, fuzzy
+#~ msgid "GE Wine"
+#~ msgstr "Winecfg"
+
+#, fuzzy
+#~ msgid "Lutris"
+#~ msgstr "Håndter flasker"
+
+#~ msgid "Bottles versioning (experimental)"
+#~ msgstr "Flaskeversjonering (eksperimentelt)"
+
+#~ msgid "<a href=\"https://hosted.weblate.org/engage/bottles/\">Translate</a>"
+#~ msgstr "<a href=\"https://hosted.weblate.org/engage/bottles/\">Oversett</a>"
+
+#~ msgid "<a href=\"https://usebottles.com/funding/\">Funding</a>"
+#~ msgstr "<a href=\"https://usebottles.com/funding/\">Finansiering</a>"
+
+#~ msgid ""
+#~ "<a href=\"https://github.com/bottlesdevs/Bottles/issues\">Bug report</a>"
+#~ msgstr ""
+#~ "<a href=\"https://github.com/bottlesdevs/Bottles/issues\">Feilrapport</a>"
+
+#~ msgid "<a href=\"https://usebottles.com/blog\">Blog</a>"
+#~ msgstr "<a href=\"https://usebottles.com/blog\">Blogg</a>"
+
+#, fuzzy
+#~ msgid "<a href=\"https://twitter.com/usebottles\">Twitter</a>"
+#~ msgstr "<a href=\"https://hosted.weblate.org/engage/bottles/\">Oversett</a>"
+
+#, fuzzy
+#~ msgid "Bug report"
+#~ msgstr "Feilrapport"
+
+#, fuzzy
+#~ msgid "Vaniglia-6.21-x86_64"
+#~ msgstr "lutris-6.0-rc1-x86_64"
+
+#, fuzzy
+#~ msgid "Utilities"
+#~ msgstr "Verktøy"
+
+#, fuzzy
+#~ msgid "Command line"
+#~ msgstr "Kommandolinje"
+
+#, fuzzy
+#~ msgid "Registry editor"
+#~ msgstr "Register-redigerer"
+
+#~ msgid "Wine config"
+#~ msgstr "Wine-oppsett"
+
+#, fuzzy
+#~ msgid "Control panel"
+#~ msgstr "Kontrollpanel"
+
+#, fuzzy
+#~ msgid ""
+#~ "Test mode enabled: only dependencies from testing repository are shown."
+#~ msgstr "Testmodus påslått: Kun avhengigheter fra testpakkebrønner vises."
+
+#, fuzzy
+#~ msgid "Microsoft .NET Framework 4 .."
+#~ msgstr "Microsoft .NET-rammeverk 4 …"
+
+#, fuzzy
+#~ msgid ""
+#~ "While the files on this page have been verified may be under proprietary "
+#~ "license."
+#~ msgstr ""
+#~ "Selv om filene på denne siden har blitt bekreftet kan de være under ufri "
+#~ "lisens."
+
+#, fuzzy
+#~ msgid ""
+#~ "While the files on this page have been verified, they may be under a "
+#~ "proprietary license."
+#~ msgstr ""
+#~ "Selv om filene på denne siden har blitt bekreftet kan de være under ufri "
+#~ "lisens."
+
+#, fuzzy
+#~ msgid "Read documentation about installers\t"
+#~ msgstr "Dokumentasjon"
+
+#~ msgid "Bottle details"
+#~ msgstr "Flaskedetaljer"
+
+#~ msgid "My beautiful bottle"
+#~ msgstr "Min vakre flaske"
+
+#~ msgid "Rename bottle"
+#~ msgstr "Gi flasken nytt navn"
+
+#~ msgid "Use DXVK"
+#~ msgstr "Bruk DXVK"
+
+#~ msgid "Use VKD3D"
+#~ msgstr "Bruk VKD3D"
+
+#~ msgid "Enable FSR"
+#~ msgstr "Skru på FSR"
+
+#, fuzzy
+#~ msgid "Use a virtual desktop"
+#~ msgstr "Virtuelt skrivebord"
+
+#, fuzzy
+#~ msgid "DXVK version"
+#~ msgstr "Versjonering"
+
+#~ msgid "Manage VKD3D versions"
+#~ msgstr "Håndter VKD3D-versjoner"
+
+#, fuzzy
+#~ msgid "DLL overrides"
+#~ msgstr "DLL-overstyringer"
+
+#, fuzzy
+#~ msgid "Read documentation about versioning\t"
+#~ msgstr "Dokumentasjon"
+
+#~ msgid "e.g. ucrtbase"
+#~ msgstr "f.eks. ucrtbase"
+
+#~ msgid "Existing overrides"
+#~ msgstr "Eksisterende overstyringer"
+
+#, fuzzy
+#~ msgid "e.g.: -example1 -example2 -example3=hello"
+#~ msgstr "f.eks: -eksempel1 -eksempel2 -eksempel3=hallo"
+
+#, fuzzy
+#~ msgid "e.g: MyDuplicatedBottle"
+#~ msgstr "Dupliser flaske"
+
+#, fuzzy
+#~ msgid "page_name"
+#~ msgstr "Springer"
+
+#, fuzzy
+#~ msgid "New variable"
+#~ msgstr "Ny overstyring"
+
+#~ msgid ""
+#~ "Here you can change the environment variables for the commands that are "
+#~ "executed."
+#~ msgstr "Her kan du legge til miljøvariabler for kommandoene som kjøres."
+
+#, fuzzy
+#~ msgid "e.g.: VAR1=value VAR2=value"
+#~ msgstr "f.eks: VAR1=verdi VAR2=verdi .."
+
+#~ msgid "e.g: VAR1=value VAR2=value .."
+#~ msgstr "f.eks: VAR1=verdi VAR2=verdi .."
+
+#~ msgid "Width"
+#~ msgstr "Bredde"
+
+#~ msgid "Height"
+#~ msgstr "Høyde"
+
+#~ msgid "Type the new name:"
+#~ msgstr "Skriv inn det nye navnet:"
+
+#, fuzzy
+#~ msgid "Type here.."
+#~ msgstr "Skriv her …"
+
+#~ msgid "Message goes here."
+#~ msgstr "Skriv meldingen her."
+
+#~ msgid "Compatibility grade"
+#~ msgstr "Kompabilitetsgrad"
+
+#~ msgid "Utility & Preferences"
+#~ msgstr "Verktøy og innstillinger"
+
+#, fuzzy
+#~ msgid "Choose a name for your bottle"
+#~ msgstr "Sikkerhetkopier denne flasken"
+
+#, fuzzy
+#~ msgid "Use custom path"
+#~ msgstr "Bruk spillmodus"
+
+#~ msgid "Welcome"
+#~ msgstr "Velkommen"
+
+#~ msgid "Back"
+#~ msgstr "Tilbake"
+
+#, fuzzy
+#~ msgid "Bottles makes running Windows Software on Linux much easier."
+#~ msgstr ""
+#~ "Flasker er et moderne verktøy som refinerer og forenkler kjøring av "
+#~ "Windows-programvare på Linux."
+
+#, fuzzy
+#~ msgid "What Are Bottles?"
+#~ msgstr "Hva er springere?"
+
+#, fuzzy
+#~ msgid "We Are Almost There"
+#~ msgstr "Vi er nesten der"
+
+#, fuzzy
+#~ msgid ""
+#~ "We need to download and install some <a href=\"https://docs.usebottles."
+#~ "com/getting-started/first-run\">components (~75MB)</a> to get you ready.\n"
+#~ "\n"
+#~ "We cannot offer these files with Bottles as these have different release "
+#~ "cycles.\n"
+#~ "\n"
+#~ "When you are ready press the <b>Install</b> button."
+#~ msgstr ""
+#~ "Du må laste ned og installere en springer for opprette dine egne "
+#~ "flasker.\n"
+#~ "Nedlastingsstørrelsen er <b>~70MB</b>.\n"
+#~ "<a href=\"https://docs.usebottles.com/getting-started/first-run\">Les mer "
+#~ "om hva som lastes ned</a>\n"
+#~ "\n"
+#~ "Disse filene kan ikke tilbys med Flasker, siden utgivelsessyklusene er "
+#~ "forskjellige.\n"
+#~ "\n"
+#~ "Trykk <b>Installer</b> når du er klar."
+
+#, fuzzy
+#~ msgid "Sit down and relax, it may take a few minutes."
+#~ msgstr "Ta en pause og slapp av, det kan ta noen minutter."
+
+#, fuzzy
+#~ msgid "Download"
+#~ msgstr "Nedlastninger"
+
+#, fuzzy
+#~ msgid "Everything Is Ready!"
+#~ msgstr "Alt er klart."
+
+#~ msgid "You are now ready to create your first bottles."
+#~ msgstr "Du er nå klart til å opprette dine første flasker."
+
+#~ msgid "Finish"
+#~ msgstr "Fullfør"
+
+#~ msgid "Whether the above list should display unstable versions."
+#~ msgstr "Hvorvidt listen ovenfor skal vise ustabile versjoner."
+
+#, fuzzy
+#~ msgid "Creation date"
+#~ msgstr "Oppdaterte oversettelser"
+
+#~ msgid "Go back"
+#~ msgstr "Tilbake"
+
 #, fuzzy, python-format
-msgid "Pick executable for %s"
-msgstr "Start kjørbar fil"
+#~ msgid "Pick executable for %s"
+#~ msgstr "Start kjørbar fil"
 
-#: src/backend/managers/installer.py:133
-msgid "Proceed"
-msgstr ""
-
-#: src/backend/managers/installer.py:456
-msgid "Local resources not found or invalid"
-msgstr ""
-
-#: src/backend/managers/installer.py:465
 #, fuzzy
-msgid "Dependencies installation failed."
-msgstr "Fant ingen springere"
+#~ msgid "Dependencies installation failed."
+#~ msgstr "Fant ingen springere"
 
-#. unlock widget
-#: src/backend/managers/installer.py:488 src/backend/managers/installer.py:493
-msgid "Installation failed, please check the logs."
-msgstr ""
+#~ msgid "Confirm deletion"
+#~ msgstr "Bekreft sletting"
 
-#: src/backend/managers/manager.py:1054
-msgid "Fail to install components, tried 3 times."
-msgstr ""
+#~ msgid "Done"
+#~ msgstr "Ferdig"
 
-#: src/backend/managers/manager.py:1065
-msgid "Missing essential components. Installing…"
-msgstr ""
-
-#: src/backend/managers/manager.py:1141
 #, fuzzy
-msgid "Failed to create bottle directory."
-msgstr "Jeg må velge en egedefinert sti"
+#~ msgid "Caffe runners"
+#~ msgstr "Endre flaske"
 
-#: src/backend/managers/manager.py:1153
-msgid "Failed to create placeholder directory/file."
-msgstr ""
-
-#: src/backend/managers/manager.py:1158
 #, fuzzy
-msgid "Generating bottle configuration…"
-msgstr "Oppretter wineprefiks …"
+#~ msgid "Proton runners"
+#~ msgstr "Håndter springere"
 
-#: src/backend/managers/manager.py:1181
-msgid "Template found, applying…"
-msgstr ""
-
-#. execute wineboot on the bottle path
-#: src/backend/managers/manager.py:1191
 #, fuzzy
-msgid "The Wine config is being updated…"
-msgstr "Oppsett"
-
-#: src/backend/managers/manager.py:1193
-#, fuzzy
-msgid "Wine config updated!"
-msgstr "Oppsett"
-
-#: src/backend/managers/manager.py:1201
-#, fuzzy
-msgid "Running as Flatpak, sandboxing userdir…"
-msgstr "Kjører som Flatpak. Oppretter sandkasse-mapper…"
-
-#: src/backend/managers/manager.py:1203
-msgid "Sandboxing userdir…"
-msgstr ""
-
-#: src/backend/managers/manager.py:1221
-#, fuzzy
-msgid "Setting Windows version…"
-msgstr "Versjonering"
-
-#: src/backend/managers/manager.py:1229
-msgid "Apply CMD default settings…"
-msgstr ""
-
-#: src/backend/managers/manager.py:1237
-#, fuzzy
-msgid "Optimizing environment…"
-msgstr "Tar i bruk miljø: {0}…"
-
-#: src/backend/managers/manager.py:1248
-#, fuzzy, python-brace-format
-msgid "Applying environment: {0}…"
-msgstr "Tar i bruk miljø: {0}…"
-
-#: src/backend/managers/manager.py:1258
-msgid "(!) Using a custom environment recipe…"
-msgstr ""
-
-#: src/backend/managers/manager.py:1261
-msgid "(!) Recipe not not found or not valid…"
-msgstr ""
-
-#: src/backend/managers/manager.py:1262
-msgid "(!) Proceeding with default environment…"
-msgstr ""
-
-#: src/backend/managers/manager.py:1278
-#, fuzzy
-msgid "Installing DXVK…"
-msgstr "Installerer DXVK…"
-
-#: src/backend/managers/manager.py:1286
-#, fuzzy
-msgid "Installing VKD3D…"
-msgstr "Installerer VKD3D…"
-
-#: src/backend/managers/manager.py:1294
-#, fuzzy
-msgid "Installing DXVK-NVAPI…"
-msgstr "Installerer DXVK…"
-
-#: src/backend/managers/manager.py:1303
-#, fuzzy, python-format
-msgid "Installing dependency: %s …"
-msgstr "Installerer avhengighet: {0} …"
-
-#: src/backend/managers/manager.py:1319
-#, fuzzy
-msgid "Creating versioning state 0…"
-msgstr "Oppretter versjoneringstilstand 0…"
-
-#: src/backend/managers/manager.py:1327
-msgid "Finalizing…"
-msgstr "Fullfører …"
-
-#: src/backend/managers/manager.py:1338
-#, fuzzy
-msgid "Caching template…"
-msgstr "Oppretter flaske …"
-
-#: src/backend/managers/versioning.py:65
-#, fuzzy
-msgid "Generating state files index …"
-msgstr "Oppretter wineprefiks …"
-
-#: src/backend/managers/versioning.py:144
-#, fuzzy
-msgid "Creating a restore point …"
-msgstr "Oppretter wineprefiks …"
-
-#: src/backend/managers/versioning.py:168
-msgid "Could not create the state folder."
-msgstr ""
-
-#: src/backend/managers/versioning.py:175
-#, fuzzy
-msgid "Updating index …"
-msgstr "Oppretter wineprefiks …"
-
-#: src/backend/managers/versioning.py:199
-#, fuzzy
-msgid "Updating states …"
-msgstr "Oppretter flaske …"
-
-#: src/backend/managers/versioning.py:228
-msgid "Could not update the states file."
-msgstr ""
-
-#: src/backend/managers/versioning.py:242
-msgid "Could not update the index file."
-msgstr ""
-
-#: src/backend/managers/versioning.py:268
-#, fuzzy, python-brace-format
-msgid "New state [{0}] created successfully!"
-msgstr "En flaske ved navn «{0}» ble opprettet"
-
-#: src/dialogs/crash.py:36
-#, fuzzy
-msgid "Show report"
-msgstr "Feilrapport"
-
-#: src/dialogs/crash.py:88
-msgid ""
-"            This issue was reported 5 times and cannot be sent again.\n"
-"            Report your feedback in one of the below existing reports."
-msgstr ""
-
-#: src/dialogs/drives.py:59
-#, fuzzy
-msgid "Choose path"
-msgstr "Utforsk C:"
-
-#: src/dialogs/drives.py:62
-msgid "Select"
-msgstr ""
-
-#: src/dialogs/generic.py:31 src/dialogs/generic.py:225
-msgid "Warning"
-msgstr "Advarsel"
-
-#: src/dialogs/generic.py:32
-msgid "An error has occurred."
-msgstr "En feil har inntruffet."
-
-#: src/dialogs/generic.py:111 src/dialogs/generic.py:160
-#: src/dialogs/generic.py:204
-msgid "Copy to clipboard"
-msgstr "Kopier til utklippstavle"
-
-#: src/dialogs/launchoptions.py:92
-msgid "Choose the script"
-msgstr ""
-
-#: src/views/bottle_details.py:156
-#, python-format
-msgid "Updated: %s"
-msgstr "Oppdatert: %s"
-
-#: src/views/bottle_details.py:238 src/views/list.py:127
-#, fuzzy
-msgid "Choose a Windows executable file"
-msgstr "Velg en kjørbar Windows-fil"
-
-#: src/views/bottle_details.py:306
-#, fuzzy
-msgid "Select the location where to save the backup config"
-msgstr "Velg sted å lagre sikkerhetskopi"
-
-#: src/views/bottle_details.py:310
-#, fuzzy
-msgid "Select the location where to save the backup archive"
-msgstr "Velg sted å lagre sikkerhetskopiert arkiv"
-
-#: src/views/bottle_details.py:317
-#, fuzzy
-msgid "Export"
-msgstr "Eksporter"
-
-#: src/views/bottle_details.py:348
-msgid "Confirm deletion"
-msgstr "Bekreft sletting"
-
-#: src/views/bottle_details.py:350
-msgid "Are you sure you want to delete this Bottle and all files?"
-msgstr "Er du sikker på at du vil slette denne flasken og alle dens filer?"
-
-#: src/views/bottle_details.py:448
-#, fuzzy
-msgid ""
-"Are you sure you want to terminate all processes?\n"
-"This can cause data loss."
-msgstr "Er du sikker på at du vil slette denne flasken og alle dens filer?"
-
-#: src/views/bottle_preferences.py:180
-#, fuzzy
-msgid "This feature is not available on your system."
-msgstr ""
-"Spillmodus er enten ikke tilgjengelig på systemet ditt, eller kjører ikke."
-
-#: src/views/bottle_preferences.py:243
-#, fuzzy
-msgid "Choose working directory for executables"
-msgstr "Velg en kjørbar Windows-fil"
-
-#: src/views/bottle_preferences.py:246
-msgid "Done"
-msgstr "Ferdig"
-
-#: src/views/bottle_programs.py:72
-#, fuzzy
-msgid "Choose an executable path"
-msgstr "Velg en kjørbar Windows-fil"
-
-#: src/views/bottle_programs.py:75
-msgid "Add"
-msgstr "Legg til"
-
-#: src/views/details.py:110
-#, fuzzy
-msgid "Details & Utilities"
-msgstr "Verktøy"
-
-#: src/views/details.py:118
-msgid "Dependencies"
-msgstr "Avhengigheter"
-
-#: src/views/details.py:123
-#, fuzzy
-msgid "Found in your bottle's Start menu."
-msgstr ""
-"Dette er programmene som ble funnet installert i flasken (det kan være "
-"flere)."
-
-#: src/views/details.py:126
-msgid "Versioning"
-msgstr "Versjonering"
-
-#: src/views/details.py:130
-msgid "Installers"
-msgstr "Installasjonskandidater"
-
-#: src/views/importer.py:88
-#, fuzzy
-msgid "Choose a backup archive"
-msgstr "Velg en sikkerhetskopi"
-
-#: src/views/importer.py:119
-#, fuzzy
-msgid "Choose a configuration file"
-msgstr "Oppsett"
-
-#: src/views/list.py:58 src/views/list.py:64
-msgid "N/A"
-msgstr "I/t"
-
-#: src/views/list.py:101
-#, fuzzy, python-brace-format
-msgid "Arguments found for executable: [{executable}]."
-msgstr "Argumenter funnet for kjørbar fil: [{executable}]."
-
-#: src/views/new.py:73
-msgid "Gaming"
-msgstr "Spill"
-
-#: src/views/new.py:74
-msgid "An environment improved for Windows games."
-msgstr "Et forbedret miljø for Windows-spill."
-
-#: src/views/new.py:79
-#, fuzzy
-msgid "Application"
-msgstr "Laster ned …"
-
-#: src/views/new.py:80
-#, fuzzy
-msgid "An environment improved for Windows applications."
-msgstr "Et forbedret miljø for Windows-spill."
-
-#: src/views/new.py:85
-msgid "Custom"
-msgstr "Egendefinert"
-
-#: src/views/new.py:86
-#, fuzzy
-msgid "A clear environment for your experiments."
-msgstr "Et rent miljø, uten optimiseringer."
-
-#: src/views/new.py:94
-msgid "Layered"
-msgstr ""
-
-#: src/views/new.py:95
-msgid "A layered environment, where every app is a layer."
-msgstr ""
-
-#: src/views/new.py:181
-#, fuzzy
-msgid "Choose a recipe file"
-msgstr "Oppsett"
-
-#: src/views/new.py:201
-#, fuzzy
-msgid "Choose where to store the bottle"
-msgstr "Sikkerhetkopier denne flasken"
-
-#: src/views/new.py:285
-#, fuzzy
-msgid "There was an error creating the bottle."
-msgstr "Kunne ikke opprette flasken."
-
-#: src/views/new.py:292
-#, fuzzy, python-brace-format
-msgid "A bottle named “{0}” was created successfully"
-msgstr "En flaske ved navn «{0}» ble opprettet"
-
-#: src/views/preferences.py:146
-#, fuzzy
-msgid "Choose new bottles path"
-msgstr "Velg en kjørbar Windows-fil"
-
-#: src/views/preferences.py:160 src/views/preferences.py:169
-msgid ""
-"Choose where to store the new bottles (this will not move the existing ones)"
-msgstr ""
-
-#: src/views/preferences.py:200
-#, fuzzy
-msgid "Caffe runners"
-msgstr "Endre flaske"
-
-#: src/views/preferences.py:201
-#, fuzzy
-msgid "Lutris runners"
-msgstr "Håndter flasker"
-
-#: src/views/preferences.py:202
-#, fuzzy
-msgid "Proton runners"
-msgstr "Håndter springere"
-
-#: src/views/preferences.py:203
-#, fuzzy
-msgid "Other runners"
-msgstr "Endre flaske"
-
-#: src/widgets/component.py:73
-msgid "Upgrade"
-msgstr ""
-
-#: src/widgets/dependency.py:107 src/widgets/installer.py:77
-#, python-brace-format
-msgid "Manifest for {0}"
-msgstr "Manifest for {0}"
-
-#: src/widgets/installer.py:88
-#, fuzzy, python-brace-format
-msgid "Review for {0}"
-msgstr "Manifest for {0}"
-
-#: src/widgets/installer.py:142
-#, python-brace-format
-msgid "Step {self.__step} of {self.steps}"
-msgstr "Steg {self.__step} av {self.steps}"
-
-#: src/widgets/state.py:97
-#, python-brace-format
-msgid "Index for state {0}"
-msgstr "Indeks for tilstand {0}"
+#~ msgid "Other runners"
+#~ msgstr "Endre flaske"
 
 #, fuzzy
 #~ msgid "WineHQ"
 #~ msgstr "Winecfg"
-
-#~ msgid "ProtonDB"
-#~ msgstr "ProtonDB"
 
 #, fuzzy
 #~ msgid "Bottles' Forums"
@@ -2640,10 +3952,6 @@ msgstr "Indeks for tilstand {0}"
 #~ "\n"
 #~ "<a href=\"https://docs.usebottles.com/components/runners\">Les mer om "
 #~ "springere</a>"
-
-#, fuzzy
-#~ msgid "Import/export"
-#~ msgstr "Importerer"
 
 #, fuzzy
 #~ msgid "Import & export"
@@ -2704,10 +4012,6 @@ msgstr "Indeks for tilstand {0}"
 #~ "Skru av hvis du opplever grafiske forstyrrelser."
 
 #, fuzzy
-#~ msgid "Whether Bottles should use the Night theme variant."
-#~ msgstr "Hvorvidt Bottles skal ikles mørk drakt."
-
-#, fuzzy
 #~ msgid "DXVK/VKD3D"
 #~ msgstr "DXVK/VKD3D for Direct3D"
 
@@ -2757,9 +4061,6 @@ msgstr "Indeks for tilstand {0}"
 #~ msgid "Use a dark application theme."
 #~ msgstr "Ifør mørk programdrakt."
 
-#~ msgid "DXVK Version"
-#~ msgstr "DXVK-versjon"
-
 #, fuzzy
 #~ msgid "Experiments:versioning"
 #~ msgstr "Eksperiementer"
@@ -2785,15 +4086,8 @@ msgstr "Indeks for tilstand {0}"
 #~ msgstr "Sikkerhetkopier denne flasken"
 
 #, fuzzy
-#~ msgid "Task Manager"
-#~ msgstr "Oppgavebehandler"
-
-#, fuzzy
 #~ msgid "Bottle"
 #~ msgstr "Flasker"
-
-#~ msgid "Special characters are not allowed!"
-#~ msgstr "Spesialtegn tillates ikke."
 
 #, fuzzy
 #~ msgid "No runners found, please install one."
@@ -2814,9 +4108,6 @@ msgstr "Indeks for tilstand {0}"
 #, fuzzy, python-brace-format
 #~ msgid "Your new {0} bottle is now ready."
 #~ msgstr "Den nye {0}-flasken er nå klar."
-
-#~ msgid "News"
-#~ msgstr "Nyheter"
 
 #~ msgid "Improved the Download manager"
 #~ msgstr "Forbedret nedlastingsbehandler"
@@ -2851,22 +4142,8 @@ msgstr "Indeks for tilstand {0}"
 #~ "Fikset feil som forårsaket at Bottles krasjet ved start av kjørbare filer "
 #~ "med argumenter."
 
-#~ msgid "Translations"
-#~ msgstr "Oversettelser"
-
-#, fuzzy
-#~ msgid "Indonesian translations thanks to @rezaalmanda"
-#~ msgstr "Indonesisk oversettelse ved @rezaalmanda"
-
-#, fuzzy
-#~ msgid "Spanish translations thanks to @oscfdezdz"
-#~ msgstr "Spansk oversettelse ved @fitojb"
-
 #~ msgid "Japanese translations thanks to @jatin-cbs"
 #~ msgstr "Japansk oversettelse ved @jatin-cbs"
-
-#~ msgid "Portuguese translations thanks to @hugok79"
-#~ msgstr "Portugisisk oversettelse ved @hugok79"
 
 #~ msgid ""
 #~ "Portuguese (Brazil) translations thanks to Ricardo Porto, @swyknox, "
@@ -2874,9 +4151,6 @@ msgstr "Indeks for tilstand {0}"
 #~ msgstr ""
 #~ "Brasiliansk portugisisk oversettelse ved Ricardo Porto, @swyknox, og "
 #~ "@davipatricio"
-
-#~ msgid "German translations thanks to @thericosanto"
-#~ msgstr "Tysk oversettelse ved @thericosanto"
 
 #, fuzzy
 #~ msgid "Choose an environment"
@@ -2890,19 +4164,7 @@ msgstr "Indeks for tilstand {0}"
 #~ msgstr "com.usebottles.bottles"
 
 #, fuzzy
-#~ msgid "Hungarian translations thanks to @ovari"
-#~ msgstr "Spansk oversettelse ved @fitojb"
-
-#, fuzzy
-#~ msgid "Swedish translations thanks to @bittin"
-#~ msgstr "Spansk oversettelse ved @fitojb"
-
-#, fuzzy
 #~ msgid "Chinese (Simplified) translations thanks to @sr093906"
-#~ msgstr "Spansk oversettelse ved @fitojb"
-
-#, fuzzy
-#~ msgid "Croatian translations thanks to @milotype"
 #~ msgstr "Spansk oversettelse ved @fitojb"
 
 #~ msgid "Downloads"
@@ -2936,10 +4198,6 @@ msgstr "Indeks for tilstand {0}"
 #~ msgstr "Spansk oversettelse ved @fitojb"
 
 #, fuzzy
-#~ msgid "Arabic translations thanks to @luxmaroc"
-#~ msgstr "Spansk oversettelse ved @fitojb"
-
-#, fuzzy
 #~ msgid "Polish translations thanks to Krzysztof Marcinek"
 #~ msgstr "Tyrksisk oversettelse ved @gunduzhan"
 
@@ -2967,19 +4225,12 @@ msgstr "Indeks for tilstand {0}"
 #~ msgid "Browse programs path"
 #~ msgstr "Utforsk C:"
 
-#, fuzzy
-#~ msgid "Russian translations thanks to @tacitcoast"
-#~ msgstr "Spansk oversettelse ved @fitojb"
-
 #~ msgid "Upgrade runner to the latest localy installed"
 #~ msgstr "Oppgrader springer til sist lokalt installerte"
 
 #, fuzzy
 #~ msgid "Destroy bottle"
 #~ msgstr "Ødelegg flaske"
-
-#~ msgid "Confirm upgrade"
-#~ msgstr "Bekreft oppgradering"
 
 #~ msgid "This will change the runner from {0} to {1}."
 #~ msgstr "Dette vil endre springeren fra {0} til {1}."
@@ -3065,9 +4316,6 @@ msgstr "Indeks for tilstand {0}"
 #, fuzzy
 #~ msgid "Execute .bat files in your bottles"
 #~ msgstr "Kjør i denne flasken"
-
-#~ msgid "General UI improvements"
-#~ msgstr "Generelle grenesnittsforbedringer"
 
 #~ msgid "Bugfix:"
 #~ msgstr "Feilfiks:"
@@ -3168,32 +4416,8 @@ msgstr "Indeks for tilstand {0}"
 #~ msgid "Toggle RC releases for runners"
 #~ msgstr "Veksle utgivelseskandidat for springere"
 
-#, fuzzy
-#~ msgid "Dependency name"
-#~ msgstr "Avhengigheter"
-
-#, fuzzy
-#~ msgid "Dependency description"
-#~ msgstr "Miljøbeskrivelse"
-
 #~ msgid "Environment description"
 #~ msgstr "Miljøbeskrivelse"
-
-#, fuzzy
-#~ msgid "Manager"
-#~ msgstr "Håndter flasker"
-
-#, fuzzy
-#~ msgid "Installer name"
-#~ msgstr "Installasjonskandidater"
-
-#, fuzzy
-#~ msgid "Installer description"
-#~ msgstr "Installasjonskandidater"
-
-#, fuzzy
-#~ msgid "Program name"
-#~ msgstr "Programmer"
 
 #, fuzzy
 #~ msgid "Fix downloading dependencies"
@@ -3326,9 +4550,6 @@ msgstr "Indeks for tilstand {0}"
 #~ msgid "Virtualize a desktop where to spawn all Windows applications."
 #~ msgstr "Virtualiser et skrivebord der alle Windows-programmer skal starte."
 
-#~ msgid "Set a different runner for this Bottle."
-#~ msgstr "Velg en annen springer for denne flasken."
-
 #~ msgid "DLL"
 #~ msgstr "DLL"
 
@@ -3362,9 +4583,6 @@ msgstr "Indeks for tilstand {0}"
 #~ "Installer avhengigheter (som corefonts, vcrun6, …) for bedre "
 #~ "programvarekompabilitet."
 
-#~ msgid "List, manage and run the programs installed in this Bottle."
-#~ msgstr "List opp, håndter og kjør programmer installert i denne flasken."
-
 #~ msgid "The program installer is an experimental feature and may not work."
 #~ msgstr ""
 #~ "Installasjonskandidaten for programmet er en eksperimentell funksjon som "
@@ -3395,9 +4613,6 @@ msgstr "Indeks for tilstand {0}"
 
 #~ msgid "We are working on Bottles v3."
 #~ msgstr "Det jobbes med Bottles v3."
-
-#~ msgid "Your Bottles"
-#~ msgstr "Dine flasker"
 
 #~ msgid "New Bottle details"
 #~ msgstr "Detaljer om ny flaske"
@@ -3451,10 +4666,6 @@ msgstr "Indeks for tilstand {0}"
 #~ "gjøres."
 
 #, fuzzy
-#~ msgid "No installers found!"
-#~ msgstr "Fant ingen springere"
-
-#, fuzzy
 #~ msgid "We can't fetch the installers from the repository right now."
 #~ msgstr "Kan ikke hente installasjonskandidater fra pakkebrønnen akkurat nå."
 
@@ -3487,9 +4698,6 @@ msgstr "Indeks for tilstand {0}"
 #~ msgid "Name your bottle"
 #~ msgstr "Gi flasken et navn"
 
-#~ msgid "Virtual Desktop resolution"
-#~ msgstr "Oppløsning for virtelt skrivebord"
-
 #, fuzzy
 #~ msgid "Wine Runners"
 #~ msgstr "Håndter flasker"
@@ -3511,16 +4719,6 @@ msgstr "Indeks for tilstand {0}"
 #, fuzzy
 #~ msgid "Kill all wine processes"
 #~ msgstr "Drep alle prosesser"
-
-#~ msgid "Command Line"
-#~ msgstr "Kommandolinje"
-
-#~ msgid "Registry Editor"
-#~ msgstr "Register-redigerer"
-
-#, fuzzy
-#~ msgid "Control Panel"
-#~ msgstr "Kontrollpanel"
 
 #, fuzzy
 #~ msgid "Last update for this bottle."

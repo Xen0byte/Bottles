@@ -15,10 +15,12 @@
     "--socket=wayland",
     "--socket=pulseaudio",
     "--device=all",
+    "--filesystem=xdg-download",
     "--system-talk-name=org.freedesktop.UDisks2",
     "--talk-name=org.freedesktop.Notifications",
     "--env=LD_LIBRARY_PATH=/app/lib:/app/lib32",
     "--env=PATH=/app/bin:/app/utils/bin:/usr/bin:/usr/lib/extensions/vulkan/MangoHud/bin/:/usr/bin:/usr/lib/extensions/vulkan/OBSVkCapture/bin/",
+    "--env=GST_PLUGIN_SYSTEM_PATH=/app/lib/gstreamer-1.0:/usr/lib/x86_64-linux-gnu/gstreamer-1.0:/app/lib32/gstreamer-1.0:/usr/lib/i386-linux-gnu/gstreamer-1.0",
     "--require-version=1.1.2"
   ],
   "inherit-extensions": [
@@ -80,7 +82,7 @@
   ],
   "modules": [
     {
-      "name": "PyYAML",
+      "name": "python-pillow",
       "buildsystem": "simple",
       "build-commands": [
         "python3 setup.py install --prefix=/app --root=/"
@@ -88,8 +90,37 @@
       "sources": [
         {
           "type": "archive",
+          "url": "https://github.com/python-pillow/Pillow/archive/refs/tags/9.2.0.tar.gz",
+          "sha256": "95836f00972dbf724bf1270178683a0ac4ea23c6c3a980858fc9f2f9456e32ef"
+        }
+      ]
+    },
+    {
+      "name": "PyYAML",
+      "buildsystem": "simple",
+      "build-commands": [
+        "python3 setup.py --with-libyaml install --prefix=/app --root=/"
+      ],
+      "sources": [
+        {
+          "type": "archive",
           "url": "https://github.com/yaml/pyyaml/archive/refs/tags/6.0.tar.gz",
           "sha256": "f33eaba25d8e0c1a959bbf00655198c287dfc5868f5b7b01e401eaa1796cc778"
+        }
+      ],
+      "modules": [
+        {
+          "name": "libyaml",
+          "config-opts": [
+            "--disable-static"
+          ],
+          "sources": [
+            {
+              "type": "archive",
+              "url": "https://github.com/yaml/libyaml/releases/download/0.2.5/yaml-0.2.5.tar.gz",
+              "sha256": "c642ae9b75fee120b2d96c712538bd2cf283228d2337df2cf2988e3c02678ef4"
+            }
+          ]
         }
       ]
     },
@@ -102,8 +133,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/psf/requests/archive/refs/tags/v2.26.0.tar.gz",
-          "sha256": "e88b61425a0b4f1316e7ab8f6c11d7abbc99b464e418786681d59fef9f9d6421"
+          "url": "https://github.com/psf/requests/archive/refs/tags/v2.28.0.tar.gz",
+          "sha256": "6b757ca284d8dc192794010c960b0cf405fcc7aed9ed2e04a8269dc41b1231ad"
         }
       ]
     },
@@ -116,8 +147,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/urllib3/urllib3/archive/refs/tags/1.26.7.tar.gz",
-          "sha256": "87f1b873ec9f7e0dc6e5bc2f9aa69279c73295a007fbd1ac421954a4679d7923"
+          "url": "https://github.com/urllib3/urllib3/archive/refs/tags/1.26.9.tar.gz",
+          "sha256": "5860049db8811e7a26e5f228359522814dc8159e6ec4f352b1b596e0dee80503"
         }
       ]
     },
@@ -172,8 +203,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/Python-Markdown/markdown/archive/refs/tags/3.3.6.tar.gz",
-          "sha256": "506543bf4fcd81ea939eae4b43c031ae65b0e210b58ab1db9e3d9dae9298a601"
+          "url": "https://github.com/Python-Markdown/markdown/archive/refs/tags/3.3.7.tar.gz",
+          "sha256": "a1b7a818ca2dc6b34b9ec0bb73e3f4325e4ee949a8390a91a4df48c311069f65"
         }
       ]
     },
@@ -217,6 +248,21 @@
           "url": "https://github.com/erocarrera/pefile/releases/download/v2021.9.3/pefile-2021.9.3.tar.gz",
           "sha256": "344a49e40a94e10849f0fe34dddc80f773a12b40675bf2f7be4b8be578bdd94a"
         }
+      ]
+    },
+    {
+      "name": "vmtouch",
+      "buildsystem": "simple",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/hoytech/vmtouch",
+          "commit": "8f6898e3c027f445962e223ca7a7b33d40395fc6"
+        }
+      ],
+      "build-commands": [
+        "make",
+        "make install PREFIX=/app"
       ]
     },
     {
@@ -403,6 +449,88 @@
       ]
     },
     {
+      "name": "libadwaita",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Dexamples=false",
+        "-Dtests=false"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.gnome.org/GNOME/libadwaita.git",
+          "tag": "1.2.rc",
+          "commit": "a6a26cd9c35571a4e0ebacb2c6d763d44e59c045"
+        }
+      ],
+      "modules": [
+        {
+          "name": "libsass",
+          "buildsystem": "meson",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/lazka/libsass.git",
+              "branch": "meson"
+            }
+          ]
+        },
+        {
+          "name": "sassc",
+          "buildsystem": "meson",
+          "sources": [
+            {
+              "type": "git",
+              "url": "https://github.com/lazka/sassc.git",
+              "branch": "meson"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "ImageMagick",
+      "config-opts": [
+        "--disable-static",
+        "--disable-docs",
+        "--with-hdri",
+        "--with-pic"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/ImageMagick/ImageMagick/archive/7.1.0-37.tar.gz",
+          "sha256": "a54888a1a46dbb808705a3e6c6b5ecb93ee30189a8ae6ea0f02300a0ab0d0996"
+        }
+      ]
+    },
+    {
+      "name": "libportal",
+      "buildsystem": "meson",
+      "config-opts": [
+        "-Ddocs=false",
+        "-Dbackends=gtk4"
+      ],
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://github.com/flatpak/libportal/archive/refs/tags/0.6.tar.gz",
+          "sha256": "8ad326c4f53b7433645dc86d994fef0292bee8adda0fe67db9288ace19250a9c"
+        }
+      ]
+    },
+    {
+      "name": "blueprint-compiler",
+      "buildsystem": "meson",
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler",
+          "branch": "main"
+        }
+      ]
+    },
+    {
       "name": "EasyTerm",
       "buildsystem": "simple",
       "build-commands": [
@@ -442,6 +570,44 @@
       ]
     },
     {
+      "name": "FVS",
+      "buildsystem": "simple",
+      "build-commands": [
+        "python3 setup.py install --prefix=/app --root=/"
+      ],
+      "sources": [
+        {
+          "type": "git",
+          "url": "https://github.com/mirkobrombin/FVS",
+          "tag": "0.3.4",
+          "commit": "4e76dc54028a88099c72ec3a925b5f059f442d05",
+          "x-checker-data": {
+            "type": "json",
+            "url": "https://api.github.com/repos/mirkobrombin/FVS/releases/latest",
+            "tag-query": ".tag_name",
+            "version-query": ".tag_name",
+            "timestamp-query": ".published_at"
+          }
+        }
+      ],
+      "modules": [
+        {
+          "name": "orjson",
+          "buildsystem": "simple",
+          "build-commands": [
+            "pip3 install --prefix /app --no-deps orjson-*.whl"
+          ],
+          "sources": [
+            {
+              "type": "file",
+              "url": "https://files.pythonhosted.org/packages/d6/79/174c198de7beb2f5ce06c41ecafb1aafc0714bb61a051ad9dfbc2fed76e8/orjson-3.7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+              "sha256": "7ef66e7c47e9531dfa3b3ffb791b548c84903570b0914b01acc5eeb56ff5bc33"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "runtime",
       "buildsystem": "simple",
       "build-commands": [
@@ -451,8 +617,8 @@
       "sources": [
         {
           "type": "archive",
-          "url": "https://github.com/bottlesdevs/runtime/releases/download/0.3/runtime.tar.gz",
-          "sha256": "37ccbe9afdc642e7b1fb3e0016c55fdccf5e221066ea96d630a5876c90792fe6"
+          "url": "https://github.com/bottlesdevs/runtime/releases/download/0.5/runtime.tar.gz",
+          "sha256": "00f7e57f0b54057343cfe49de52690c7b3024771478fc75cfe55c2154e13834f"
         }
       ]
     },
@@ -460,6 +626,9 @@
       "name": "bottles",
       "builddir": true,
       "buildsystem": "meson",
+      "config-opts": [
+        "-Ddevel=true"
+      ],
       "sources": [
         {
           "type": "dir",

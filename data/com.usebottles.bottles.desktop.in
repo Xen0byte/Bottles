@@ -2,12 +2,12 @@
 Name=Bottles
 Comment=Easily manage wineprefix
 Icon=com.usebottles.bottles
-Exec=bottles %f
+Exec=bottles %u
 Terminal=false
 Type=Application
 Categories=Utility;GNOME;GTK;
 StartupNotify=true
 StartupWMClass=bottles
-MimeType=application/x-ms-dos-executable;application/x-msi;application/x-ms-shortcut;application/x-wine-extension-msp;
+MimeType=x-scheme-handler/bottles;application/x-ms-dos-executable;application/x-msi;application/x-ms-shortcut;application/x-wine-extension-msp;
 Keywords=wine;windows;
 X-GNOME-UsesNotifications=true

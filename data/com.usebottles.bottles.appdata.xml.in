@@ -2,7 +2,7 @@
 <component type="desktop">
     <id>com.usebottles.bottles.desktop</id>
     <metadata_license>CC0-1.0</metadata_license>
-    <project_license>GPL-3.0-or-later</project_license>
+    <project_license>GPL-3.0-only</project_license>
     <name>Bottles</name>
     <summary>Run Windows software</summary>
     <developer_name translatable="no">Mirko Brombin</developer_name>
@@ -30,52 +30,52 @@
           <li>System for bringing your configuration to new versions of Bottles</li>
           <li>Back up and import bottles</li>
           <li>Import Wine prefixes from other managers</li>
-          <li>Bottles versioning (experimental)</li>
+          <li>Bottles versioning</li>
           <li>... and much more that you can find by installing Bottles!</li>
         </ul>
     </description>
-    ​<mimetypes>
-        <mimetype>application/x-ms-dos-executable</mimetype>
-        <mimetype>application/x-msi</mimetype>
-        <mimetype>application/x-ms-shortcut</mimetype>
-        <mimetype>application/x-wine-extension-msp</mimetype>
-    </mimetypes>
+    <provides>
+        <mediatype>application/x-ms-dos-executable</mediatype>
+        <mediatype>application/x-msi</mediatype>
+        <mediatype>application/x-ms-shortcut</mediatype>
+        <mediatype>application/x-wine-extension-msp</mediatype>
+    </provides>
     <screenshots>
         <screenshot type="default">
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/screenshot.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/screenshot.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/1.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/1.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/2.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/2.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/3.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/3.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/4.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/4.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/5.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/5.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/6.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/6.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/7.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/7.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/8.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/8.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/9.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/9.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/10.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/10.png</image>
         </screenshot>
         <screenshot>
-            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/master/data/appstream/11.png</image>
+            <image>https://raw.githubusercontent.com/bottlesdevs/Bottles/main/data/appstream/11.png</image>
         </screenshot>
     </screenshots>
     <translation type="gettext">com.usebottles.bottles</translation>
@@ -85,6 +85,8 @@
     <url type="help">https://docs.usebottles.com</url>
     <url type="donation">https://usebottles.com/funding</url>
     <url type="translate">https://hosted.weblate.org/engage/bottles</url>
+    <url type="vcs-browser">https://github.com/bottlesdevs/Bottles</url>
+    <url type="contribute">https://github.com/bottlesdevs/Bottles/blob/main/CONTRIBUTING.md</url>
     <recommends>
       <control>pointing</control>
       <control>keyboard</control>
@@ -94,45 +96,42 @@
       <display_length compare="ge">768</display_length>
     </requires>
     <releases>
-        <release version="2022.5.2-trento-3" date="2022-04-27">
+        <release version="2022.8.28-brescia-2" date="2022-08-28">
           <description>
             <p>News</p>
             <ul>
-                <li>General improvements to respect GNOME Circle requirements</li>
-                <li>More consistency of buttons/menus position</li>
-                <li>Improve Onboarding process</li>
-                <li>Auto-focus in bottle's name field when creating a new bottle</li>
-                <li>New bottle's name field now uses default style</li>
-                <li>New bottle create button is now always visible but disabled (not sensitive) if not usable</li>
-                <li>Improve end of bottle creation modal</li>
-                <li>Suggest how to install first program in new bottle</li>
-                <li>Explain what to do in each page</li>
-                <li>Explain what to do the first time you open a bottle</li>
-                <li>Bottle renaming is now in preferences view</li>
-                <li>Explain what compatibility grades are</li>
-                <li>Add missing dots to sentences</li>
-                <li>Fit title case</li>
-                <li>Align animations to most GNOME apps</li>
+                <li>Library mode is now a stable feature and enabled by default</li>
+                <li>Dependencies "copy_file" action now creates the path if not exists (see maintainers docs.)</li>
+                <li>Opening a bottle, a dialog is shown if the runner is not installed</li>
+                <li>The C: drive is now marked as persistend in the Drives section and cannot be edited by the user</li>
+                <li>All dialogs can now be closed pressing Escape</li>
+                <li>The dark mode switcher is now available only for system which doesn't support the standard</li>
+                <li>Simplification of "Legacy Tools" section, thanks to @Knebergish</li>
+                <li>Minor UI improvements, thanks to @TheEvilSkeleton, @orowith2os, @marhkb</li>
             </ul>
 
             <p>Fixes</p>
             <ul>
-                <li>Fixed desktop entries, bottles-cli was using Name instead of Path (Thanks to @emiltang)</li>
+                <li>Fix a bug in the template system, was trying to unpack a partial one</li>
+                <li>Fix a bug in setting overrides for old-structured program entries</li>
+                <li>Fix a bug in vmtouch management</li>
+                <li>Fix a bug in the WineCommand interface which was causing a crash if the executable path is not accessible</li>
+                <li>Fix a bug in the Steam Manager, was generating wrong shortcuts when the program name has spaces in it</li>
+                <li>Fix long names in library mode</li>
+                <li>Fix a bug in bottle creation, sometimes it created a symlinks loop in the userdir</li>
+                <li>Fix a bug in the crash dialog, the similarity check was set too high resulting in no similar reports</li>
             </ul>
 
             <p>Translations</p>
             <ul>
-                <li>French translations thanks to @julroy67</li>
-                <li>Persian traslations thanks to @pikhosh, @Gnkalk</li>
-                <li>Portuguese (Brazil) translations thanks to @FHEK789, @vitorhcl</li>
-                <li>German translations thanks to @Maxopoly</li>
-                <li>Spanish translations thanks to @uanretamales</li>
-                <li>Swedish translations thanks to @bittin</li>
-                <li>Russian translations thanks to @Knebergish</li>
-                <li>Czech translations thanks to @vikdevelop</li>
-                <li>Chinese (traditional) translations thanks to @Adrian400811</li>
-                <li>Malay translations thanks to @amiruldevkun</li>
-                <li>Fix grammar issues thanks to @purpleidea</li>
+                <li>Italian translations thanks to @alfonso133</li>
+                <li>Bengali translations thanks to @zihadio</li>
+                <li>Catalan translations thanks to @rogervc</li>
+                <li>Tamil translations thanks to @kbdharun</li>
+                <li>Dutch translations thanks to @flipflop97</li>
+                <li>Spanish translations thanks to @ParadoxialN3</li>
+                <li>Ukranian translations thanks to @c0m1c5an5</li>
+                <li>Turkish translations thanks to @Dhizaes</li>
             </ul>
           </description>
         </release>

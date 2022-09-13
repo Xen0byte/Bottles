@@ -16,6 +16,21 @@
       <summary>Toggle update date in list</summary>
       <description>Toggle the update date in list of bottles.</description>
     </key>
+    <key type="b" name="steam-programs">
+      <default>true</default>
+      <summary>Steam apps listing</summary>
+      <description>Toggle steam apps listing.</description>
+    </key>
+    <key type="b" name="epic-games">
+      <default>true</default>
+      <summary>Epic Games listing</summary>
+      <description>Toggle epic games listing.</description>
+    </key>
+    <key type="b" name="ubisoft-connect">
+      <default>true</default>
+      <summary>Ubisoft Connect listing</summary>
+      <description>Toggle ubisoft connect listing.</description>
+    </key>
     <key type="i" name="window-width">
       <default>850</default>
       <summary>Window width</summary>
@@ -42,7 +57,7 @@
       <description>Toggle release candidate for runners.</description>
     </key>
     <key type="s" name="startup-view">
-      <default>'page_add'</default>
+      <default>'page_library'</default>
       <summary>Startup view</summary>
       <description>Choose which view the application should be started in.</description>
     </key>
@@ -51,20 +66,25 @@
       <summary>Experiments</summary>
       <description>Toggle experimental features such as versioning and installers. Release candidate for runners.</description>
     </key>
-    <key type="b" name="experiments-steam">
+    <key type="b" name="steam-proton-support">
       <default>false</default>
-      <summary>Experiments:steam</summary>
-      <description>Toggle experimental Steam Proton prefixes support.</description>
+      <summary>Steam Proton Support</summary>
+      <description>Toggle Steam Proton prefixes support.</description>
     </key>
-    <key type="b" name="experiments-library">
+    <key type="b" name="experiments-sandbox">
       <default>false</default>
-      <summary>Experiments:library</summary>
-      <description>Toggle experimental Library mode.</description>
+      <summary>Experiments:sandbox</summary>
+      <description>Toggle experimental Sandbox per bottle.</description>
     </key>
     <key type="b" name="auto-close-bottles">
       <default>false</default>
       <summary>Automatically close Bottles</summary>
       <description>Close Bottles after starting an executable from the file manager.</description>
+    </key>
+    <key type="b" name="show-sandbox-warning">
+      <default>true</default>
+      <summary>Show sandbox warning</summary>
+      <description>Toggle sandbox warning.</description>
     </key>
 	</schema>
 </schemalist>

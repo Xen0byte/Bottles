@@ -5,8 +5,8 @@ script:
   - rm -rf build  | true
   
   # Building with meson and ninja
-  - DESTDIR=$APPDIR
-  - mkdir build & meson build --prefix=/usr
+  - DESTDIR=$TARGET_APPDIR
+  - mkdir build & meson build --prefix=/usr --buildtype=release
   - cd build
   - ninja ; ninja install ; ninja bottles-pot ; ninja bottles-update-po
   - cd ..
@@ -46,13 +46,35 @@ script:
   - cp -a data/com.usebottles.bottles.appdata.xml.in AppDir/usr/share/metainfo/com.usebottles.bottles.appdata.xml
   
   # Set bash as default shell
-  - mkdir -p $APPDIR/bin
-  - ln -sf bash $APPDIR/bin/sh
+  - mkdir -p AppDir/bin
+  - ln -sf bash AppDir/bin/sh
+
+  # Set python3 as default python
+  - mkdir -p AppDir/usr/bin
+  - ln -sf python3 AppDir/usr/bin/python
 
   # Install p7zip
   - wget https://github.com/bottlesdevs/p7zip/releases/download/16.02/p7zip.tar.xz
-  - tar -xf p7zip.tar.xz -C AppDir/bin
+  - tar -xf p7zip.tar.xz -C AppDir/usr/bin
 
+  # Install EasyTerm
+  - wget https://github.com/bottlesdevs/EasyTerm/archive/refs/tags/0.2.0.tar.gz
+  - mkdir -p $HOME/easyterm
+  - tar zxvf 0.2.0.tar.gz -C $HOME/easyterm
+  - cp $HOME/easyterm/EasyTerm-*/easyterm/easyterm.py AppDir/usr/bin/
+  - chmod +x AppDir/usr/bin/easyterm.py
+  
+  # Install LibAdwaita
+  - git clone https://gitlab.gnome.org/GNOME/libadwaita.git && cd ./libadwaita
+  - git reset --hard 5cb00a274318b870f4b3ff09ed8f24d52f11f7de && export DESTDIR=../../AppDir
+  - mkdir build && meson build -Dtests=false -Dexamples=false --prefix=/usr --buildtype=release
+  - cd ./build && ninja install && cd ../../ && rm -rf ./libadwaita && unset DESTDIR
+  
+  # Fetch appimage_module_patcher.sh
+  - wget https://gist.githubusercontent.com/azubieta/202c85f1f5a9e5c6be5cb066fcb2d5e2/raw/40f04063fa5fff21310ba075922295b09dd84bee/appimage_module_patcher.sh
+  - cp appimage_module_patcher.sh AppDir/usr/bin/appimage_module_patcher
+  - chmod +x AppDir/usr/bin/appimage_module_patcher
+  
 AppDir:
   path: ./AppDir
 
@@ -60,7 +82,7 @@ AppDir:
     id: com.usebottles.bottles
     name: Bottles
     icon: com.usebottles.bottles
-    version: 2022.5.2-trento-3
+    version: 2022.8.28-brescia-2
     
     # Set the python executable as entry point
     exec: usr/bin/python3.10
@@ -71,7 +93,7 @@ AppDir:
   apt:
     arch: [amd64, i386]
     sources:
-      - sourceline: 'deb http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse'
+      - sourceline: 'deb http://archive.ubuntu.com/ubuntu/ kinetic main restricted universe multiverse'
         key_url: 'http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x871920D1991BC93C'
 
     include:
@@ -80,9 +102,8 @@ AppDir:
     - gsettings-desktop-schemas
     - dconf-gsettings-backend
     - gsettings-backend
-    - libhandy-1-0
+    - libgtksourceview-5-0
     - libbz2-1.0
-    - libcanberra-gtk3-module
     - libcanberra-pulse
     - libexpat1
     - libgcc-s1
@@ -94,23 +115,23 @@ AppDir:
     - libpython3.10-stdlib
     - librsvg2-common
     - libselinux1
-    - libgtk-3-0
+    - libgtk-4-1
     - libwebkit2gtk-4.0
     - libglib2.0-0
     - libglib2.0-bin
     - libgee-0.8-2
     - libffi8ubuntu1
-    - libhandy-1-0
+    - libportal1
+    - libportal-gtk4-1
     - python3-gi-cairo
     - python3-certifi
     - python3-yaml
     - python3-requests
     - python3-markdown
-    - gir1.2-gtk-3.0
-    - gir1.2-gtksource-4
-    - gir1.2-handy-1
+    - gir1.2-gtk-4.0
+    - gir1.2-gtksource-5
     - gir1.2-notify-0.7
-    - ibus-gtk3
+    - ibus-gtk4
     - zlib1g
     - libfreetype6
     - libfreetype6:i386
@@ -118,27 +139,31 @@ AppDir:
     - winbind
     - cabextract
     - patool
-    - p7zip
+    # - p7zip
     - x11-utils
 
     exclude:
     - humanity-icon-theme
 
   after_runtime: |
-     rm -f $APPDIR/.bundle.yml
-     rm -rf $APPDIR/usr/share/doc
-     rm -rf $APPDIR/usr/share/man
-     mkdir -p $APPDIR/usr/local/lib/p7zip/ 
-     ln -s $APPDIR/usr/lib/p7zip/ $APPDIR/usr/local/lib/p7zip/
+    # rm -f $APPDIR/.bundle.yml
+    # rm -rf $APPDIR/usr/share/doc
+    # rm -rf $APPDIR/usr/share/man
+    # mkdir -p $APPDIR/usr/local/lib/p7zip/ 
+    # ln -s $APPDIR/usr/lib/p7zip/ $APPDIR/usr/local/lib/p7zip/
+    AppDir/usr/bin/appimage_module_patcher $APPDIR/usr/bin/*
 
   files:
     include:
+      - AppDir/usr/bin/*
       - AppDir/usr/lib/x86_64-linux-gnu/libffi.so.8
-      - AppDir/usr/lib/x86_64-linux-gnu/libhandy-1.so.0
+      - AppDir/usr/lib/x86_64-linux-gnu/libadwaita-1.so.0
 
     exclude:
       - AppDir/usr/lib/x86_64-linux-gnu/gconv
       - AppDir/usr/share/man
+      - AppDir/.bundle.yml
+      - AppDir/usr/share/doc
       - AppDir/usr/share/doc/*/README.*
       - AppDir/usr/share/doc/*/changelog.*
       - AppDir/usr/share/doc/*/NEWS.*
